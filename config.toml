@@ -1,11 +1,72 @@
-baseURL = 'https://blog.airscript.it'
-title = 'airscript.it' 
-theme = 'PaperMod'
-defaultContentLanguage = 'it'
-[languages]
-  [languages.it]
-    languageName = 'Italiano'
-    weight = 1
-  [languages.en]
-    languageName = 'English'
-    weight = 2
+paginate = 5
+theme = "PaperMod"
+enableEmoji = true
+title = "airscript.it" 
+enableRobotsTXT = true
+pygmentsUseClasses = true
+enableInlineShortcodes = true
+defaultContentLanguage = "it"
+baseURL = "https://blog.airscript.it"
+copyright = "airscript.it | Sharing happiness with code."
+
+
+[languages.it]
+  weight = 1
+  languageName = "it"
+  languageAltTitle = "Italiano"
+  contentDir = "content/italian"
+
+[[languages.it.menu.main]]
+weight = 5
+name = "Archivio"
+url = "archives/"
+
+[[languages.it.menu.main]]
+weight = 10
+name = "About"
+url = "about/"
+
+
+[[languages.it.menu.main]]
+weight = 15
+name = "Cerca"
+url = "search/"
+
+
+[languages.en]
+  weight = 2
+  languageName = "en"
+  contentDir = "content/english"
+
+[[languages.en.menu.main]]
+weight = 5
+name = "Archive"
+url = "archives/"
+
+[[languages.en.menu.main]]
+weight = 10
+name = "About"
+url = "about/"
+
+[[languages.en.menu.main]]
+weight = 15
+name = "Search"
+url = "search/"
+
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+
+[params]
+defaultTheme = "auto"
+displayFullLangName = true
+ShowShareButtons = false
+ShowReadingTime = true
+ShowCodeCopyButtons = true
+ShowToc = true
+
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
