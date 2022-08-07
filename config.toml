@@ -1,0 +1,11 @@
+baseURL = 'https://blog.airscript.it'
+title = 'airscript.it' 
+theme = 'PaperMod'
+defaultContentLanguage = 'it'
+[languages]
+  [languages.it]
+    languageName = 'Italiano'
+    weight = 1
+  [languages.en]
+    languageName = 'English'
+    weight = 2
