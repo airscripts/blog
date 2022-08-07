@@ -1,0 +1,16 @@
+version: 2.1
+jobs:
+  base:
+    docker:
+      - image: cimg/base:stable
+      
+    steps:
+      - checkout
+      - run:
+          name: "Base Job"
+          command: "echo Base job is working!"
+          
+workflows:
+  base-workflow:
+    jobs:
+      - base
