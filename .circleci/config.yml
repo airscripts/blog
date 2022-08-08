@@ -1,16 +1,80 @@
 version: 2.1
+
 jobs:
-  base:
+  verify:
     docker:
-      - image: cimg/base:stable
+      - image: node:18.7.0-alpine3.16
       
     steps:
       - checkout
+
       - run:
-          name: "Base Job"
-          command: "echo Base job is working!"
-          
+          name: "Verify Job"
+          command: "echo Verify job is working!"
+
+  build:
+    docker:
+      - image: node:18.7.0-alpine3.16
+      
+    steps:
+      - checkout
+
+      - run:
+          name: "Update Alpine Repositories"
+          command: "apk update"
+
+      - run:
+          name: "Install Hugo"
+          command: "apk add hugo"
+      
+      - run:
+          name: "Building Site"
+          command: "hugo --gc --minify"
+    
+  deploy:
+    docker:
+      - image: node:18.7.0-alpine3.16
+
+    steps:
+      - checkout
+
+      - run:
+          name: "Update Alpine Repositories"
+          command: "apk update"
+
+      - run:
+          name: "Update npm"
+          command: "npm install -g npm"
+      
+      - run:
+          name: "Install Netlify CLI"
+          command: "npm install -g netlify-cli"
+
+      - run:
+          name: "Install Hugo"
+          command: "apk add hugo"
+      
+      - run:
+          name: "Building Site"
+          command: "HUGO_ENV=production hugo --gc --minify"
+      
+      - run:
+          name: "Deploy To Netlify"
+          command: "netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public"
+    
 workflows:
-  base-workflow:
+  verify:
     jobs:
-      - base
+      - verify
+
+  build:
+    jobs:
+      - build
+
+  deploy:
+    jobs:
+      - deploy:
+          filters:
+              branches:
+                only:
+                  - main
