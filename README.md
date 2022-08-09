@@ -26,6 +26,7 @@ Contributions and suggestions about how to improve the blog are welcome!
 
 ## 💚 Support  
 If you want to support my work you can do it with the links below.  
+
 Choose what you find more suitable for you:  
 - [Support me on GitHub](https://github.com/sponsors/Airscripts)  
 - [Support me via linktr.ee](https://linktr.ee/airscript)  
@@ -33,5 +34,6 @@ Choose what you find more suitable for you:
 Thank you so much, it means a lot for me!
 
 ## 💳 License  
-This blog has dual-licensing.  
-This means that for its source code [MIT License](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog.airscript.it/tree/main/content/LICENSE) is applied.  
+This repository has dual-licensing.  
+ 
+This means that for its source code [MIT License](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog.airscript.it/blog/main/LICENSE_CC_BY_4.0) is applied.  
