@@ -1,9 +1,13 @@
 version: 2.1
 
-jobs:
-  verify:
+executors:
+  alpine-environment:
     docker:
       - image: node:18.7.0-alpine3.16
+
+jobs:
+  verify:
+    executor: alpine-environment
       
     steps:
       - checkout
@@ -13,8 +17,7 @@ jobs:
           command: "echo Verify job is working!"
 
   build:
-    docker:
-      - image: node:18.7.0-alpine3.16
+    executor: alpine-environment
       
     steps:
       - checkout
@@ -38,10 +41,15 @@ jobs:
       - run:
           name: "Building Site"
           command: "hugo --gc --minify"
+        
+      - persist_to_workspace:
+          root: .
+
+          paths:
+            - ./public
     
   deploy:
-    docker:
-      - image: node:18.7.0-alpine3.16
+    executor: alpine-environment
 
     steps:
       - checkout
@@ -89,7 +97,11 @@ workflows:
 
   deploy:
     jobs:
+      - build
       - deploy:
+          requires:
+            - build
+
           filters:
               branches:
                 only:
