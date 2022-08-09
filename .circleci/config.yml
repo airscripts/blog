@@ -54,6 +54,9 @@ jobs:
     steps:
       - checkout
 
+      - attach_workspace:
+        at: .
+
       - run:
           name: "Update Alpine Repositories"
           command: "apk update"
@@ -61,18 +64,6 @@ jobs:
       - run:
           name: "Install Git"
           command: "apk add git"
-        
-      - run:
-          name: "Update Git Submodules"
-          command: "git submodule update --init --recursive"
-
-      - run:
-          name: "Install Hugo"
-          command: "apk add hugo"
-
-      - run:
-          name: "Building Site"
-          command: "HUGO_ENV=production hugo --gc --minify"
 
       - run:
           name: "Update npm"
