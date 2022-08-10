@@ -1,23 +1,53 @@
 version: 2.1
 
 executors:
-  alpine-environment:
+  build-environment:
+    docker:
+      - image: alpine:3.16
+
+  deploy-environment:
     docker:
       - image: node:18.7.0-alpine3.16
+    
+  publish-environment:
+    docker:
+      - image: docker:20.10.17-cli-alpine3.16
 
 jobs:
-  verify:
-    executor: alpine-environment
+  verify-build-environment:
+    executor: build-environment
       
     steps:
-      - checkout
-
       - run:
-          name: "Verify Job"
-          command: "echo Verify job is working!"
+          name: "Verify apk"
+          command: "apk"
+  
+  verify-deploy-environment:
+    executor: deploy-environment
+
+    steps:
+      - run:
+          name: "Verify apk"
+          command: "apk"
+      
+      - run: 
+          name: "Verify Node.js"
+          command: "node -v"
+
+      - run: 
+          name: "Verify npm"
+          command: "npm -v"
+        
+  verify-publish-environment:
+    executor: publish-environment
+
+    steps:
+      - run:
+          name: "Verify Docker"
+          command: "docker -v"
 
   build:
-    executor: alpine-environment
+    executor: build-environment
       
     steps:
       - checkout
@@ -49,7 +79,7 @@ jobs:
             - ./public
     
   deploy:
-    executor: alpine-environment
+    executor: deploy-environment
 
     steps:
       - checkout
@@ -62,10 +92,6 @@ jobs:
           command: "apk update"
 
       - run:
-          name: "Install Git"
-          command: "apk add git"
-
-      - run:
           name: "Update npm"
           command: "npm install -g npm"
       
@@ -76,11 +102,31 @@ jobs:
       - run:
           name: "Deploy To Netlify"
           command: "netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public"
-    
+
+  publish:
+    executor: publish-environment
+
+    steps:
+      - checkout
+
+      - run:
+          name: "Login Into Docker Hub"
+          command: "docker login --username $DOCKER_USERNAME --password $DOCKER_ACCESS_TOKEN"
+
+      - run:
+          name: "Build Docker Image"
+          command: "docker build -f .docker/blog.Dockerfile -t airscript/blog:$CIRCLE_TAG ."  
+
+      - run:
+          name: "Publish To Docker Hub"
+          command: "docker push airscript/blog:$CIRCLE_TAG"
+
 workflows:
   verify:
     jobs:
-      - verify
+      - verify-build-environment
+      - verify-deploy-environment
+      - verify-publish-environment
 
   build:
     jobs:
@@ -89,6 +135,7 @@ workflows:
   deploy:
     jobs:
       - build
+      
       - deploy:
           requires:
             - build
@@ -97,3 +144,13 @@ workflows:
               branches:
                 only:
                   - main
+  publish:
+    jobs:
+      - publish:
+          filters: 
+            tags:
+              only: 
+                - /.*/
+
+            branches:
+              ignore: /.*/
