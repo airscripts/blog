@@ -20,7 +20,7 @@ jobs:
     steps:
       - run:
           name: "Verify apk"
-          command: "apk"
+          command: "apk --version"
   
   verify-deploy-environment:
     executor: deploy-environment
@@ -28,7 +28,7 @@ jobs:
     steps:
       - run:
           name: "Verify apk"
-          command: "apk"
+          command: "apk --version"
       
       - run: 
           name: "Verify Node.js"
