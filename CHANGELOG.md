@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
 
+## 🎉 1.1.0
+### What's Changed
+* feat: add logo and favicon by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/8
+* refactor(ci): add persistency to build job by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/9
+* fix(ci): add missing attach workspace to deploy job by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/10
+* feat(docker): add docker support and publish workflow by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/11
+
+### Full Changelog
+https://github.com/Airscripts/blog.airscript.it/compare/1.0.0...1.1.0
+
 ## 🎉 1.0.0
 ### What's Changed
 * chore: add circleci config.yml by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/1
