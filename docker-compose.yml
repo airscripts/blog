@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  blog: 
+    tty: true
+    restart: always
+    image: airscript/blog:1.1.0
+    container_name: airscript-blog
+
+    ports:
+      - "25001:25001/udp"
+      - "25001:25001/tcp"
+
+    volumes:
+      - .:/app
+
+    networks:
+      default:
+        aliases:
+          - blognet
+
+    build:
+      context: .
+      dockerfile: ".docker/blog.Dockerfile"
