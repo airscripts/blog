@@ -71,13 +71,18 @@ jobs:
       - run:
           name: "Building Site"
           command: "hugo --gc --minify"
-        
-      - persist_to_workspace:
-          root: .
 
-          paths:
-            - ./public
-    
+      - when:
+          condition: 
+            equal: [ main, << pipeline.git.branch >>]
+
+          steps:
+            - persist_to_workspace:
+                root: .
+
+                paths:
+                  - ./public
+
   deploy:
     executor: deploy-environment
 
