@@ -11,7 +11,7 @@ executors:
     
   publish-environment:
     docker:
-      - image: docker:20.10.17-cli-alpine3.16
+      - image: alpine:3.16
 
 jobs:
   verify-build-environment:
@@ -43,8 +43,8 @@ jobs:
 
     steps:
       - run:
-          name: "Verify Docker"
-          command: "docker -v"
+          name: "Verify apk"
+          command: "apk --version"
 
   build:
     executor: build-environment
@@ -113,6 +113,9 @@ jobs:
 
     steps:
       - checkout
+      
+      - setup_remote_docker:
+          docker_layer_caching: true
 
       - run:
           name: "Login Into Docker Hub"
