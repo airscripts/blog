@@ -119,6 +119,10 @@ jobs:
           version: 20.10.14
 
       - run:
+          name: "Install Docker CLI"
+          command: apk add docker-cli
+
+      - run:
           name: "Login Into Docker Hub"
           command: "docker login --username $DOCKER_USERNAME --password $DOCKER_ACCESS_TOKEN"
 
