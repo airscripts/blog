@@ -1,4 +1,4 @@
-FROM node:18.7.0-alpine3.16
+FROM alpine:3.16
 
 LABEL maintainer="Airscript <dev.airscript@gmail.com>"
 
