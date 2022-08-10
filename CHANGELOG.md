@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
 
+## 🎉 1.2.0
+
+### What's Changed
+* refactor: change base image for blog.Dockerfile by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/12
+
+### Full Changelog
+https://github.com/Airscripts/blog.airscript.it/compare/1.1.0...1.2.0  
+&nbsp;
+
 ## 🎉 1.1.0
 ### What's Changed
 * feat: add logo and favicon by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/8
@@ -12,7 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * feat(docker): add docker support and publish workflow by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/11
 
 ### Full Changelog
-https://github.com/Airscripts/blog.airscript.it/compare/1.0.0...1.1.0
+https://github.com/Airscripts/blog.airscript.it/compare/1.0.0...1.1.0  
+&nbsp;
 
 ## 🎉 1.0.0
 ### What's Changed

@@ -4,7 +4,7 @@ services:
   blog: 
     tty: true
     restart: always
-    image: airscript/blog:1.1.0
+    image: airscript/blog:1.2.0
     container_name: airscript-blog
 
     ports:
