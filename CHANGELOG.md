@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
 
+## 🎉 1.3.0
+
+### What's Changed
+* fix(content): add missing link to github repository by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/17
+* feat: add home page by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/18
+
+### Full Changelog
+https://github.com/Airscripts/blog.airscript.it/compare/1.2.1...1.3.0  
+&nbsp;
+
 ## 🎉 1.2.1
 
 ### What's Changed
