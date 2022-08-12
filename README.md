@@ -16,7 +16,7 @@ In order to the use correct version of Hugo it is **recommended** to use Docker.
 
 2. Update git submodules:
     ```bash
-    git submodule update --init --recursive
+    sh init.sh
     ```
 
 ### 🐳 Containerized Environment

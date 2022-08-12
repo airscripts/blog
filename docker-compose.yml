@@ -22,3 +22,6 @@ services:
     build:
       context: .
       dockerfile: ".docker/blog.Dockerfile"
+
+      args:
+        BLOG_BUILD_ENV: compose
