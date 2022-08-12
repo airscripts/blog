@@ -58,11 +58,11 @@ jobs:
 
       - run:
           name: "Install Git"
-          command: "apk add git"
+          command: "sh ./scripts/git.sh $BLOG_BUILD_ENV"
         
       - run:
           name: "Update Git Submodules"
-          command: "git submodule update --init --recursive"
+          command: "sh ./scripts/submodules.sh $BLOG_BUILD_ENV"
 
       - run:
           name: "Install Hugo"
