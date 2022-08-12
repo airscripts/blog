@@ -11,7 +11,7 @@
 &nbsp;
 
 # What is blog.airscript.it?
-This is my personal blog where I write posts about information technology, motivation and life adventures.  
+This is my personal blog where I write posts about computer science, motivation and much more.  
 It is open source so that anybody can improve it freely or just take inspiration.   
 &nbsp;
 

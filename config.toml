@@ -16,10 +16,19 @@ languageName = "it"
 languageAltTitle = "Italiano"
 contentDir = "content/italian"
 
-[[languages.it.menu.main]]
-weight = 5
-name = "Archivio"
-url = "archives/"
+[languages.it.homeInfoParams]
+Title = "Oh, ciao! 👋🏻"
+
+Content = """
+  Ti do il benvenuto su **airscript.it**!  
+  Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!  
+  Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una 🌟 al [blog su GitHub](https://github.com/Airscripts/blog.airscript.it).  
+"""
+
+# [[languages.it.menu.main]]
+# weight = 5
+# name = "Archivio"
+# url = "archives/"
 
 [[languages.it.menu.main]]
 weight = 10
@@ -38,10 +47,10 @@ weight = 2
 languageName = "en"
 contentDir = "content/english"
 
-[[languages.en.menu.main]]
-weight = 5
-name = "Archive"
-url = "archives/"
+# [[languages.en.menu.main]]
+# weight = 5
+# name = "Archive"
+# url = "archives/"
 
 [[languages.en.menu.main]]
 weight = 10
@@ -52,6 +61,15 @@ url = "about/"
 weight = 15
 name = "Search"
 url = "search/"
+
+[languages.en.homeInfoParams]
+Title = "Oh, hello! 👋🏻"
+
+Content = """
+  I welcome you on **airscript.it**!  
+  On this blog you'll find articles related to computer science, motivation and much more!  
+  If you want, you can support me through the link below or leaving a 🌟 at [blog on GitHub](https://github.com/Airscripts/blog.airscript.it).  
+"""
 
 
 [taxonomies]
@@ -67,6 +85,19 @@ ShowReadingTime = true
 ShowCodeCopyButtons = true
 ShowToc = true
 label.icon = "logo.svg"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/sponsors/Airscripts"
+
+[[params.socialIcons]]
+name = "KoFi"
+url = "https://ko-fi.com/airscript"
+
+[params.editPost]
+URL = "https://github.com/Airscripts/blog.airscript.it/tree/main/content"
+Text = "Suggest Changes"
+appendFilePath = false
 
 
 [outputs]
