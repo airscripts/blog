@@ -21,7 +21,7 @@ Just to name a few of the thousand things that fascinate me.
 Oh yes! I cannot miss out an honorable mention to paleonthology and 
 specifically to **dinosaurs**.  
 
-Of all, however, information technology was the one I never lost sight of.  
+Of all, however, computer science was the one I never lost sight of.  
 The possibility of being able to create tools that could make people's life better through lines of code, got me so excited to make this interest, 
 **passion** and later also **work**.  
 
@@ -50,7 +50,7 @@ During this year I've got an invaluable value from these experiences and I
 want to share them with you.  
 
 ## What can I read?
-As a great information technolgy enthusiast it seems absolutely obvious 
+As a great computer science enthusiast it seems absolutely obvious 
 to me that the main topic will be that. I will treat it, however, in my own way.  
 
 How? I'll put in a pinch of **philosophy** and **simplicity**: like those that distinguish me.  
