@@ -20,6 +20,8 @@ Just to name a few of the thousand things that fascinate me.
 
 Oh yes! I cannot miss out an honorable mention to paleonthology and 
 specifically to **dinosaurs**.  
+*Just between us I hadn't really forgotten them, I wanted them to have the 
+attention they deserve.*  
 
 Of all, however, computer science was the one I never lost sight of.  
 The possibility of being able to create tools that could make people's life better through lines of code, got me so excited to make this interest, 
