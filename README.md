@@ -8,6 +8,17 @@ This repository contains source code and content of my blog hosted on [blog.airs
 In order to the use correct version of Hugo it is **recommended** to use Docker.  
 &nbsp;
 
+### ⚙️ Common Steps
+1. Clone this repository: 
+    ```bash
+    git clone https://github.com/Airscripts/blog.airscript.it.git
+    ```
+
+2. Update git submodules:
+    ```bash
+    git submodule update --init --recursive
+    ```
+
 ### 🐳 Containerized Environment
 1. Install Docker and Docker Compose on your machine following these links:
 - [Docker](https://docs.docker.com/get-docker/)
@@ -23,19 +34,9 @@ In order to the use correct version of Hugo it is **recommended** to use Docker.
 &nbsp;
 
 ### 💻 Local Environment
-1. Clone this repository: 
-    ```bash
-    git clone https://github.com/Airscripts/blog.airscript.it.git
-    ```
+1. Install Hugo following this [guide](https://gohugo.io/getting-started/installing/).
 
-2. Update git submodules:
-    ```bash
-    git submodule update --init --recursive
-    ```
-    
-3. Install Hugo following this [guide](https://gohugo.io/getting-started/installing/).
-
-4. Run the following command:
+2. Run the following command:
     ```bash
     hugo server
     ```  
