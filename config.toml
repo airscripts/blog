@@ -7,7 +7,7 @@ pygmentsUseClasses = true
 enableInlineShortcodes = true
 defaultContentLanguage = "it"
 baseURL = "https://blog.airscript.it"
-copyright = "airscript.it (1.2.1) | Sharing happiness with code."
+copyright = "airscript.it (1.3.0) | Sharing happiness with code."
 
 
 [languages.it]
