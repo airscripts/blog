@@ -6,16 +6,18 @@ ENV BLOG_PORT=25001
 ENV BLOG_INTERFACE=0.0.0.0
 
 ARG BLOG_DIR=app
+ARG BLOG_BUILD_ENV=docker
 
-RUN apk update
-RUN apk add hugo
+RUN apk update && apk add hugo && mkdir ${BLOG_DIR}
 
-RUN mkdir ${BLOG_DIR}
 WORKDIR /${BLOG_DIR}
 
 COPY . .
 
-ENTRYPOINT ["./docker-entrypoint.sh"]
+RUN sh ./scripts/git.sh ${BLOG_BUILD_ENV} && sh ./scripts/submodules.sh ${BLOG_BUILD_ENV}
+
+ENTRYPOINT ["./scripts/docker-entrypoint.sh"]
+
 CMD ["hugo"]
 
 EXPOSE ${BLOG_PORT}
