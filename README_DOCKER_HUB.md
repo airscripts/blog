@@ -7,7 +7,7 @@
 &nbsp;
 
 # Supported Tags
-- [`1.2.0`](https://github.com/Airscripts/blog.airscript.it/blob/main/.docker/blog.Dockerfile)  
+- [`1.2.1`](https://github.com/Airscripts/blog.airscript.it/blob/main/.docker/blog.Dockerfile)  
 &nbsp;
 
 # What is blog.airscript.it?

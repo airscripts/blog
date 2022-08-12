@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
 
+## 🎉 1.2.1
+
+### What's Changed
+- fix(docker): temporarily remove git submodule from Dockerfile
+
+### Full Changelog
+https://github.com/Airscripts/blog.airscript.it/compare/1.2.0...1.2.1  
+&nbsp;
+
 ## 🎉 1.2.0
 
 ### What's Changed
