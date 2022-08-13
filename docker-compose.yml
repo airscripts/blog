@@ -4,11 +4,10 @@ services:
   blog: 
     tty: true
     restart: always
-    image: airscript/blog:1.4.0
+    image: airscript/blog:compose
     container_name: airscript-blog
 
     ports:
-      - "25001:25001/udp"
       - "25001:25001/tcp"
 
     volumes:
