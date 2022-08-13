@@ -8,7 +8,7 @@
 
 [submodule "tests/test_helper/bats-support"]
 	path = tests/test_helper/bats-support
-	url = ehttps://github.com/bats-core/bats-support.git
+	url = https://github.com/bats-core/bats-support.git
 
 [submodule "tests/test_helper/bats-assert"]
 	path = tests/test_helper/bats-assert
