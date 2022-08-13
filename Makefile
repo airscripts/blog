@@ -11,8 +11,8 @@ clean:
 	docker compose down
 	cd ./themes/PaperMod && find . -name "*" -delete
 	cd ./tests/bats && find . -name "*" -delete
-	cd ./tests/test_helper/bats-assert && find . -name "*" -delete
-	cd ./tests/test_helper/bats-support && find . -name "*" -delete
+	cd ./tests/libraries/bats-assert && find . -name "*" -delete
+	cd ./tests/libraries/bats-support && find . -name "*" -delete
 
 .PHONY: build
 build: git-submodules
