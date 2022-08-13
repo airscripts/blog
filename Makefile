@@ -22,6 +22,10 @@ build: git-submodules
 run:
 	docker compose up -d
 
+.PHONY: test
+test:
+	./tests/bats/bin/bats ./tests/*
+
 .PHONY: install-bash
 install-bash:
 	sh ./scripts/install/bash.sh
