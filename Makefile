@@ -22,9 +22,25 @@ build: git-submodules
 run:
 	docker compose up -d
 
-.PHONY: test
-test:
-	./tests/bats/bin/bats ./tests/*
+.PHONY: all-test
+all-test: build-test run-test
+
+.PHONY: clean-test
+clean-test:
+	docker rmi airscript/bats
+
+.PHONY: clean-bats
+clean-bats:
+	docker rmi bats/bats:1.7.0
+
+.PHONY: build-test
+build-test:
+	docker build -f .docker/bats.Dockerfile -t airscript/bats .
+
+.PHONY: run-test
+run-test:
+	docker run -it --name="worker-bats" airscript/bats ./tests
+	docker rm worker-bats
 
 .PHONY: install-bash
 install-bash:
