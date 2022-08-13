@@ -19,32 +19,24 @@ jobs:
       
     steps:
       - run:
-          name: "Verify apk"
-          command: "apk --version"
+          name: "Verify Environment"
+          command: "sh ./scripts/ci/verify.sh build"
   
   verify-deploy-environment:
     executor: deploy-environment
 
     steps:
       - run:
-          name: "Verify apk"
-          command: "apk --version"
-      
-      - run: 
-          name: "Verify Node.js"
-          command: "node -v"
+          name: "Verify Environment"
+          command: "sh ./scripts/ci/verify.sh deploy"
 
-      - run: 
-          name: "Verify npm"
-          command: "npm -v"
-        
   verify-publish-environment:
     executor: publish-environment
 
     steps:
       - run:
-          name: "Verify apk"
-          command: "apk --version"
+          name: "Verify Environment"
+          command: "sh ./scripts/ci/verify.sh publish"
 
   build:
     executor: build-environment
@@ -53,24 +45,21 @@ jobs:
       - checkout
 
       - run:
-          name: "Update Alpine Repositories"
-          command: "apk update"
+          name: "Install Packages"
 
-      - run:
-          name: "Install Git"
-          command: "sh ./scripts/git.sh $BLOG_BUILD_ENV"
+          command: |
+            "apk update"
+            "sh ./scripts/install/make.sh"
+            "make install-git env=$BLOG_BUILD_ENV"
+            "make install-hugo"
         
       - run:
-          name: "Update Git Submodules"
-          command: "sh ./scripts/submodules.sh $BLOG_BUILD_ENV"
-
-      - run:
-          name: "Install Hugo"
-          command: "apk add hugo"
+          name: "Add Git Submodules"
+          command: "make git-submodules env=$BLOG_BUILD_ENV"
       
       - run:
           name: "Building Site"
-          command: "hugo --gc --minify"
+          command: "make build-ci"
 
       - when:
           condition: 
@@ -93,20 +82,17 @@ jobs:
           at: .
 
       - run:
-          name: "Update Alpine Repositories"
-          command: "apk update"
+          name: "Install Packages"
 
-      - run:
-          name: "Update npm"
-          command: "npm install -g npm"
-      
-      - run:
-          name: "Install Netlify CLI"
-          command: "npm install -g netlify-cli"
+          command: |
+            "apk update"
+            "sh ./scripts/install/make.sh"
+            "make install-npm"
+            "make install-netlify-cli"
       
       - run:
           name: "Deploy To Netlify"
-          command: "netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public"
+          command: "make deploy-ci id=$NETLIFY_SITE_ID token=$NETLIFY_ACCESS_TOKEN"
 
   publish:
     executor: publish-environment
@@ -119,20 +105,15 @@ jobs:
           version: 20.10.14
 
       - run:
-          name: "Install Docker CLI"
-          command: apk add docker-cli
-
-      - run:
-          name: "Login Into Docker Hub"
-          command: "docker login --username $DOCKER_USERNAME --password $DOCKER_ACCESS_TOKEN"
-
-      - run:
-          name: "Build Docker Image"
-          command: "docker build -f .docker/blog.Dockerfile -t airscript/blog:$CIRCLE_TAG ."  
+          name: "Install Packages"
+          command: |
+            "apk update"
+            "sh ./scripts/install/make.sh"
+            "make install-docker-cli"
 
       - run:
           name: "Publish To Docker Hub"
-          command: "docker push airscript/blog:$CIRCLE_TAG"
+          command: "make publish-ci tag=$CIRCLE_TAG username=$DOCKER_USERNAME token=$DOCKER_ACCESS_TOKEN"
 
 workflows:
   verify:
