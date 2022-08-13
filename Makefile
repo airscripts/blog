@@ -9,7 +9,8 @@ all: build run
 .PHONY: clean
 clean:
 	docker compose down
-	cd ./themes/PaperMod && find . -name "*" -delete
+	cd ./themes && rm -r PaperMod
+	cd ./tests && rm -r bats test_helper
 
 .PHONY: build
 build: git-submodules
