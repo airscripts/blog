@@ -20,6 +20,10 @@ build: git-submodules
 run:
 	docker compose up -d
 
+.PHONY: install-bash
+install-bash:
+	sh ./scripts/install/bash.sh
+
 .PHONY: install-npm
 install-npm:
 	sh ./scripts/install/npm.sh
