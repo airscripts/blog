@@ -21,8 +21,8 @@ jobs:
       - checkout
 
       - run:
-          name: "Verify Environment"
-          command: "sh ./scripts/ci/verify.sh build"
+          name: Verify Environment
+          command: sh ./scripts/ci/verify.sh build
   
   verify-deploy-environment:
     executor: deploy-environment
@@ -31,8 +31,8 @@ jobs:
       - checkout
 
       - run:
-          name: "Verify Environment"
-          command: "sh ./scripts/ci/verify.sh deploy"
+          name: Verify Environment
+          command: sh ./scripts/ci/verify.sh deploy
 
   verify-publish-environment:
     executor: publish-environment
@@ -41,8 +41,8 @@ jobs:
       - checkout
 
       - run:
-          name: "Verify Environment"
-          command: "sh ./scripts/ci/verify.sh publish"
+          name: Verify Environment
+          command: sh ./scripts/ci/verify.sh publish
 
   build:
     executor: build-environment
@@ -51,21 +51,21 @@ jobs:
       - checkout
 
       - run:
-          name: "Install Packages"
+          name: Install Packages
 
           command: |
-            "apk update"
-            "sh ./scripts/install/make.sh"
-            "make install-git env=$BLOG_BUILD_ENV"
-            "make install-hugo"
+            apk update
+            sh ./scripts/install/make.sh
+            make install-git env=$BLOG_BUILD_ENV
+            make install-hugo
         
       - run:
-          name: "Add Git Submodules"
-          command: "make git-submodules env=$BLOG_BUILD_ENV"
+          name: Add Git Submodules
+          command: make git-submodules env=$BLOG_BUILD_ENV
       
       - run:
-          name: "Building Site"
-          command: "make build-ci"
+          name: Building Site
+          command: make build-ci
 
       - when:
           condition: 
@@ -88,17 +88,17 @@ jobs:
           at: .
 
       - run:
-          name: "Install Packages"
+          name: Install Packages
 
           command: |
-            "apk update"
-            "sh ./scripts/install/make.sh"
-            "make install-npm"
-            "make install-netlify-cli"
+            apk update
+            sh ./scripts/install/make.sh
+            make install-npm
+            make install-netlify-cli
       
       - run:
-          name: "Deploy To Netlify"
-          command: "make deploy-ci id=$NETLIFY_SITE_ID token=$NETLIFY_ACCESS_TOKEN"
+          name: Deploy To Netlify
+          command: make deploy-ci id=$NETLIFY_SITE_ID token=$NETLIFY_ACCESS_TOKEN
 
   publish:
     executor: publish-environment
@@ -111,15 +111,15 @@ jobs:
           version: 20.10.14
 
       - run:
-          name: "Install Packages"
+          name: Install Packages
           command: |
-            "apk update"
-            "sh ./scripts/install/make.sh"
-            "make install-docker-cli"
+            apk update
+            sh ./scripts/install/make.sh
+            make install-docker-cli
 
       - run:
-          name: "Publish To Docker Hub"
-          command: "make publish-ci tag=$CIRCLE_TAG username=$DOCKER_USERNAME token=$DOCKER_ACCESS_TOKEN"
+          name: Publish To Docker Hub
+          command: make publish-ci tag=$CIRCLE_TAG username=$DOCKER_USERNAME token=$DOCKER_ACCESS_TOKEN
 
 workflows:
   verify:
