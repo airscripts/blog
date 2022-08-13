@@ -5,41 +5,27 @@ This repository contains source code and content of my blog hosted on [blog.airs
 &nbsp;
 
 ## 📦 Installation  
-In order to the use correct version of Hugo it is **recommended** to use Docker.  
+In order to contribute to this project, you need an up and running development environment.  
+Follow the steps below in order to have one fully functional.  
 &nbsp;
 
-### ⚙️ Common Steps
 1. Clone this repository: 
     ```bash
     git clone https://github.com/Airscripts/blog.airscript.it.git
     ```
 
-2. Update git submodules:
-    ```bash
-    sh init.sh
-    ```
-
-### 🐳 Containerized Environment
-1. Install Docker and Docker Compose on your machine following these links:
+2. Make sure to have these dependencies installed on your machine:
+- [Make](https://www.gnu.org/software/make/)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-2. Run the following commands in the repository's root folder:
+3. Run the following command in the repository's root folder:
     ```bash
-    docker compose build
-    docker compose up
+    make all
     ```
 
-3. Everything should be set up and running on port 25001.  
-&nbsp;
-
-### 💻 Local Environment
-1. Install Hugo following this [guide](https://gohugo.io/getting-started/installing/).
-
-2. Run the following command:
-    ```bash
-    hugo server
-    ```  
+4. Everything should be set up and running on port 25001.  
 &nbsp;
 
 ## 🤝 Contributing  
