@@ -142,8 +142,19 @@ workflows:
   main:
     jobs:
       - verify-build-environment
-      - verify-deploy-environment
-      - verify-publish-environment
+
+      - verify-deploy-environment:
+          filters:
+            branches:
+              only:
+                - main
+
+      - verify-publish-environment:
+          filters:
+            branches:
+              only:
+                - main
+
       - build
 
       - path-filtering/filter:
