@@ -68,7 +68,7 @@ install-hugo:
 
 .PHONY: install-cli
 install-git:
-	sh ./scripts/install/git.sh $(env)
+	sh ./scripts/install/git.sh $(environment)
 
 .PHONY: install-docker-cli
 install-docker-cli:
@@ -76,7 +76,7 @@ install-docker-cli:
 
 .PHONY: verify-ci
 verify-ci:
-	sh ./scripts/ci/verify.sh $(env)
+	sh ./scripts/ci/verify.sh $(environment)
 
 .PHONY: build-ci
 build-ci:
@@ -91,7 +91,7 @@ publish-ci: docker-login docker-build docker-push
 
 .PHONY: git-submodules
 git-submodules:
-	sh ./scripts/shared/git-submodules.sh $(env)
+	sh ./scripts/shared/git-submodules.sh $(environment)
 
 .PHONY: docker-login
 docker-login: 
