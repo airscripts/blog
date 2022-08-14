@@ -118,7 +118,7 @@ jobs:
           name: Verify Publish Environment
           command: bash scripts/ci/verify.sh publish
 
-  tests-base:
+  tests:
     executor: node
 
     steps:
@@ -131,7 +131,7 @@ jobs:
           command: npm install -g bats
 
       - run:
-          name: Run Node Tests
+          name: Run Tests
           command: >
             bats 
             tests/*
@@ -221,8 +221,7 @@ workflows:
     when: << pipeline.parameters.test >>
 
     jobs:
-      - tests-bats
-      - tests-node
+      - tests
 
   build:
     when: << pipeline.parameters.build >>
