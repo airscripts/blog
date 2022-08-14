@@ -1,0 +1,52 @@
+version: 2.1
+
+parameters:
+  run-tests-jobs:
+    type: boolean
+    default: false
+
+tests-node-environment:
+  docker:
+    - image: node:18.7.0-alpine3.16
+
+tests-bats-environment:
+  docker:
+    - image: bats/bats:1.7.0
+
+jobs:
+  tests-bats:
+    executor: tests-bats-environment
+
+    steps: 
+      - checkout
+
+      - run:
+          name: Run Tests
+          command: bats ./tests/_.bats ./tests/install.bats ./tests/shared.bats
+
+  tests-node:
+    executor: tests-node-environment
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install Packages
+          
+          command: |
+            apk update
+            apk add bash
+            npm install -g bats
+
+      - run:
+          name: Run Node Tests
+          command: bats tests/_.bats tests/install-node.bats
+            
+
+workflows:
+  tests:
+    when: << pipeline.parameters.run-tests-jobs >>
+
+    jobs:
+      - tests-bats
+      - tests-node

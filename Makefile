@@ -48,7 +48,7 @@ run-test:
 		./tests/_.bats ./tests/install.bats ./tests/shared.bats
 	
 	docker run -it --rm --name="worker-bats-node" airscript/bats:node \
-		./tests/_.bats ./tests/install-npm.bats
+		./tests/_.bats ./tests/install-node.bats
 
 .PHONY: install-bash
 install-bash:
