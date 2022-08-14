@@ -27,20 +27,28 @@ all-test: build-test run-test
 
 .PHONY: clean-test
 clean-test:
-	docker rmi airscript/bats
+	docker rm worker-bats-node; \
+	docker rm worker-bats-alpine; \
+	docker rmi airscript/bats:node; \
+	docker rmi airscript/bats:alpine
 
 .PHONY: clean-bats
 clean-bats:
 	docker rmi bats/bats:1.7.0
+	docker rmi node:18.7.0-alpine3.16
 
 .PHONY: build-test
 build-test:
-	docker build -f .docker/bats.Dockerfile -t airscript/bats .
+	docker build -f .docker/bats.alpine.Dockerfile -t airscript/bats:alpine .
+	docker build -f .docker/bats.node.Dockerfile -t airscript/bats:node .
 
 .PHONY: run-test
 run-test:
-	docker run -it --name="worker-bats" airscript/bats ./tests
-	docker rm worker-bats
+	docker run -it --rm --name="worker-bats-alpine" airscript/bats:alpine \
+		./tests/_.bats ./tests/install.bats ./tests/shared.bats
+	
+	docker run -it --rm --name="worker-bats-node" airscript/bats:node \
+		./tests/_.bats ./tests/install-npm.bats
 
 .PHONY: install-bash
 install-bash:
