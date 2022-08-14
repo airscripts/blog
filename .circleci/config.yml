@@ -20,6 +20,11 @@ executors:
       - image: alpine:3.16
 
 jobs:
+  verify:
+    steps:
+      - continuation/continue:
+          configuration_path: .circleci/verify.yml
+
   build:
     executor: build-environment
       
@@ -103,10 +108,7 @@ jobs:
 workflows:
   main:
     jobs:
-      - continuation/continue:
-          configuration_path: .circleci/verify.yml
-          parameters: '{ "executor": "build-environment" }'
-
+      - verify
       - build
 
       - path-filtering/filter:
