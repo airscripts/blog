@@ -233,6 +233,8 @@ workflows:
     when: << pipeline.parameters.deploy >>
 
     jobs:
+      - build
+
       - deploy:
           requires:
             - build
