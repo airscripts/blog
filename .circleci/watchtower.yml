@@ -22,6 +22,15 @@ jobs:
       - checkout
 
       - run:
+          name: Install Packages
+
+          command: |
+            apk update
+            sh scripts/install/bash.sh $BLOG_BUILD_ENV
+            bash scripts/install/make.sh
+            make install-git env=$BLOG_BUILD_ENV
+
+      - run:
           name: Add Git Submodules
           command: make git-submodules env=$BLOG_BUILD_ENV
 
@@ -40,7 +49,9 @@ jobs:
           
           command: |
             apk update
-            apk add bash
+            sh scripts/install/bash.sh $BLOG_BUILD_ENV
+            bash scripts/install/make.sh
+            make install-git env=$BLOG_BUILD_ENV
             npm install -g bats
 
       - run:
