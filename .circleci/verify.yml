@@ -5,6 +5,14 @@ executors:
     docker:
       - image: alpine:3.16
 
+  deploy-environment:
+    docker:
+      - image: node:18.7.0-alpine3.16
+    
+  publish-environment:
+    docker:
+      - image: alpine:3.16
+
 jobs:
   verify-build-environment:
     executor: build-environment
