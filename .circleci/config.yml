@@ -139,18 +139,13 @@ jobs:
           command: make publish-ci tag=$CIRCLE_TAG username=$DOCKER_USERNAME token=$DOCKER_ACCESS_TOKEN
 
 workflows:
-  verify:
+  main:
     jobs:
       - verify-build-environment
       - verify-deploy-environment
       - verify-publish-environment
-
-  build:
-    jobs:
       - build
 
-  watchtower:
-    jobs:
       - path-filtering/filter:
           name: watch
 
@@ -159,11 +154,7 @@ workflows:
           
           base-revision: main
           config-path: .circleci/watchtower.yml
-
-  deploy:
-    jobs:
-      - build
-      
+        
       - deploy:
           requires:
             - build
@@ -172,8 +163,7 @@ workflows:
               branches:
                 only:
                   - main
-  publish:
-    jobs:
+
       - publish:
           filters: 
             tags:

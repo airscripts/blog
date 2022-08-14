@@ -44,7 +44,7 @@ jobs:
             
 
 workflows:
-  tests:
+  test:
     when: << pipeline.parameters.run-tests-jobs >>
 
     jobs:
