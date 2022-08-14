@@ -1,11 +1,11 @@
 version: 2.1
 
+parameters:
+  executor:
+    type: executor
+
 jobs:
   verify-build-environment:
-    parameters:
-      executor:
-        type: executor
-        
     executor: << parameters.executor >>
       
     steps:
