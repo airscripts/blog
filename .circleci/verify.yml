@@ -1,13 +1,13 @@
 version: 2.1
 
-parameters:
-  executor:
-    type: executor
-    default: "build-environment"
+executors:
+  build-environment:
+    docker:
+      - image: alpine:3.16
 
 jobs:
   verify-build-environment:
-    executor: << parameters.executor >>
+    executor: build-environment
       
     steps:
       - checkout
