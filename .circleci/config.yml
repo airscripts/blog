@@ -104,7 +104,7 @@ workflows:
   main:
     jobs:
       - continuation/continue:
-          configuration_path: ./verify.yml
+          configuration_path: .circleci/verify.yml
           parameters: '{ "executor": "build-environment" }'
 
       - build
