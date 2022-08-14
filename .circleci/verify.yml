@@ -1,0 +1,62 @@
+version: 2.1
+
+jobs:
+  verify-build-environment:
+    parameters:
+      executor:
+        type: executor
+        
+    executor: << parameters.executor >>
+      
+    steps:
+      - checkout
+
+      - run:
+          name: Verify Environment
+          command: |
+            apk update
+            sh scripts/install/bash.sh $BLOG_BUILD_ENV
+            bash scripts/ci/verify.sh build
+  
+  verify-deploy-environment:
+    executor: deploy-environment
+
+    steps:
+      - checkout
+
+      - run:
+          name: Verify Environment
+          command: |
+            apk update
+            sh scripts/install/bash.sh $BLOG_BUILD_ENV
+            bash scripts/ci/verify.sh deploy
+
+  verify-publish-environment:
+    executor: publish-environment
+
+    steps:
+      - checkout
+
+      - run:
+          name: Verify Environment
+          command: |
+            apk update
+            sh scripts/install/bash.sh $BLOG_BUILD_ENV
+            bash scripts/ci/verify.sh publish
+
+workflows:
+  verify:
+    jobs:
+      - verify-build-environment
+
+      - verify-deploy-environment:
+          filters:
+            branches:
+              only:
+                - main
+
+      - verify-publish-environment:
+          filters:
+            branches:
+              only:
+                - main
