@@ -3,6 +3,7 @@ version: 2.1
 parameters:
   executor:
     type: executor
+    default: "build-environment"
 
 jobs:
   verify-build-environment:
