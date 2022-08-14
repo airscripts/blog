@@ -1,0 +1,270 @@
+version: 2.1
+
+parameters:
+  verify:
+    type: boolean
+    default: true
+
+  test:
+    type: boolean
+    default: false
+
+  build:
+    type: boolean
+    default: true
+
+  deploy:
+    type: boolean
+    default: true
+
+  publish:
+    type: boolean
+    default: true
+
+executors:
+  alpine:
+    docker:
+      - image: alpine:3.16
+
+  bats:
+    docker:
+      - image: bats/bats:1.7.0
+
+  node:
+    docker:
+      - image: node:18.7.0-alpine3.16
+
+commands:
+  "setup:base":
+    - run:
+        name: Setup Executor
+
+        command: |
+          apk update
+          sh scripts/install/bash.sh
+          bash scripts/install/make.sh
+
+  "setup:git":
+    - "install:git"
+
+    - run:
+        name: Setup Git
+        command: make git-submodules env=$BLOG_BUILD_ENV
+
+  "setup:netlify":
+    - "install:npm"
+    - "install:netlify-cli"
+
+  "install:git":
+    - run:
+        name: "Install Git"
+        command: make install-git env=$BLOG_BUILD_ENV
+
+  "install:npm":
+    - run:
+        name: Install npm
+        command: make install-npm
+
+  "install:hugo":
+    - run:
+        name: Install Hugo
+        command: make install-hugo
+
+  "install:docker-cli":
+    - run:
+        name: Install Docker CLI
+        command: make install-docker-cli
+
+  "install:netlify-cli":
+    - run:
+        name: Install Netlify CLI
+        command: make install-netlify-cli
+
+jobs:
+  "verify:build":
+    executor: alpine
+      
+    steps:
+      - checkout
+      - "setup:base"
+
+      - run:
+          name: Verify Build Environment
+          command: bash scripts/ci/verify.sh build
+  
+  "verify:deploy":
+    executor: node
+
+    steps:
+      - checkout
+      - "setup:base"
+
+      - run:
+          name: Verify Deploy Environment
+          command: bash scripts/ci/verify.sh deploy
+
+  "verify:publish":
+    executor: alpine
+
+    steps:
+      - checkout
+      - "setup:base"
+
+      - run:
+          name: Verify Publish Environment
+          command: bash scripts/ci/verify.sh publish
+
+  "tests:bats":
+    executor: bats
+
+    steps: 
+      - checkout
+      - "setup:base"
+      - "setup:git"
+
+      - run:
+          name: Run Tests
+          command: >
+            bats 
+            ./tests/_.bats 
+            ./tests/install.bats 
+            ./tests/shared.bats
+
+  "tests:node":
+    executor: node
+
+    steps:
+      - checkout
+      - "setup:base"
+      - "setup:git"
+
+      - run:
+          name: Install Bats
+          command: npm install -g bats
+
+      - run:
+          name: Run Node Tests
+          command: >
+            bats 
+            tests/_.bats 
+            tests/install-node.bats
+
+  build:
+    executor: alpine
+      
+    steps:
+      - checkout
+      - "setup:base"
+      - "setup:git"
+      - "install:hugo"
+      
+      - run:
+          name: Build Site
+          command: make build-ci
+
+      - when:
+          condition: 
+            equal: [ main, << pipeline.git.branch >>]
+
+          steps:
+            - persist_to_workspace:
+                root: .
+
+                paths:
+                  - ./public
+
+  deploy:
+    executor: node
+
+    steps:
+      - checkout
+      - "setup:base"
+      - "setup:netlify"
+
+      - attach_workspace:
+          at: .
+      
+      - run:
+          name: Deploy To Netlify
+          command: >
+            make deploy-ci 
+            id=$NETLIFY_SITE_ID 
+            token=$NETLIFY_ACCESS_TOKEN
+
+  publish:
+    executor: alpine
+
+    steps:
+      - checkout
+      - "setup:base"
+      - "install:docker-cli"
+
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 20.10.14
+
+      - run:
+          name: Publish To Docker Hub
+          command: >
+            make publish-ci 
+            tag=$CIRCLE_TAG 
+            username=$DOCKER_USERNAME 
+            token=$DOCKER_ACCESS_TOKEN
+
+workflows:
+  verify:
+    when: << pipeline.parameters.verify >>
+
+    jobs:
+      - "verify:build"
+
+      - "verify:deploy":
+          filters:
+            branches:
+              only:
+                - main
+
+      - "verify:publish":
+          filters:
+            branches:
+              only:
+                - main
+
+  test:
+    when: << pipeline.parameters.test >>
+
+    jobs:
+      - "tests:bats"
+      - "tests:node"
+
+  build:
+    when: << pipeline.parameters.build >>
+
+    jobs:
+      - build
+
+  deploy:
+    when: << pipeline.parameters.deploy >>
+
+    jobs:
+      - deploy:
+          requires:
+            - build
+
+          filters:
+              branches:
+                only:
+                  - main
+
+  publish:
+    when: << pipeline.parameters.publish >>
+
+    jobs:
+      - publish:
+          filters: 
+            tags:
+              only: 
+                - /.*/
+
+            branches:
+              ignore: /.*/
