@@ -22,6 +22,10 @@ jobs:
       - checkout
 
       - run:
+          name: Add Git Submodules
+          command: make git-submodules env=$BLOG_BUILD_ENV
+
+      - run:
           name: Run Tests
           command: bats ./tests/_.bats ./tests/install.bats ./tests/shared.bats
 
@@ -38,6 +42,10 @@ jobs:
             apk update
             apk add bash
             npm install -g bats
+
+      - run:
+          name: Add Git Submodules
+          command: make git-submodules env=$BLOG_BUILD_ENV
 
       - run:
           name: Run Node Tests
