@@ -23,4 +23,4 @@ services:
       dockerfile: ".docker/blog.Dockerfile"
 
       args:
-        BLOG_BUILD_ENV: compose
+        BLOG_BUILD_ENVIRONMENT: compose

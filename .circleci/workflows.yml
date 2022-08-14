@@ -26,16 +26,12 @@ executors:
     docker:
       - image: alpine:3.16
 
-  bats:
-    docker:
-      - image: bats/bats:1.7.0
-
   node:
     docker:
       - image: node:18.7.0-alpine3.16
 
 commands:
-  "setup:base":
+  setup-base:
     - run:
         name: Setup Executor
 
@@ -44,99 +40,83 @@ commands:
           sh scripts/install/bash.sh
           bash scripts/install/make.sh
 
-  "setup:git":
-    - "install:git"
+  setup-git:
+    - install-git
 
     - run:
         name: Setup Git
-        command: make git-submodules env=$BLOG_BUILD_ENV
+        command: make git-submodules environment=$CI_ENVIRONMENT
 
-  "setup:netlify":
-    - "install:npm"
-    - "install:netlify-cli"
+  setup-netlify:
+    - install-npm
+    - install-netlify-cli
 
-  "install:git":
+  install-git:
     - run:
         name: "Install Git"
-        command: make install-git env=$BLOG_BUILD_ENV
+        command: make install-git environment=$CI_ENVIRONMENT
 
-  "install:npm":
+  install-npm:
     - run:
         name: Install npm
         command: make install-npm
 
-  "install:hugo":
+  install-hugo:
     - run:
         name: Install Hugo
         command: make install-hugo
 
-  "install:docker-cli":
+  install-docker-cli:
     - run:
         name: Install Docker CLI
         command: make install-docker-cli
 
-  "install:netlify-cli":
+  install-netlify-cli:
     - run:
         name: Install Netlify CLI
         command: make install-netlify-cli
 
 jobs:
-  "verify:build":
+  verify-build:
     executor: alpine
       
     steps:
       - checkout
-      - "setup:base"
+      - setup-base
 
       - run:
           name: Verify Build Environment
           command: bash scripts/ci/verify.sh build
   
-  "verify:deploy":
+  verify-deploy:
     executor: node
 
     steps:
       - checkout
-      - "setup:base"
+      - setup-base
 
       - run:
           name: Verify Deploy Environment
           command: bash scripts/ci/verify.sh deploy
 
-  "verify:publish":
+  verify-publish:
     executor: alpine
 
     steps:
       - checkout
-      - "setup:base"
+      - setup-base
 
       - run:
           name: Verify Publish Environment
           command: bash scripts/ci/verify.sh publish
 
-  "tests:bats":
-    executor: bats
-
-    steps: 
-      - checkout
-      - "setup:base"
-      - "setup:git"
-
-      - run:
-          name: Run Tests
-          command: >
-            bats 
-            ./tests/_.bats 
-            ./tests/install.bats 
-            ./tests/shared.bats
-
-  "tests:node":
+  tests-base:
     executor: node
 
     steps:
       - checkout
-      - "setup:base"
-      - "setup:git"
+      - setup-base
+      - setup-git
 
       - run:
           name: Install Bats
@@ -146,17 +126,16 @@ jobs:
           name: Run Node Tests
           command: >
             bats 
-            tests/_.bats 
-            tests/install-node.bats
+            tests/*
 
   build:
     executor: alpine
       
     steps:
       - checkout
-      - "setup:base"
-      - "setup:git"
-      - "install:hugo"
+      - setup-base
+      - setup-git
+      - install-hugo
       
       - run:
           name: Build Site
@@ -178,8 +157,8 @@ jobs:
 
     steps:
       - checkout
-      - "setup:base"
-      - "setup:netlify"
+      - setup-base
+      - setup-netlify
 
       - attach_workspace:
           at: .
@@ -196,8 +175,8 @@ jobs:
 
     steps:
       - checkout
-      - "setup:base"
-      - "install:docker-cli"
+      - setup-base
+      - install-docker-cli
 
       - setup_remote_docker:
           docker_layer_caching: true
@@ -216,15 +195,15 @@ workflows:
     when: << pipeline.parameters.verify >>
 
     jobs:
-      - "verify:build"
+      - verify-build
 
-      - "verify:deploy":
+      - verify-deploy:
           filters:
             branches:
               only:
                 - main
 
-      - "verify:publish":
+      - verify-publish:
           filters:
             branches:
               only:
@@ -234,8 +213,8 @@ workflows:
     when: << pipeline.parameters.test >>
 
     jobs:
-      - "tests:bats"
-      - "tests:node"
+      - tests-bats
+      - tests-node
 
   build:
     when: << pipeline.parameters.build >>
