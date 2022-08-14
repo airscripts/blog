@@ -21,6 +21,8 @@ executors:
 
 jobs:
   verify:
+    executor: continuation/default
+
     steps:
       - continuation/continue:
           configuration_path: .circleci/verify.yml
