@@ -158,7 +158,7 @@ workflows:
       - build
 
       - path-filtering/filter:
-          name: watch
+          name: watchtower
 
           mapping: |
             tests/.* run-tests-jobs true
