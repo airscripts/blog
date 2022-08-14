@@ -10,14 +10,6 @@ executors:
     docker:
       - image: alpine:3.16
 
-  tests-node-environment:
-    docker:
-      - image: node:18.7.0-alpine3.16
-
-  tests-bats-environment:
-    docker:
-      - image: bats/bats:1.7.0
-      
   deploy-environment:
     docker:
       - image: node:18.7.0-alpine3.16
