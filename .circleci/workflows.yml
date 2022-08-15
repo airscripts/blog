@@ -95,7 +95,8 @@ jobs:
       - setup
 
       - run:
-          name: make verify-ci environment=base
+          name: Verify Base
+          command: make verify-ci environment=base
 
   verify-build:
     executor: base
