@@ -22,22 +22,18 @@ parameters:
     default: true
 
 executors:
-  alpine:
+  base:
     docker:
       - image: alpine:3.16
 
-  node:
-    docker:
-      - image: node:18.7.0-alpine3.16
-
 commands:
-  setup-base:
+  setup:
     steps:
       - run:
-          name: Setup Executor
+          name: Setup
 
           command: |
-            apk update
+            sh scripts/update.sh
             sh scripts/install/bash.sh
             bash scripts/install/make.sh
 
@@ -72,6 +68,12 @@ commands:
           name: Install Hugo
           command: make install-hugo
 
+  install-bats:
+    steps:
+      - run:
+          name: Install Bats
+          command: make install-bats
+
   install-docker-cli:
     steps:
       - run:
@@ -85,50 +87,62 @@ commands:
           command: make install-netlify-cli
 
 jobs:
+  verify:
+    executor: base
+
+    steps:
+      - checkout
+      - setup
+
+      - run:
+          name: make verify-ci environment=base
+
   verify-build:
-    executor: alpine
+    executor: base
       
     steps:
       - checkout
-      - setup-base
+      - setup
+      - setup-git
+      - install-hugo
 
       - run:
-          name: Verify Build Environment
-          command: bash scripts/ci/verify.sh build
+          name: Verify Build
+          command: make verify-ci environment=build
   
   verify-deploy:
-    executor: node
+    executor: base
 
     steps:
       - checkout
-      - setup-base
+      - setup
+      - setup-netlify
 
       - run:
-          name: Verify Deploy Environment
-          command: bash scripts/ci/verify.sh deploy
+          name: Verify Deploy
+          command: make verify-ci environment=deploy
 
   verify-publish:
-    executor: alpine
+    executor: base
 
     steps:
       - checkout
-      - setup-base
+      - setup
+      - install-docker-cli
 
       - run:
-          name: Verify Publish Environment
-          command: bash scripts/ci/verify.sh publish
+          name: Verify Publish
+          command: make verify-ci environment=publish
 
   tests:
-    executor: node
+    executor: base
 
     steps:
       - checkout
-      - setup-base
+      - setup
       - setup-git
-
-      - run:
-          name: Install Bats
-          command: npm install -g bats
+      - install-npm
+      - install-bats
 
       - run:
           name: Run Tests
@@ -137,11 +151,11 @@ jobs:
             tests/*
 
   build:
-    executor: alpine
+    executor: base
       
     steps:
       - checkout
-      - setup-base
+      - setup
       - setup-git
       - install-hugo
       
@@ -161,11 +175,11 @@ jobs:
                   - ./public
 
   deploy:
-    executor: node
+    executor: base
 
     steps:
       - checkout
-      - setup-base
+      - setup
       - setup-netlify
 
       - attach_workspace:
@@ -179,11 +193,11 @@ jobs:
             token=$NETLIFY_ACCESS_TOKEN
 
   publish:
-    executor: alpine
+    executor: base
 
     steps:
       - checkout
-      - setup-base
+      - setup
       - install-docker-cli
 
       - setup_remote_docker:
@@ -203,19 +217,7 @@ workflows:
     when: << pipeline.parameters.verify >>
 
     jobs:
-      - verify-build
-
-      - verify-deploy:
-          filters:
-            branches:
-              only:
-                - main
-
-      - verify-publish:
-          filters:
-            branches:
-              only:
-                - main
+      - verify
 
   test:
     when: << pipeline.parameters.test >>
@@ -227,13 +229,21 @@ workflows:
     when: << pipeline.parameters.build >>
 
     jobs:
-      - build
+      - verify-build
+
+      - build:
+          requires:
+            - verify-build
 
   deploy:
     when: << pipeline.parameters.deploy >>
 
     jobs:
-      - build
+      - verify-build
+
+      - build:
+          requires:
+            - verify-build
 
       - deploy:
           requires:
@@ -248,7 +258,12 @@ workflows:
     when: << pipeline.parameters.publish >>
 
     jobs:
+      - verify-publish
+
       - publish:
+          requires:
+            - verify-publish
+
           filters: 
             tags:
               only: 
