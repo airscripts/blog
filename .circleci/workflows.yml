@@ -240,11 +240,20 @@ workflows:
     when: << pipeline.parameters.deploy >>
 
     jobs:
-      - verify-build
+      - verify-build:
+          filters:
+              branches:
+                only:
+                  - main
 
       - build:
           requires:
             - verify-build
+
+          filters:
+              branches:
+                only:
+                  - main
 
       - deploy:
           requires:
@@ -259,7 +268,15 @@ workflows:
     when: << pipeline.parameters.publish >>
 
     jobs:
-      - verify-publish
+      - verify-publish:
+          filters: 
+            tags:
+              only: 
+                - /.*/
+
+            branches:
+              ignore: /.*/
+
 
       - publish:
           requires:
