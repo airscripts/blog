@@ -15,3 +15,11 @@ workflows:
 
           mapping: |
             tests/.* test true
+            data/.* build true
+            i18n/.* build true
+            static/.* build true
+            content/.* build true
+            layouts/.* build true
+            resources/.* build true
+            archetypes/.* build true
+            config.toml/.* build true
