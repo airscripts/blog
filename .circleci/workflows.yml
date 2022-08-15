@@ -284,7 +284,6 @@ workflows:
             branches:
               ignore: /.*/
 
-
       - publish:
           requires:
             - verify-publish

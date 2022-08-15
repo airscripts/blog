@@ -10,8 +10,8 @@ ARG BLOG_BUILD_ENVIRONMENT=docker
 
 RUN \
   apk update && \
-  apk add hugo && \
   apk add bash && \
+  apk add hugo && \
   mkdir ${BLOG_DIR}
 
 WORKDIR /${BLOG_DIR}
