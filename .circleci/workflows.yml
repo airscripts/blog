@@ -242,22 +242,29 @@ workflows:
     jobs:
       - verify-build:
           filters:
-              branches:
-                only:
-                  - main
+            branches:
+              only:
+                - main
 
       - build:
           requires:
             - verify-build
 
           filters:
-              branches:
-                only:
-                  - main
+            branches:
+              only:
+                - main
+
+      - verify-deploy:
+          filters:
+            branches:
+              only:
+                - main
 
       - deploy:
           requires:
             - build
+            - verify-deploy
 
           filters:
               branches:
