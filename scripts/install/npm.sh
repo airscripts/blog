@@ -1,3 +1,3 @@
 #!/bin/bash
-npm install -g npm
+apk add npm
 echo "npm installed successfully."
