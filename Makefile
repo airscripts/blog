@@ -32,11 +32,15 @@ clean-tests:
 
 .PHONY: build-tests
 build-tests:
-	docker build -f .docker/tests.Dockerfile -t $(TESTS_IMAGE_NAME) .
+	mkdir -p tmp && \
+	cp -r .git scripts tests Makefile tmp && \
+	docker build -f .docker/tests.Dockerfile -t $(TESTS_IMAGE_NAME) .; \
+	rm -rf tmp
 
 .PHONY: run-tests
 run-tests:
-	docker run --rm -it $(TESTS_IMAGE_NAME)
+	docker run --rm -it $(TESTS_IMAGE_NAME) && \
+	docker rmi $(TESTS_IMAGE_NAME)
 
 .PHONY: install-bash
 install-bash:
@@ -54,7 +58,7 @@ install-netlify-cli:
 install-hugo:
 	bash ./scripts/install/hugo.sh
 
-.PHONY: install-cli
+.PHONY: install-git
 install-git:
 	bash ./scripts/install/git.sh $(environment)
 

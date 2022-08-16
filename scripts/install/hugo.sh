@@ -1,3 +1,3 @@
 #!/bin/bash
-apk add hugo
+apk add hugo && \
 echo "Hugo installed successfully."
