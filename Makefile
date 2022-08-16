@@ -46,6 +46,10 @@ run-tests:
 install-bash:
 	sh ./scripts/install/bash.sh
 
+.PHONY: install-bats
+install-bats:
+	sh ./scripts/install/bats.sh
+
 .PHONY: install-npm
 install-npm:
 	bash ./scripts/install/npm.sh
