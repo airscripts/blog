@@ -22,7 +22,7 @@ RUN \
   sh ./scripts/install/git.sh ${BLOG_BUILD_ENVIRONMENT} && \
   sh ./scripts/shared/git-submodules.sh ${BLOG_BUILD_ENVIRONMENT}
 
-ENTRYPOINT ["./scripts/docker-entrypoint.sh"]
+ENTRYPOINT ["./scripts/blog.docker-entrypoint.sh"]
 
 CMD ["hugo"]
 
