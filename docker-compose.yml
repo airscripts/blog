@@ -20,7 +20,7 @@ services:
 
     build:
       context: .
-      dockerfile: ".docker/blog.Dockerfile"
+      dockerfile: ".docker/dockerfiles/blog.Dockerfile"
 
       args:
         BLOG_BUILD_ENVIRONMENT: compose

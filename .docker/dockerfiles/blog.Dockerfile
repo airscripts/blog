@@ -25,6 +25,6 @@ FROM alpine:3.16 AS runner
     bash scripts/install/make.sh && \
     make install-hugo
   
-  ENTRYPOINT ["./scripts/blog.docker-entrypoint.sh"]
+  ENTRYPOINT [".docker/scripts/blog.docker-entrypoint.sh"]
   CMD ["hugo"]
   EXPOSE ${BLOG_PORT}

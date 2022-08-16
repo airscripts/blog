@@ -10,5 +10,5 @@ FROM alpine:3.16 AS runner
     make install-npm && \
     make install-bats
 
-  ENTRYPOINT ["scripts/tests.docker-entrypoint.sh"]
+  ENTRYPOINT [".docker/scripts/tests.docker-entrypoint.sh"]
   CMD ["bats"]
