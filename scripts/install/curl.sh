@@ -1,3 +1,3 @@
 #!/bin/bash
-apk add curl
+apk add curl && \
 echo "curl installed successfully."

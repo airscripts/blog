@@ -34,8 +34,8 @@ clean-tests:
 .PHONY: build-tests
 build-tests:
 	mkdir -p tmp && \
-	cp -r .git scripts tests Makefile tmp && \
-	docker build -f .docker/tests.Dockerfile -t $(TESTS_IMAGE_NAME) .; \
+	cp -r .git .docker scripts tests Makefile tmp && \
+	docker build -f .docker/dockerfiles/tests.Dockerfile -t $(TESTS_IMAGE_NAME) .; \
 	rm -rf tmp
 
 .PHONY: run-tests
@@ -53,8 +53,8 @@ clean-ci-configs:
 .PHONY: build-ci-configs
 build-ci-configs:
 	mkdir -p tmp && \
-	cp -r  .circleci scripts Makefile tmp && \
-	docker build -f .docker/ci.Dockerfile -t $(CI_IMAGE_NAME) .; \
+	cp -r  .circleci .docker scripts Makefile tmp && \
+	docker build -f .docker/dockerfiles/ci.Dockerfile -t $(CI_IMAGE_NAME) .; \
 	rm -rf tmp
 
 .PHONY: run-ci-configs
