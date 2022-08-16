@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! "$1" = "compose" ]; then
-  git submodule update --init --recursive
+  git submodule update --init --recursive && \
   echo "Git submodule update executed."
 
 else 
