@@ -10,5 +10,5 @@ FROM alpine:3.16 AS runner
     make install-curl && \
     make install-circleci-cli
 
-ENTRYPOINT [ "scripts/ci.docker-entrypoint.sh" ]
-CMD ["circleci"]
+  ENTRYPOINT [ ".docker/scripts/ci.docker-entrypoint.sh" ]
+  CMD ["circleci"]

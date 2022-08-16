@@ -41,11 +41,29 @@ setup() {
 @test "Install npm" {
     run ./scripts/install/npm.sh
     assert_output --partial "$INSTALL_NPM"
-    refute_output --partial "ERR!"
+    refute_output --partial "ERROR"
 }
 
 @test "Install Netlify CLI" {
     run ./scripts/install/netlify-cli.sh
     assert_output --partial "$INSTALL_NETLIFY_CLI"
     refute_output --partial "ERR!"
+}
+
+@test "Install Bats" {
+    run ./scripts/install/bats.sh
+    assert_output --partial "$INSTALL_BATS"
+    refute_output --partial "ERR!"
+}
+
+@test "Install curl" {
+    run ./scripts/install/curl.sh
+    assert_output --partial "$INSTALL_CURL"
+    refute_output --partial "ERROR"
+}
+
+@test "Install CircleCI CLI" {
+    run ./scripts/install/circleci-cli.sh
+    assert_output --partial "$INSTALL_CIRCLECI_CLI"
+    refute_output --partial "404"
 }
