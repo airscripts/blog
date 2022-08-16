@@ -7,8 +7,8 @@ FROM alpine:3.16 AS runner
     sh scripts/update.sh && \
     sh scripts/install/bash.sh && \
     bash scripts/install/make.sh && \
-    make install-npm && \
-    make install-bats
+    make install-curl && \
+    make install-circleci-cli
 
-  ENTRYPOINT ["scripts/tests.docker-entrypoint.sh"]
-  CMD ["bats"]
+ENTRYPOINT [ "scripts/ci.docker-entrypoint.sh" ]
+CMD ["circleci"]

@@ -1,5 +1,6 @@
 SHELL = /bin/sh
 TESTS_IMAGE_NAME = airscript/tests:base
+CI_IMAGE_NAME = airscript/ci:base
 
 .SUFFIXES:
 .SUFFIXES: .sh
@@ -42,6 +43,25 @@ run-tests:
 	docker run --rm -it $(TESTS_IMAGE_NAME) && \
 	docker rmi $(TESTS_IMAGE_NAME)
 
+.PHONY: all-ci-configs
+all-ci-configs: build-ci-configs run-ci-configs
+
+.PHONY: clean-ci-configs
+clean-ci-configs:
+	docker rmi $(CI_IMAGE_NAME)
+
+.PHONY: build-ci-configs
+build-ci-configs:
+	mkdir -p tmp && \
+	cp -r  .circleci scripts Makefile tmp && \
+	docker build -f .docker/ci.Dockerfile -t $(CI_IMAGE_NAME) .; \
+	rm -rf tmp
+
+.PHONY: run-ci-configs
+run-ci-configs:
+	docker run --rm -it $(CI_IMAGE_NAME) && \
+	docker rmi $(CI_IMAGE_NAME)
+
 .PHONY: install-bash
 install-bash:
 	sh ./scripts/install/bash.sh
@@ -54,9 +74,9 @@ install-bats:
 install-npm:
 	bash ./scripts/install/npm.sh
 
-.PHONY: install-netlify-cli
-install-netlify-cli:
-	bash ./scripts/install/netlify-cli.sh
+.PHONY: install-curl
+install-curl:
+	bash ./scripts/install/curl.sh
 
 .PHONY: install-hugo
 install-hugo:
@@ -69,6 +89,14 @@ install-git:
 .PHONY: install-docker-cli
 install-docker-cli:
 	bash ./scripts/install/docker-cli.sh
+
+.PHONY: install-circleci-cli
+install-circleci-cli:
+	bash ./scripts/install/circleci-cli.sh
+
+.PHONY: install-netlify-cli
+install-netlify-cli:
+	bash ./scripts/install/netlify-cli.sh
 
 .PHONY: verify-ci
 verify-ci:
