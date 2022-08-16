@@ -89,6 +89,7 @@ commands:
 jobs:
   verify:
     executor: base
+    resource_class: small
 
     steps:
       - checkout
@@ -100,7 +101,8 @@ jobs:
 
   verify-build:
     executor: base
-      
+    resource_class: small
+
     steps:
       - checkout
       - setup
@@ -113,6 +115,7 @@ jobs:
   
   verify-deploy:
     executor: base
+    resource_class: small
 
     steps:
       - checkout
@@ -125,6 +128,7 @@ jobs:
 
   verify-publish:
     executor: base
+    resource_class: small
 
     steps:
       - checkout
@@ -137,6 +141,7 @@ jobs:
 
   tests:
     executor: base
+    resource_class: small
 
     steps:
       - checkout
@@ -151,7 +156,8 @@ jobs:
 
   build:
     executor: base
-      
+    resource_class: medium
+
     steps:
       - checkout
       - setup
@@ -175,6 +181,7 @@ jobs:
 
   deploy:
     executor: base
+    resource_class: small
 
     steps:
       - checkout
@@ -193,6 +200,7 @@ jobs:
 
   publish:
     executor: base
+    resource_class: small
 
     steps:
       - checkout
