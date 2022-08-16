@@ -11,6 +11,7 @@ workflows:
       - path-filtering/filter:
           name: workflows
           base-revision: main
+          resource_class: small
           config-path: .circleci/workflows.yml
 
           mapping: |
