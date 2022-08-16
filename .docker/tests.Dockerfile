@@ -1,21 +1,14 @@
-FROM alpine:3.16
+FROM alpine:3.16 AS runner
+  LABEL maintainer="Airscript <dev.airscript@gmail.com>"
+  WORKDIR /tmp
+  COPY tmp/ /tmp/
 
-LABEL maintainer="Airscript <dev.airscript@gmail.com>"
+  RUN \
+    apk update && \
+    sh /tmp/scripts/install/bash.sh && \
+    bash /tmp/scripts/install/make.sh && \
+    bash /tmp/scripts/install/npm.sh && \
+    bash /tmp/scripts/install/bats.sh
 
-ARG APP_DIR=app
-
-RUN \
-  apk update && \
-  apk add npm && \
-  apk add bash && \
-  apk add make && \
-  npm install -g bats \
-  mkdir ${APP_DIR}
-
-WORKDIR /${APP_DIR}
-
-COPY . .
-
-ENTRYPOINT ["./scripts/tests.docker-entrypoint.sh"]
-
-CMD ["bats"]
+  ENTRYPOINT ["./scripts/tests.docker-entrypoint.sh"]
+  CMD ["bats"]

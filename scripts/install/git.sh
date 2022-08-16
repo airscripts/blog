@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ ! "$1" = "compose" ]; then
-  apk add git
+  apk add git && \
   echo "Git installed successfully."
 
 else 

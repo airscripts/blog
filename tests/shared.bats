@@ -9,7 +9,7 @@ setup() {
 
 @test "Add Git Submodules" {
     run ./scripts/shared/git-submodules.sh
-    assert_output "$ADD_GIT_SUBMODULE_EXECUTED"
+    assert_output --partial "$ADD_GIT_SUBMODULE_EXECUTED"
 }
 
 @test "Skip Git Submodules" {

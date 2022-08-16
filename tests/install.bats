@@ -37,3 +37,15 @@ setup() {
     assert_output --partial "$INSTALL_MAKE"
     refute_output --partial "ERROR"
 }
+
+@test "Install npm" {
+    run ./scripts/install/npm.sh
+    assert_output --partial "$INSTALL_NPM"
+    refute_output --partial "ERR!"
+}
+
+@test "Install Netlify CLI" {
+    run ./scripts/install/netlify-cli.sh
+    assert_output --partial "$INSTALL_NETLIFY_CLI"
+    refute_output --partial "ERR!"
+}
