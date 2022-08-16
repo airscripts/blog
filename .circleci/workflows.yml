@@ -5,7 +5,7 @@ parameters:
     type: boolean
     default: true
 
-  test:
+  tests:
     type: boolean
     default: false
 
@@ -147,9 +147,7 @@ jobs:
 
       - run:
           name: Run Tests
-          command: >
-            bats 
-            tests/*
+          command: make tests-base
 
   build:
     executor: base
@@ -220,8 +218,8 @@ workflows:
     jobs:
       - verify
 
-  test:
-    when: << pipeline.parameters.test >>
+  tests:
+    when: << pipeline.parameters.tests >>
 
     jobs:
       - tests

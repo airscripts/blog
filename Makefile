@@ -1,4 +1,5 @@
 SHELL = /bin/sh
+TESTS_IMAGE_NAME = airscript/tests:base
 
 .SUFFIXES:
 .SUFFIXES: .sh
@@ -22,33 +23,20 @@ build: git-submodules
 run:
 	docker compose up -d
 
-.PHONY: all-test
-all-test: build-test run-test
+.PHONY: all-tests
+all-tests: build-tests run-tests
 
-.PHONY: clean-test
-clean-test:
-	docker rm worker-bats-node; \
-	docker rm worker-bats-alpine; \
-	docker rmi airscript/bats:node; \
-	docker rmi airscript/bats:alpine
+.PHONY: clean-tests
+clean-tests:
+	docker rmi $(TESTS_IMAGE_NAME)
 
-.PHONY: clean-bats
-clean-bats:
-	docker rmi bats/bats:1.7.0
-	docker rmi node:18.7.0-alpine3.16
+.PHONY: build-tests
+build-tests:
+	docker build -f .docker/tests.Dockerfile -t $(TESTS_IMAGE_NAME) .
 
-.PHONY: build-test
-build-test:
-	docker build -f .docker/bats.alpine.Dockerfile -t airscript/bats:alpine .
-	docker build -f .docker/bats.node.Dockerfile -t airscript/bats:node .
-
-.PHONY: run-test
-run-test:
-	docker run -it --rm --name="worker-bats-alpine" airscript/bats:alpine \
-		./tests/_.bats ./tests/install.bats ./tests/shared.bats
-	
-	docker run -it --rm --name="worker-bats-node" airscript/bats:node \
-		./tests/_.bats ./tests/install-node.bats
+.PHONY: run-tests
+run-tests:
+	docker run --rm -it $(TESTS_IMAGE_NAME)
 
 .PHONY: install-bash
 install-bash:
@@ -56,51 +44,55 @@ install-bash:
 
 .PHONY: install-npm
 install-npm:
-	sh ./scripts/install/npm.sh
+	bash ./scripts/install/npm.sh
 
 .PHONY: install-netlify-cli
 install-netlify-cli:
-	sh ./scripts/install/netlify-cli.sh
+	bash ./scripts/install/netlify-cli.sh
 
 .PHONY: install-hugo
 install-hugo:
-	sh ./scripts/install/hugo.sh
+	bash ./scripts/install/hugo.sh
 
 .PHONY: install-cli
 install-git:
-	sh ./scripts/install/git.sh $(environment)
+	bash ./scripts/install/git.sh $(environment)
 
 .PHONY: install-docker-cli
 install-docker-cli:
-	sh ./scripts/install/docker-cli.sh
+	bash ./scripts/install/docker-cli.sh
 
 .PHONY: verify-ci
 verify-ci:
-	sh ./scripts/ci/verify.sh $(environment)
+	bash ./scripts/ci/verify.sh $(environment)
 
 .PHONY: build-ci
 build-ci:
-	sh ./scripts/ci/build.sh
+	bash ./scripts/ci/build.sh
 
 .PHONY: deploy-ci
 deploy-ci:
-	sh ./scripts/ci/deploy.sh $(id) $(token)
+	bash ./scripts/ci/deploy.sh $(id) $(token)
 
 .PHONY: publish-ci
 publish-ci: docker-login docker-build docker-push
 
 .PHONY: git-submodules
 git-submodules:
-	sh ./scripts/shared/git-submodules.sh $(environment)
+	bash ./scripts/shared/git-submodules.sh $(environment)
 
 .PHONY: docker-login
 docker-login: 
-	sh ./scripts/docker/login.sh $(username) $(token)
+	bash ./scripts/docker/login.sh $(username) $(token)
 
 .PHONY: docker-build
 docker-build:
-	sh ./scripts/docker/build.sh $(tag)
+	bash ./scripts/docker/build.sh $(tag)
 
 .PHONY: docker-push
 docker-push:
-	sh ./scripts/docker/push.sh $(tag)
+	bash ./scripts/docker/push.sh $(tag)
+
+.PHONY: tests-base
+tests-base:
+	bash scripts/tests/base.sh

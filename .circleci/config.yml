@@ -14,9 +14,9 @@ workflows:
           config-path: .circleci/workflows.yml
 
           mapping: |
-            tests/.* test true
             data/.* build true
             i18n/.* build true
+            tests/.* tests true
             static/.* build true
             content/.* build true
             layouts/.* build true
