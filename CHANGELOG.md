@@ -3,6 +3,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with some edits,
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
+&nbsp;
+
+## 🎉 1.5.0
+
+### What's Changed
+* feat: implement use of make by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/22
+* feat(ci): add automatic tests by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/23
+* refactor(ci): reorganize jobs by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/25
+* refactor(docker): collapse tests Dockerfiles into single one by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/26
+* feat(ci): specify resource classes in CI's jobs by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/27
+* feat(ci): add resource_class to setup workflow job by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/28
+* refactor(docker): refactor both blog and tests Dockerfiles by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/29
+* feat(docker): add ci Dockerfile by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/30
+* feat: add JP's quote in home by @spagno in https://github.com/Airscripts/blog.airscript.it/pull/31
+
+### New Contributors
+* @spagno made their first contribution in https://github.com/Airscripts/blog.airscript.it/pull/31
+
+### Full Changelog
+https://github.com/Airscripts/blog.airscript.it/compare/1.4.0...1.5.0  
+&nbsp;
 
 ## 🎉 1.4.0
 
