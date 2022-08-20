@@ -40,26 +40,26 @@ build-tests:
 
 .PHONY: run-tests
 run-tests:
-	docker run --rm -it $(TESTS_IMAGE_NAME) && \
+	docker run --rm $(TESTS_IMAGE_NAME) && \
 	docker rmi $(TESTS_IMAGE_NAME)
 
-.PHONY: all-ci-configs
-all-ci-configs: build-ci-configs run-ci-configs
+.PHONY: all-ci
+all-ci: build-ci run-ci
 
-.PHONY: clean-ci-configs
-clean-ci-configs:
+.PHONY: clean-ci
+clean-ci:
 	docker rmi $(CI_IMAGE_NAME)
 
-.PHONY: build-ci-configs
-build-ci-configs:
+.PHONY: build-ci
+build-ci:
 	mkdir -p tmp && \
 	cp -r  .circleci .docker scripts Makefile tmp && \
 	docker build -f .docker/dockerfiles/ci.Dockerfile -t $(CI_IMAGE_NAME) .; \
 	rm -rf tmp
 
-.PHONY: run-ci-configs
-run-ci-configs:
-	docker run --rm -it $(CI_IMAGE_NAME) && \
+.PHONY: run-ci
+run-ci:
+	docker run --rm $(CI_IMAGE_NAME) && \
 	docker rmi $(CI_IMAGE_NAME)
 
 .PHONY: install-bash
@@ -98,20 +98,20 @@ install-circleci-cli:
 install-netlify-cli:
 	bash ./scripts/install/netlify-cli.sh
 
-.PHONY: verify-ci
-verify-ci:
+.PHONY: ci-verify
+ci-verify:
 	bash ./scripts/ci/verify.sh $(environment)
 
-.PHONY: build-ci
-build-ci:
+.PHONY: ci-build
+ci-builds:
 	bash ./scripts/ci/build.sh
 
-.PHONY: deploy-ci
-deploy-ci:
+.PHONY: ci-deploy
+ci-deploy:
 	bash ./scripts/ci/deploy.sh $(id) $(token)
 
-.PHONY: publish-ci
-publish-ci: docker-login docker-build docker-push
+.PHONY: ci-publish
+ci-publish: docker-login docker-build docker-push
 
 .PHONY: git-submodules
 git-submodules:

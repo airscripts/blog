@@ -97,7 +97,7 @@ jobs:
 
       - run:
           name: Verify Base
-          command: make verify-ci environment=base
+          command: make ci-verify environment=base
 
   verify-build:
     executor: base
@@ -111,7 +111,7 @@ jobs:
 
       - run:
           name: Verify Build
-          command: make verify-ci environment=build
+          command: make ci-verify environment=build
   
   verify-deploy:
     executor: base
@@ -124,7 +124,7 @@ jobs:
 
       - run:
           name: Verify Deploy
-          command: make verify-ci environment=deploy
+          command: make ci-verify environment=deploy
 
   verify-publish:
     executor: base
@@ -137,7 +137,7 @@ jobs:
 
       - run:
           name: Verify Publish
-          command: make verify-ci environment=publish
+          command: make ci-verify environment=publish
 
   tests:
     executor: base
@@ -166,7 +166,7 @@ jobs:
       
       - run:
           name: Build Site
-          command: make build-ci
+          command: make ci-build
 
       - when:
           condition: 
@@ -194,7 +194,7 @@ jobs:
       - run:
           name: Deploy To Netlify
           command: >
-            make deploy-ci 
+            make ci-deploy 
             id=$NETLIFY_SITE_ID 
             token=$NETLIFY_ACCESS_TOKEN
 
@@ -214,7 +214,7 @@ jobs:
       - run:
           name: Publish To Docker Hub
           command: >
-            make publish-ci 
+            make ci-publish 
             tag=$CIRCLE_TAG 
             username=$DOCKER_USERNAME 
             token=$DOCKER_ACCESS_TOKEN
