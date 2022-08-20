@@ -107,7 +107,7 @@ ci-verify:
 	bash ./scripts/ci/verify.sh $(environment)
 
 .PHONY: ci-build
-ci-builds:
+ci-build:
 	bash ./scripts/ci/build.sh
 
 .PHONY: ci-deploy
