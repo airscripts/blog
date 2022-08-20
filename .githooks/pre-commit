@@ -1,0 +1,21 @@
+#!/bin/bash
+PREFIX="pre-commit:"
+STAGED_FILES=$(git diff --diff-filter=d --cached --name-only)
+CI_FILES=$(echo "$STAGED_FILES" | grep .circleci)
+TESTS_FILES=$(echo "$STAGED_FILES" | grep tests)
+
+if [ ${#CI_FILES} -gt 0 ]; then
+  if ! make all-ci; then
+    echo "$PREFIX Error during CI files validation."
+    exit 1
+  fi
+fi
+
+if [ ${#TESTS_FILES} -gt 0 ]; then
+  if ! make all-tests; then
+    echo "$PREFIX Error during tests validation."
+    exit 1
+  fi
+fi
+
+echo "$PREFIX Run successfully."

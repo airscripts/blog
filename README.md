@@ -15,13 +15,15 @@ Follow the steps below in order to have one fully functional.
     ```
 
 2. Make sure to have these dependencies installed on your machine:
+- [Bash](https://www.gnu.org/software/bash/)
 - [Make](https://www.gnu.org/software/make/)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-3. Run the following command in the repository's root folder:
+3. Run the following commands in the repository's root folder:
     ```bash
+    make setup
     make all
     ```
 
