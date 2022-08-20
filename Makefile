@@ -8,6 +8,10 @@ CI_IMAGE_NAME = airscript/ci:base
 .PHONY: all
 all: build run
 
+.PHONY: setup
+setup:
+	git config --local core.hooksPath .githooks/
+
 .PHONY: clean
 clean:
 	docker compose down
