@@ -42,12 +42,15 @@ Qui non si bada a spese!
 weight = 10
 name = "About"
 url = "about/"
-
+pageRef = "about"
+identifier = "About"
 
 [[languages.it.menu.main]]
 weight = 15
 name = "Cerca"
 url = "search/"
+pageRef = "search"
+identifier = "Search"
 
 
 [languages.en]
@@ -70,11 +73,15 @@ On this blog you'll find articles related to computer science, motivation and mu
 weight = 10
 name = "About"
 url = "about/"
+pageRef = "about"
+identifier = "About"
 
 [[languages.en.menu.main]]
 weight = 15
 name = "Search"
 url = "search/"
+pageRef = "search"
+identifier = "Search"
 
 [languages.en.homeInfoParams]
 Title = "Oh, hello! 👋🏻"
