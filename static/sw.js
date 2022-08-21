@@ -22,6 +22,8 @@ const BASE_CACHE_FILES = [
   "/safari-pinned-tab.svg",
   "/android-chrome-192x192.png",
   "/android-chrome-512x512.png",
+  "/maskable-android-chrome-192x192.png",
+  "/maskable-android-chrome-512x512.png",
 ];
 
 const CACHE_VERSIONS = {
