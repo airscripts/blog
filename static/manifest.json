@@ -3,7 +3,7 @@
   "short_name": "blog.airscript.it",
   "theme_color": "#0f94d2",
   "background_color": "#ffffff",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "",
   "scope": "/",
   "start_url": "/",
