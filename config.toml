@@ -107,7 +107,9 @@ ShowShareButtons = false
 images = ["/logo-512x512"]
 displayFullLangName = true
 ShowCodeCopyButtons = true
+assets.theme_color = "#0f94d2"
 blogCustomCSS = ["/css/offline.css"]
+assets.msapplication_TileColor = "#2b5797"
 
 [[params.socialIcons]]
 name = "github"
