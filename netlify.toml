@@ -2,9 +2,9 @@
 for = "/*"
 
 [headers.values]
-Content-Security-Policy = "script-src 'self'"
+Content-Security-Policy = "script-src 'self' 'https://cdn.onesignal.com' 'sha256-YPIAQZwhKKusCORgJv+3ws0o8a2C+2G0Mwm5Ed5sB9A=' 'sha256-18OJdeGxaqdolTGAJtZ8LKg6Qa5DuUGQQaiY+s00cgs=' 'sha256-vu66FILRzvC+aLE8Gel5KXXtKU8cMG6IFs9D+ISvNzA=' 'sha256-ivWbCN5KkjztNBqwts0+7/S9nhLJtJcTyynhkocJF7Y=' 'sha256-X5avg43RTxt2cSum+E3xICbowEMaOBxeBiNh05CXDTY=' 'sha256-gutHTLMHA1OVQaXSfROJDMXVr1Yz9kL7TSRma0/5iEg='"
 Referrer-Policy = "strict-origin-when-cross-origin"
 X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
-Permissions-Policy = "accelerometer=(self), ambient-light-sensor=(self), autoplay=(self), battery=(self), camera=(self), cross-origin-isolated=(self), display-capture=(self), document-domain=(self), encrypted-media=(self), execution-while-not-rendered=(self), execution-while-out-of-viewport=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), keyboard-map=(self), magnetometer=(self), microphone=(self), midi=(self), navigation-override=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), interest-cohort=(self), serial=(self), sync-script=(self), trust-token-redemption=(self), window-placement=(self), vertical-scroll=(self)"
+Permissions-Policy = "accelerometer=(self), autoplay=(self), camera=(self), cross-origin-isolated=(self), display-capture=(self), document-domain=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), keyboard-map=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), xr-spatial-tracking=(self)"
