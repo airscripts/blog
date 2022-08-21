@@ -2,7 +2,7 @@
 for = "/*"
 
 [headers.values]
-Content-Security-Policy = "script-src 'self' 'https://cdn.onesignal.com' 'sha256-YPIAQZwhKKusCORgJv+3ws0o8a2C+2G0Mwm5Ed5sB9A=' 'sha256-18OJdeGxaqdolTGAJtZ8LKg6Qa5DuUGQQaiY+s00cgs=' 'sha256-vu66FILRzvC+aLE8Gel5KXXtKU8cMG6IFs9D+ISvNzA=' 'sha256-ivWbCN5KkjztNBqwts0+7/S9nhLJtJcTyynhkocJF7Y=' 'sha256-X5avg43RTxt2cSum+E3xICbowEMaOBxeBiNh05CXDTY=' 'sha256-gutHTLMHA1OVQaXSfROJDMXVr1Yz9kL7TSRma0/5iEg='"
+Content-Security-Policy = "script-src 'self' https://cdn.onesignal.com https://cdn.onesignal.com/* 'sha256-YPIAQZwhKKusCORgJv+3ws0o8a2C+2G0Mwm5Ed5sB9A=' 'sha256-18OJdeGxaqdolTGAJtZ8LKg6Qa5DuUGQQaiY+s00cgs=' 'sha256-vu66FILRzvC+aLE8Gel5KXXtKU8cMG6IFs9D+ISvNzA=' 'sha256-ivWbCN5KkjztNBqwts0+7/S9nhLJtJcTyynhkocJF7Y=' 'sha256-X5avg43RTxt2cSum+E3xICbowEMaOBxeBiNh05CXDTY=' 'sha256-gutHTLMHA1OVQaXSfROJDMXVr1Yz9kL7TSRma0/5iEg='"
 Referrer-Policy = "strict-origin-when-cross-origin"
 X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
