@@ -1,41 +1,31 @@
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f94d2">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="manifest" href="/manifest.json" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f94d2" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-<meta name="msapplication-config" content="/browserconfig.xml">
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="/android-chrome-192x192.png"
+/>
 
-<meta name="theme-color" content="#0f94d2">
-<link rel="manifest" href="/manifest.json">
-
-{{ range .Site.Params.blogCustomCSS -}}
-  <link rel="stylesheet" href="{{ . | absURL }}">
-{{- end }}
-
-{{ range .Site.Params.blogCustomJS -}}
-  <script type="text/javascript" src="{{ . | absURL }}"></script>
-{{- end }}
+<meta name="theme-color" content="#0f94d2" />
+<meta name="msapplication-TileColor" content="#2b5797" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="msapplication-config" content="/browserconfig.xml" />
 
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 
-<script>
-  var OneSignal = window.OneSignal || [];
+{{ range .Site.Params.blogCustomCSS -}}
+<link rel="stylesheet" href="{{ . | absURL }}" />
+{{- end }} 
 
-  var initConfig = {
-      appId: "b11e178e-35e4-4e25-ba77-18c2fb03fc8a",
+{{ range .Site.Params.blogCustomJS -}}
+<script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}
 
-      notifyButton: {
-        enable: true
-      },
-  };
-
-  OneSignal.push(function () {
-    OneSignal.SERVICE_WORKER_PARAM = { scope: '/push/onesignal/' };
-    OneSignal.SERVICE_WORKER_PATH = '/push/onesignal/OneSignalSDKWorker.js'
-    OneSignal.SERVICE_WORKER_UPDATER_PATH = '/push/onesignal/OneSignalSDKWorker.js'
-    OneSignal.init(initConfig);
-  });
-</script>
+{{ range .Site.Params.oneSignalScripts -}}
+<script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}

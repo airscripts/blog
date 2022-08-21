@@ -130,6 +130,12 @@ assets.theme_color = "#0f94d2"
 blogCustomCSS = ["/css/offline.css"]
 assets.msapplication_TileColor = "#2b5797"
 
+notificationsScripts = [
+  "/js/notifications/dictionary.js", 
+  "/js/notifications/i18n.js", 
+  "/js/notifications/main.js"
+]
+
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/sponsors/Airscripts"

@@ -53,3 +53,4 @@ This means that for its source code [MIT License](https://github.com/Airscripts/
 ## 📚 Resources
 - PageSpeed Insights Report: [Link](https://pagespeed.web.dev/report?url=https%3A%2F%2Fblog.airscript.it%2F)  
 - Mozilla Observatory: [Link](https://observatory.mozilla.org/analyze/blog.airscript.it)  
+- Security Headers: [Link](https://securityheaders.com/?q=blog.airscript.it&hide=on&followRedirects=on)  
