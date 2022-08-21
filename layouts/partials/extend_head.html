@@ -22,9 +22,9 @@
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 
 <script>
-  let OneSignal = window.OneSignal || [];
+  var OneSignal = window.OneSignal || [];
 
-  let initConfig = {
+  var initConfig = {
       appId: "b11e178e-35e4-4e25-ba77-18c2fb03fc8a",
 
       notifyButton: {
@@ -33,9 +33,9 @@
   };
 
   OneSignal.push(function () {
-    OneSignal.SERVICE_WORKER_PARAM = { scope: '/js/push/' };
-    OneSignal.SERVICE_WORKER_PATH = 'js/push/OneSignalSDKWorker.js'
-    OneSignal.SERVICE_WORKER_UPDATER_PATH = 'js/push/OneSignalSDKWorker.js'
+    OneSignal.SERVICE_WORKER_PARAM = { scope: '/push/onesignal/' };
+    OneSignal.SERVICE_WORKER_PATH = '/push/onesignal/OneSignalSDKWorker.js'
+    OneSignal.SERVICE_WORKER_UPDATER_PATH = '/push/onesignal/OneSignalSDKWorker.js'
     OneSignal.init(initConfig);
   });
 </script>
