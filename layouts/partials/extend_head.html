@@ -18,3 +18,14 @@
 {{ range .Site.Params.blogCustomJS -}}
   <script type="text/javascript" src="{{ . | absURL }}"></script>
 {{- end }}
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "b11e178e-35e4-4e25-ba77-18c2fb03fc8a",
+    });
+  });
+</script>
