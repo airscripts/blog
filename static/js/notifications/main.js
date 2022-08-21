@@ -1,17 +1,14 @@
-const OneSignal = window.OneSignal || [];
-const defaultLanguage = "en";
-
 const locale =
   navigator.languages && navigator.languages.length
     ? navigator.languages[0]
     : navigator.language;
 
+const defaultLanguage = "en";
 const language = locale ? locale.split("-")[0] : defaultLanguage;
+var OneSignal = window.OneSignal || [];
 
-const initConfig = {
+var initConfig = {
   persistNotification: true,
-  path: "/js/notifications/worker.js",
-  subdomainName: "https://blog.airscript.it",
   notificationClickHandlerAction: "navigate",
   appId: "b11e178e-35e4-4e25-ba77-18c2fb03fc8a",
   safari_web_id: "web.onesignal.auto.364542e4-0165-4e49-b6eb-0136f3f4eaa9",
