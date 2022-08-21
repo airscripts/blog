@@ -1,10 +1,10 @@
 const CACHE_VERSION = 1;
 const SUPPORTED_METHODS = ["GET"];
 const NOT_FOUND_PAGE = "/404.html";
-const OFFLINE_PAGE = "/offline.html";
+const OFFLINE_PAGE = "/offline/index.html";
 const NOT_FOUND_CACHE_FILES = ["/404.html"];
 const SITE_URL = "https://blog.airscript.it";
-const OFFLINE_CACHE_FILES = ["/offline.html"];
+const OFFLINE_CACHE_FILES = ["/offline/index.html"];
 
 const BASE_CACHE_FILES = [
   "/logo.svg",
@@ -154,7 +154,7 @@ self.addEventListener("activate", (event) => {
       self.clients.claim(),
       self.skipWaiting(),
     ]).catch(() => {
-      event.skipWaiting();
+      self.skipWaiting();
     })
   );
 });
