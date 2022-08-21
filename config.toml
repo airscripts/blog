@@ -85,6 +85,7 @@ category = "categories"
 
 [params]
 ShowToc = true
+blogCustomJS = []
 defaultTheme = "auto"
 ShowWordCount = true
 ShowReadingTime = true
@@ -95,6 +96,7 @@ ShowShareButtons = false
 images = "/logo-512x512"
 displayFullLangName = true
 ShowCodeCopyButtons = true
+blogCustomCSS = ["/css/offline.css"]
 
 [[params.socialIcons]]
 name = "github"
