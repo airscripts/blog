@@ -49,5 +49,4 @@ OneSignal.push(function () {
   OneSignal.SERVICE_WORKER_PATH = "/js/notifications/worker.js";
   OneSignal.SERVICE_WORKER_UPDATER_PATH = "/js/notifications/worker.js";
   OneSignal.init(initConfig);
-  OneSignal.showSlidedownPrompt();
 });
