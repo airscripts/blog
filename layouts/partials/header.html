@@ -54,10 +54,14 @@
                     {{- end -}}
                     {{- $prod := (hugo.IsProduction | or (eq site.Params.env "production")) }}
                     {{- if and (in $processableFormats $img.MediaType.SubType) (eq $prod true)}}
-                        {{- if site.Params.label.iconHeight }}
+                        {{- if (and (site.Params.label.iconHeight) (site.Params.label.iconWidth)) }}
+                            {{- $img = $img.Resize (printf "%dx%d" site.Params.lable.iconWidth site.Params.label.iconHeight) }}
+                        {{- else if site.Params.label.iconHeight}}
                             {{- $img = $img.Resize (printf "x%d" site.Params.label.iconHeight) }}
+                        {{ else if site.Params.label.iconWidth }}
+                            {{- $img = $img.Resize (printf "%dx" site.Params.label.iconWidth) }}
                         {{ else }}
-                            {{- $img = $img.Resize "x30" }}
+                            {{- $img = $img.Resize "30x30" }}
                         {{- end }}
                     {{- end }}
                     <img 
