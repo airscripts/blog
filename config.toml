@@ -91,6 +91,8 @@ ShowReadingTime = true
 ShowCodeCopyButtons = true
 ShowToc = true
 label.icon = "logo.svg"
+label.iconWidth = "30"
+label.iconHeight = "30"
 
 [[params.socialIcons]]
 name = "github"
