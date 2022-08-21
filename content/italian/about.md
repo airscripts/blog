@@ -4,7 +4,7 @@ layout: "about"
 date: "2022-08-12"
 author: "Airscript"
 categories: ["general"]
-images: "/logo-512x512"
+images: ["/logo-512x512"]
 tags: ["airscript", "about"]
 summary: "About page di blog.airscript.it dove racconto chi sono, cosa faccio e gli obiettivi del blog."
 ---
