@@ -4,8 +4,9 @@ layout: "about"
 date: "2022-08-12"
 author: "Airscript"
 categories: ["general"]
+images: "/logo-512x512"
 tags: ["airscript", "about"]
-summary: "Blog's about page."
+summary: "Blog's about page where I tell about who I am, what I do and the objectives of the blog."
 ---
 > To make something special, you just have to believe it's special.  
 > *Mr. Ping, Kung Fu Panda*

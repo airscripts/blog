@@ -16,16 +16,21 @@ languageName = "it"
 languageAltTitle = "Italiano"
 contentDir = "content/italian"
 
+description = """
+Ti do il benvenuto su airscript.it!
+Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!
+"""
+
 [languages.it.homeInfoParams]
 Title = "Oh, ciao! 👋🏻"
 
 Content = """
-  Ti do il benvenuto su **airscript.it**!  
-  Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!  
-  Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una 🌟 al [blog su GitHub](https://github.com/Airscripts/blog.airscript.it).  
-  &nbsp;  
-  Qui non si bada a spese!  
-  *John Hammond, Jurassic Park.*
+Ti do il benvenuto su **airscript.it**!  
+Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!  
+Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una 🌟 al [blog su GitHub](https://github.com/Airscripts/blog.airscript.it).  
+&nbsp;  
+Qui non si bada a spese!  
+*John Hammond, Jurassic Park.*
 """
 
 # [[languages.it.menu.main]]
@@ -48,7 +53,13 @@ url = "search/"
 [languages.en]
 weight = 2
 languageName = "en"
+languageAltTitle = "English"
 contentDir = "content/english"
+
+description = """
+I welcome you on airscript.it!
+On this blog you'll find articles related to computer science, motivation and much more!
+"""
 
 # [[languages.en.menu.main]]
 # weight = 5
@@ -69,12 +80,12 @@ url = "search/"
 Title = "Oh, hello! 👋🏻"
 
 Content = """
-  I welcome you on **airscript.it**!  
-  On this blog you'll find articles related to computer science, motivation and much more!  
-  If you want, you can support me through the link below or leaving a 🌟 at my [blog on GitHub](https://github.com/Airscripts/blog.airscript.it).  
-  &nbsp;  
-  Spared no expense!  
-  *John Hammond, Jurassic Park.*
+I welcome you on **airscript.it**!  
+On this blog you'll find articles related to computer science, motivation and much more!  
+If you want, you can support me through the link below or leaving a 🌟 at my [blog on GitHub](https://github.com/Airscripts/blog.airscript.it).  
+&nbsp;  
+Spared no expense!  
+*John Hammond, Jurassic Park.*
 """
 
 
@@ -105,6 +116,10 @@ url = "https://github.com/sponsors/Airscripts"
 [[params.socialIcons]]
 name = "KoFi"
 url = "https://ko-fi.com/airscript"
+
+[[params.socialIcons]]
+name = "RSS"
+url = "https://blog.airscript.it/index.xml"
 
 [params.editPost]
 appendFilePath = false
