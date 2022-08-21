@@ -115,19 +115,19 @@ category = "categories"
 
 [params]
 ShowToc = true
-blogCustomJS = []
-defaultTheme = "auto"
 ShowWordCount = true
-ShowReadingTime = true
 label.iconWidth = 30
-label.icon = "logo.svg"
+defaultTheme = "auto"
 label.iconHeight = 30
+ShowReadingTime = true
+blogCustomScripts = []
+label.icon = "logo.svg"
 ShowShareButtons = false
 images = ["/logo-512x512"]
 displayFullLangName = true
 ShowCodeCopyButtons = true
 assets.theme_color = "#0f94d2"
-blogCustomCSS = ["/css/offline.css"]
+blogCustomStyles = ["/css/offline.css"]
 assets.msapplication_TileColor = "#2b5797"
 
 notificationsScripts = [
