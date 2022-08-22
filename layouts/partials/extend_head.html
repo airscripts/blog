@@ -23,9 +23,9 @@
 {{- end }} 
 
 {{ range .Site.Params.blogCustomScripts -}}
-<script type="application/javascript" src="{{ . | absURL }}"></script>
+<script type="text/javascript" src="{{ . | absURL }}"></script>
 {{- end }}
 
 {{ range .Site.Params.notificationsScripts -}}
-<script type="application/javascript" src="{{ . | absURL }}"></script>
+<script type="text/javascript" src="{{ . | absURL }}"></script>
 {{- end }}
