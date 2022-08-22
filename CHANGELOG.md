@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).  
 &nbsp;
 
+## 🎉 1.7.0
+
+### What's Changed
+* fix: add identifier in order to use keyboard shortcut for search by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/36
+* feat: add push notifications support by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/37
+* feat: add http security headers by @Airscripts in https://github.com/Airscripts/blog.airscript.it/pull/38
+
+### Full Changelog
+https://github.com/Airscripts/blog.airscript.it/compare/1.6.0...1.7.0  
+&nbsp;
+
 ## 🎉 1.6.0
 
 ### What's Changed
