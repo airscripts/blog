@@ -18,14 +18,29 @@
 
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 
-{{ range .Site.Params.blogCustomStyles -}}
-<link rel="stylesheet" href="{{ . | absURL }}" />
-{{- end }} 
-
-{{ range .Site.Params.blogCustomScripts -}}
-<script type="text/javascript" src="{{ . | absURL }}"></script>
+{{ range $id, $element := .Site.Params.customStyles -}}
+<link 
+  rel="stylesheet"
+  href="{{ .file | absURL }}" 
+  integrity="{{ .integrity }}" 
+  crossorigin="anonymous"
+/>
 {{- end }}
 
-{{ range .Site.Params.notificationsScripts -}}
-<script type="text/javascript" src="{{ . | absURL }}"></script>
+{{ range $id, $element := .Site.Params.customScripts -}}
+<script 
+  type="text/javascript" 
+  src="{{ .file | absURL }}" 
+  integrity="{{ .integrity }}" 
+  crossorigin="anonymous"
+></script>
+{{- end }}
+
+{{ range $id, $element := .Site.Params.notificationsScripts -}}
+<script 
+  type="text/javascript" 
+  src="{{ .file | absURL }}" 
+  integrity="{{ .integrity }}" 
+  crossorigin="anonymous"
+></script>
 {{- end }}

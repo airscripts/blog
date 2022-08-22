@@ -20,6 +20,13 @@ clean:
 	cd ./tests/libraries/bats-assert && find . -name "*" -delete
 	cd ./tests/libraries/bats-support && find . -name "*" -delete
 
+.PHONY: hash
+hash:
+	cat static/css/offline.css | openssl dgst -sha512 -binary | openssl base64 -A
+	cat static/js/notifications/dictionary.js | openssl dgst -sha512 -binary | openssl base64 -A
+	cat static/js/notifications/i18n.js | openssl dgst -sha512 -binary | openssl base64 -A
+	cat static/js/notifications/main.js | openssl dgst -sha512 -binary | openssl base64 -A
+
 .PHONY: build
 build: git-submodules
 	docker compose build
