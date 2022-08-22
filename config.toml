@@ -9,7 +9,6 @@ enableInlineShortcodes = true
 defaultContentLanguage = "it"
 baseURL = "https://blog.airscript.it"
 
-
 [[headers]]
 for = '/**'
 
@@ -20,7 +19,6 @@ X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 Permissions-Policy = "accelerometer=(self), ambient-light-sensor=(self), autoplay=(self), battery=(self), camera=(self), cross-origin-isolated=(self), display-capture=(self), document-domain=(self), encrypted-media=(self), execution-while-not-rendered=(self), execution-while-out-of-viewport=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), keyboard-map=(self), magnetometer=(self), microphone=(self), midi=(self), navigation-override=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), interest-cohort=(self), serial=(self), sync-script=(self), trust-token-redemption=(self), window-placement=(self), vertical-scroll=(self)"
-
 
 [languages.it]
 weight = 1
@@ -64,7 +62,6 @@ url = "search/"
 pageRef = "search"
 identifier = "Search"
 
-
 [languages.en]
 weight = 2
 languageName = "en"
@@ -107,11 +104,9 @@ Spared no expense!
 *John Hammond, Jurassic Park.*
 """
 
-
 [taxonomies]
 tag = "tags"
 category = "categories"
-
 
 [params]
 ShowToc = true
@@ -120,21 +115,31 @@ label.iconWidth = 30
 defaultTheme = "auto"
 label.iconHeight = 30
 ShowReadingTime = true
-blogCustomScripts = []
 label.icon = "logo.svg"
 ShowShareButtons = false
 images = ["/logo-512x512"]
 displayFullLangName = true
 ShowCodeCopyButtons = true
 assets.theme_color = "#0f94d2"
-blogCustomStyles = ["/css/offline.css"]
 assets.msapplication_TileColor = "#2b5797"
 
-notificationsScripts = [
-  "/js/notifications/dictionary.js", 
-  "/js/notifications/i18n.js", 
-  "/js/notifications/main.js"
-]
+[[customScripts]]
+
+[[params.customStyles]]
+file = "/css/offline.css"
+integrity = "sha512-+R/cu1jJ/RrydyUhKhXI1QczU3TRLLLHAQyYHi1vXFAEF8lK4MxJiWgjIckiCegJ80aIB6icc6lSoLn1YY/OSA=="
+
+[[params.notificationsScripts]]
+file = "/js.notifications/dictionary.js"
+integrity = "sha512-tOZZsofKwRGHAcQVGMed077Q0y4hnPvTv0Nw8L9VYWKlQgWcQZznMXZTTNID39Q0+Dumx+kHl7PlP7K+cGn6nQ=="
+
+[[params.notificationsScripts]]
+file = "/js.notifications/i18n.js"
+integrity = "sha512-eNnuCLQ8noOgoy620xyZxApQlMLSJZze6Qe/h/uKQIynxfvYfmL29FimkcLho1i7AGeG+tkh0WM5pnBcIn82Hg=="
+
+[[params.notificationsScripts]]
+file = "/js.notifications/main.js"
+integrity = "sha512-SAID9CBhh48e0EabUHvgvRrh2FiCmBh5Xb+fX2sv5P9IhYvRC73fYNHWg6usTYMyEOvJ6uEuP9y7nTQIgr0f7w=="
 
 [[params.socialIcons]]
 name = "github"
@@ -152,7 +157,6 @@ url = "https://blog.airscript.it/index.xml"
 appendFilePath = false
 Text = "Suggest Changes"
 URL = "https://github.com/Airscripts/blog.airscript.it/tree/main/content"
-
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
