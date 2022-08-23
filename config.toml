@@ -131,15 +131,15 @@ integrity = "sha512-+R/cu1jJ/RrydyUhKhXI1QczU3TRLLLHAQyYHi1vXFAEF8lK4MxJiWgjIcki
 
 [[params.notificationsScripts]]
 file = "/js.notifications/dictionary.js"
-integrity = "sha512-tOZZsofKwRGHAcQVGMed077Q0y4hnPvTv0Nw8L9VYWKlQgWcQZznMXZTTNID39Q0+Dumx+kHl7PlP7K+cGn6nQ=="
+integrity = "EFNI3O8CgGOt6+JT8ez49CxHGmYnPWr7X1QXvT+e3MRwMRb6nQDvgMBgQxUgII2Oq5xrll95bXmK5JJLfKqPnA=="
 
 [[params.notificationsScripts]]
 file = "/js.notifications/i18n.js"
-integrity = "sha512-eNnuCLQ8noOgoy620xyZxApQlMLSJZze6Qe/h/uKQIynxfvYfmL29FimkcLho1i7AGeG+tkh0WM5pnBcIn82Hg=="
+integrity = "EFNI3O8CgGOt6+JT8ez49CxHGmYnPWr7X1QXvT+e3MRwMRb6nQDvgMBgQxUgII2Oq5xrll95bXmK5JJLfKqPnA=="
 
 [[params.notificationsScripts]]
 file = "/js.notifications/main.js"
-integrity = "sha512-SAID9CBhh48e0EabUHvgvRrh2FiCmBh5Xb+fX2sv5P9IhYvRC73fYNHWg6usTYMyEOvJ6uEuP9y7nTQIgr0f7w=="
+integrity = "EFNI3O8CgGOt6+JT8ez49CxHGmYnPWr7X1QXvT+e3MRwMRb6nQDvgMBgQxUgII2Oq5xrll95bXmK5JJLfKqPnA=="
 
 [[params.socialIcons]]
 name = "github"
