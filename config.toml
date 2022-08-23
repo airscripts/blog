@@ -130,15 +130,15 @@ file = "/css/offline.css"
 integrity = "sha512-+R/cu1jJ/RrydyUhKhXI1QczU3TRLLLHAQyYHi1vXFAEF8lK4MxJiWgjIckiCegJ80aIB6icc6lSoLn1YY/OSA=="
 
 [[params.notificationsScripts]]
-file = "/js.notifications/dictionary.js"
+file = "/js/notifications/dictionary.js"
 integrity = "sha512-EFNI3O8CgGOt6+JT8ez49CxHGmYnPWr7X1QXvT+e3MRwMRb6nQDvgMBgQxUgII2Oq5xrll95bXmK5JJLfKqPnA=="
 
 [[params.notificationsScripts]]
-file = "/js.notifications/i18n.js"
+file = "/js/notifications/i18n.js"
 integrity = "sha512-EFNI3O8CgGOt6+JT8ez49CxHGmYnPWr7X1QXvT+e3MRwMRb6nQDvgMBgQxUgII2Oq5xrll95bXmK5JJLfKqPnA=="
 
 [[params.notificationsScripts]]
-file = "/js.notifications/main.js"
+file = "/js/notifications/main.js"
 integrity = "sha512-EFNI3O8CgGOt6+JT8ez49CxHGmYnPWr7X1QXvT+e3MRwMRb6nQDvgMBgQxUgII2Oq5xrll95bXmK5JJLfKqPnA=="
 
 [[params.socialIcons]]
