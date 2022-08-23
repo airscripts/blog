@@ -108,6 +108,9 @@ Spared no expense!
 tag = "tags"
 category = "categories"
 
+[markup]
+highlight.style = "dracula"
+
 [params]
 ShowToc = true
 ShowWordCount = true
@@ -117,6 +120,7 @@ label.iconHeight = 30
 ShowReadingTime = true
 label.icon = "logo.svg"
 ShowShareButtons = false
+assets.disableHLJS = true
 images = ["/logo-512x512"]
 displayFullLangName = true
 ShowCodeCopyButtons = true
