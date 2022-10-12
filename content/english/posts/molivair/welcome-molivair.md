@@ -18,7 +18,7 @@ But first let's start from the beginning. I've co-founded **Molivair**.
 
 ## What is Molivair?
 Molivair was born with the goal of making our surroundings more colorful.  
-How it does it, it's very simple.  
+How it does it it's very simple.  
 You have most likely come across art generated with the help of Artificial Intelligence. At Molivair we do just that!  
 We generate art that will then be shared and auctioned on dedicated marketplaces.  
 
@@ -39,8 +39,8 @@ What I am going to tell you about is **Outpaintings**.
 Born from the inspiration of some creations found around, Outpaintings is a collection of ten famous expanded paintings. The name comes from this very expansion, which leads us to visually imagine what lies beyond the boundaries of a painting.  
 Let me tell you: it is truly fascinating.
 
-This collection was made as a springboard for the main project for which this all started. We wanted to get a feel for the market, understand how the tools involved work, and spread the word about Molivair.  
-We hope you will enjoy it as much as it did with us as we generated each and every pixel.  
+This collection was made as a springboard for the main project from which this all started. We wanted to get a feel for the market, understand how the tools involved work, and spread the word about Molivair.  
+We hope you will enjoy it as much as it was with us as we generated each and every pixel.  
 
 ## How did you generate the paintings?
 If you are interested in knowing the process behind the creation of the paintings, you can let me know via the contact information I will leave at the end of the post. I would love to write something about it!
