@@ -5,7 +5,7 @@ date: "2022-08-12"
 author: "Airscript"
 categories: ["general"]
 tags: ["airscript", "about"]
-images: ["/logo-256x256.png"]
+images: ["/logo-open-graph.png"]
 summary: "About page di blog.airscript.it dove racconto chi sono, cosa faccio e gli obiettivi del blog."
 ---
 > Per rendere una cosa speciale, devi solo credere che sia speciale.  

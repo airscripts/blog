@@ -4,8 +4,8 @@ layout: "about"
 date: "2022-08-12"
 author: "Airscript"
 categories: ["general"]
-images: ["/logo-256x256.png"]
 tags: ["airscript", "about"]
+images: ["/logo-open-graph.png"]
 summary: "Blog's about page where I tell about who I am, what I do and the objectives of the blog."
 ---
 > To make something special, you just have to believe it's special.  
