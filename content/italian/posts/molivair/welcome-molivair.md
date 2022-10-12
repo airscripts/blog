@@ -18,7 +18,7 @@ Ma prima partiamo dal principio. Ho co-fondato **Molivair**.
 
 ## Cos'è Molivair?
 Molivair nasce con l'obiettivo di rendere ancora più colorato ciò che ci circonda.  
-Il come lo fa, è molto semplice.  
+Il come lo fa è molto semplice.  
 Ti sarà capitato, molto probabilmente, di imbatterti in arte generata con l'ausilio dell'Intelligenza Artificiale. In Molivair facciamo proprio questo!  
 Generiamo arte che sarà poi condivisa e messa all'asta su dei mercati dedicati.  
 
@@ -39,11 +39,11 @@ Ciò di cui ti parlerò, è **Outpaintings**.
 Nata dall'ispirazione di alcune creazioni trovate in giro, Outpaintings è una collezione di dieci famosi dipinti espansi. Il nome deriva proprio da questa espansione, che ci porta ad immaginare visivamente che cosa c'è oltre i confini di un quadro.  
 Lasciamelo dire: è veramente affascinante.
 
-Questa collezione è stata realizzata come trampolino di lancio per il progetto principale per cui è partito tutto questo. Volevamo tastare con mano il mercato, comprendere il funzionamento degli strumenti coinvolti e diffondere il verbo di Molivair.  
-Speriamo possa piacerti come lo è stato con noi mentre generavamo ogni singolo pixel.  
+Questa collezione è stata realizzata come trampolino di lancio per il progetto principale da cui è partito tutto questo. Volevamo tastare con mano il mercato, comprendere il funzionamento degli strumenti coinvolti e diffondere il verbo di Molivair.  
+Speriamo possa piacerti come lo è stato per noi mentre generavamo ogni singolo pixel.  
 
 ## Come avete generato i dipinti?
-Se sei interessato a sapere il processo dietro la creazione dei dipinti, puoi farmelo sapere tramite i contatti che ti lascerò alla fine del post. Mi piacerebbe molto scrivere qualcosa a riguardo!
+Se sei interessato a conoscere il processo dietro la creazione dei dipinti, puoi farmelo sapere tramite i contatti che ti lascerò alla fine del post. Mi piacerebbe molto scrivere qualcosa a riguardo!
 
 ## Dove puoi trovare Outpaintings
 Se vuoi darci un'occhiata, qui sotto ti lascio in chiaro l'indirizzo per raggiungerla:
