@@ -1,4 +1,4 @@
-FROM alpine:3.16 AS runner
+FROM alpine:3.17 AS runner
   LABEL maintainer="Airscript <dev.airscript@gmail.com>"
   WORKDIR /tmp
   COPY tmp/ /tmp/
