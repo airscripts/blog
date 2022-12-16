@@ -1,31 +1,32 @@
 <script>
-  if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("/sw.js", { scope: "/" })
-
-      .then(function (registration) {
-        console.log("Service Worker: Registered.");
-      });
-
-    navigator.serviceWorker.ready.then(function (registration) {
-      console.log("Service Worker: Ready.");
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/sw.js", { scope: "/" })
+    .then(function (registration) {
+      console.log("Service Worker: Registered.");
     });
+
+  navigator.serviceWorker.ready.then(function (registration) {
+    console.log("Service Worker: Ready.");
+  });
+}
+</script>
+
+<script integrity="XF6O1Z7tmFdMKJug1taoTIEN5erd8st9wgg3kujj3zIB9ErdmlzR499Eup9AKwDXeI2O6BnABt/6fWqvmzkOJw==">
+console.log("Attaching events to menu...");
+
+let efMenu = document.querySelector(".menu");
+let efTrigger = document.querySelector("#menu-trigger");
+
+efTrigger.addEventListener("click", function () {
+  efMenu.classList.toggle("hidden");
+});
+
+document.body.addEventListener('click', function (event) {
+  if (!efTrigger.contains(event.target)) {
+    efMenu.classList.add("hidden");
   }
+});
 
-  console.log("Attaching events to menu...");
-
-  let efMenu = document.querySelector(".menu");
-  let efTrigger = document.querySelector("#menu-trigger");
-
-  efTrigger.addEventListener("click", function () {
-    efMenu.classList.toggle("hidden");
-  });
-
-  document.body.addEventListener('click', function (event) {
-    if (!efTrigger.contains(event.target)) {
-      efMenu.classList.add("hidden");
-    }
-  });
-
-  console.log("Events attached!");
+console.log("Events attached!");
 </script>
