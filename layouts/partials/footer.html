@@ -142,7 +142,7 @@ document.querySelectorAll('pre > code').forEach((codeblock) => {
   if (containsHighlight) {
     container.appendChild(copybutton);
   } else if (isFirstChildContainer) {
-    return;
+    //
   } else if (isTableNode) {
     codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
   } else {
