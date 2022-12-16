@@ -2,7 +2,7 @@
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .register("/sw.js", { scope: "/" })
-      
+
       .then(function (registration) {
         console.log("Service Worker: Registered.");
       });
@@ -11,4 +11,19 @@
       console.log("Service Worker: Ready.");
     });
   }
+</script>
+
+<script>
+  let efMenu = document.querySelector(".menu")
+  let efTrigger = document.querySelector("#menu-trigger")
+
+  efTrigger.addEventListener("click", function () {
+    efMenu.classList.toggle("hidden")
+  });
+
+  document.body.addEventListener('click', function (event) {
+    if (!efTrigger.contains(event.target)) {
+      efMenu.classList.add("hidden")
+    }
+  });
 </script>
