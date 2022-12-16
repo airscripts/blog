@@ -134,6 +134,10 @@ integrity = "sha512-eNnuCLQ8noOgoy620xyZxApQlMLSJZze6Qe/h/uKQIynxfvYfmL29FimkcLh
 file = "/js/notifications/main.js"
 integrity = "sha512-SAID9CBhh48e0EabUHvgvRrh2FiCmBh5Xb+fX2sv5P9IhYvRC73fYNHWg6usTYMyEOvJ6uEuP9y7nTQIgr0f7w=="
 
+[[params.menuScripts]]
+file = "/js/menu.js"
+integrity = "sha512-XF6O1Z7tmFdMKJug1taoTIEN5erd8st9wgg3kujj3zIB9ErdmlzR499Eup9AKwDXeI2O6BnABt/6fWqvmzkOJw=="
+
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/sponsors/Airscripts"
