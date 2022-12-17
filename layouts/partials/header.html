@@ -3,7 +3,7 @@
 
 {{- /* theme is light */}}
 {{- if (eq site.Params.defaultTheme "light") }}
-<script>
+<script nonce="Xuebtprq4k7XN6IXusvnqsoNdcihTojj">
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
     }
@@ -11,7 +11,7 @@
 
 {{- /* theme is dark */}}
 {{- else if (eq site.Params.defaultTheme "dark") }}
-<script>
+<script nonce="NcAFUH6ON6dCQB8HZnnDkNzAgRB08vhS">
     if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
     }
@@ -19,7 +19,7 @@
 
 {{- else }}
 {{- /* theme is auto */}}
-<script>
+<script nonce="QtTSjB_e5ad2iZ2Q84S6BcxqeB1DmnAY">
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
@@ -32,7 +32,7 @@
 
 {{- /* theme-toggle is disabled and theme is auto */}}
 {{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
-<script>
+<script nonce="lDzeJvDugA9sau9Xv6dxmVnUadEL8V6C">
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
