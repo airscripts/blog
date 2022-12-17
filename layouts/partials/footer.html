@@ -29,7 +29,7 @@
 
 {{- partial "extend_footer.html" . }}
 
-<script>
+<script nonce="DFSCyWW7U_2kbOmnIO1XWHPqDrWoN8Op">
 let menu = document.getElementById('menu')
 
 if (menu) {
@@ -67,7 +67,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </script>
 
 {{- if (not site.Params.disableScrollToTop) }}
-<script>
+<script nonce="apNXv-1NY9eUB90KmEczs3GDiTip8uau">
 var mybutton = document.getElementById("top-link");
 
 window.onscroll = function () {
@@ -83,7 +83,7 @@ window.onscroll = function () {
 {{- end }}
 
 {{- if (not site.Params.disableThemeToggle) }}
-<script>
+<script nonce="2WhN6wkNuTCFdLlUVj1i606JqVCb7W5_">
 document.getElementById("theme-toggle").addEventListener("click", () => {
   if (document.body.className.includes("dark")) {
     document.body.classList.remove('dark');
@@ -97,7 +97,7 @@ document.getElementById("theme-toggle").addEventListener("click", () => {
 {{- end }}
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
-<script>
+<script nonce="QXYOmUnOeTfI3IuRJ8j-jhQ2SLLd33Vc">
 document.querySelectorAll('pre > code').forEach((codeblock) => {
   const container = codeblock.parentNode.parentNode;
   const copybutton = document.createElement('button');
