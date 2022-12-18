@@ -1,6 +1,8 @@
 SHELL = /bin/sh
-TESTS_IMAGE_NAME = airscript/tests:base
+
 CI_IMAGE_NAME = airscript/ci:base
+TESTS_IMAGE_NAME = airscript/tests:base
+BLOG_IMAGE_NAME = airscript/blog:compose
 
 .SUFFIXES:
 .SUFFIXES: .sh
@@ -15,6 +17,7 @@ setup:
 .PHONY: clean
 clean:
 	docker compose down
+	docker rmi $(BLOG_IMAGE_NAME)
 	cd ./themes/PaperMod && find . -name "*" -delete
 	cd ./tests/bats && find . -name "*" -delete
 	cd ./tests/libraries/bats-assert && find . -name "*" -delete
