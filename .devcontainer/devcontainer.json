@@ -1,0 +1,19 @@
+{
+  "image": "20.10.22-dind-alpine3.17",
+  "name": "airscript/blog:environment",
+  "overrideCommand": false,
+  "postCreateCommand": "sh scripts/environment/setup.sh",
+  
+  "forwardPorts": [
+    25001
+  ],
+
+  "runArgs": [
+    "--init",
+    "--privileged"
+  ],
+
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ]
+}
