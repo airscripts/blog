@@ -1,5 +1,4 @@
 ---
-weight: 1
 date: "2022-10-12"
 author: "Airscript"
 title: "Welcome, Molivair"
