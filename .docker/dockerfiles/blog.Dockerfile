@@ -13,7 +13,7 @@ FROM alpine:3.17 AS builder
     make git-submodules environment=${BLOG_BUILD_ENVIRONMENT}
 
 FROM alpine:3.17 AS runner
-  LABEL maintainer="Airscript <dev.airscript@gmail.com>"
+  LABEL maintainer="Airscript <francesco@airscript.it>"
   ENV BLOG_PORT=25001
   ENV BLOG_INTERFACE=0.0.0.0
   WORKDIR /home
