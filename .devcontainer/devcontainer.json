@@ -3,7 +3,7 @@
   "name": "airscript-blog-environment",
   "overrideCommand": false,
   "postCreateCommand": "sh scripts/environment/setup.sh",
-  
+
   "forwardPorts": [
     25001
   ],
