@@ -7,21 +7,48 @@ This repository contains source code and content of my blog hosted on [blog.airs
 ## 📦 Installation  
 In order to contribute to this project, you need an up and running development environment.  
 Follow the steps below in order to have one fully functional.  
+Please note that only one path between *Classic* and *Dev Container* has to be followed.
 &nbsp;
 
-1. Clone this repository: 
-    ```bash
-    git clone https://github.com/Airscripts/blog.airscript.it.git
-    ```
+### Classic  
 
-2. Make sure to have these dependencies installed on your machine:
+1. Make sure to have these dependencies installed on your machine:
 - [Bash](https://www.gnu.org/software/bash/)
 - [Make](https://www.gnu.org/software/make/)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
+2. Clone this repository: 
+    ```bash
+    git clone https://github.com/Airscripts/blog.airscript.it.git
+    ```
+
 3. Run the following commands in the repository's root folder:
+    ```bash
+    make setup
+    make all
+    ```
+
+4. Everything should be set up and running on port 25001.  
+&nbsp;
+
+### Dev Container  
+
+1. Make sure to have these dependencies installed on your machine:
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [Bash](https://www.gnu.org/software/bash/)
+- [Docker](https://docs.docker.com/get-docker/)
+- [Visual Studio Code](https://code.visualstudio.com/Download)
+
+2. Clone this repository: 
+    ```bash
+    git clone https://github.com/Airscripts/blog.airscript.it.git
+    ```
+
+3. Open it in Visual Studio Code and then confirm the will to open it into a devcontainer.  
+
+4. Run the following commands in the repository's root folder:
     ```bash
     make setup
     make all
@@ -46,7 +73,6 @@ Thank you so much, it means a lot for me!
 
 ## 💳 License  
 This repository has dual-licensing.  
- 
 This means that for its source code [MIT License](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_CC_BY_4.0) is applied.  
 &nbsp;
 
