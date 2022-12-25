@@ -40,6 +40,7 @@ Please note that only one path between *Classic* and *Dev Container* has to be f
 - [Bash](https://www.gnu.org/software/bash/)
 - [Docker](https://docs.docker.com/get-docker/)
 - [Visual Studio Code](https://code.visualstudio.com/Download)
+- [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 2. Clone this repository: 
     ```bash
@@ -47,6 +48,7 @@ Please note that only one path between *Classic* and *Dev Container* has to be f
     ```
 
 3. Open it in Visual Studio Code and then confirm the will to open it into a devcontainer.  
+To make it work here, be sure to have installed *Dev Containers* extension.
 
 4. Run the following commands in the repository's root folder:
     ```bash
