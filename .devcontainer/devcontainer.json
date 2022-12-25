@@ -10,7 +10,8 @@
 
   "runArgs": [
     "--init",
-    "--privileged"
+    "--privileged",
+    "--name", "airscript-blog-environment"
   ],
 
   "extensions": [
