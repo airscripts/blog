@@ -76,6 +76,10 @@ run-ci:
 	docker run --rm $(CI_IMAGE_NAME) && \
 	docker rmi $(CI_IMAGE_NAME)
 
+.PHONY: clean-devcontainer
+clean-devcontainer:
+	sh ./scripts/environment/teardown.sh
+
 .PHONY: install-bash
 install-bash:
 	sh ./scripts/install/bash.sh
