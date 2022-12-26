@@ -3,7 +3,7 @@ PREFIX="pre-commit:"
 STAGED_FILES=$(git diff --diff-filter=d --cached --name-only)
 CI_FILES=$(echo "$STAGED_FILES" | grep .circleci)
 TESTS_FILES=$(echo "$STAGED_FILES" | grep tests)
-DEVCONTAINERS_FILES=$(echo "$STAGED_FILES" | grep .devcontainer)
+DEVCONTAINER_FILES=$(echo "$STAGED_FILES" | grep .devcontainer)
 
 if [ ${#CI_FILES} -gt 0 ]; then
   if ! make all-ci; then
@@ -19,9 +19,9 @@ if [ ${#TESTS_FILES} -gt 0 ]; then
   fi
 fi
 
-if [ ${#DEVCONTAINERS_FILES} -gt 0 ]; then
-  if ! docker exec devcontainer /bin/bash ./scripts/environment/verify.sh; then
-    echo "$PREFIX Error during devcontainers validation."
+if [ ${#DEVCONTAINER_FILES} -gt 0 ]; then
+  if ! make all-devcontainers; then
+    echo "$PREFIX Error during devcontainer validation."
     exit 1
   fi
 fi
