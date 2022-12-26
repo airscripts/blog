@@ -3,10 +3,11 @@ SHELL = /bin/sh
 CI_IMAGE_NAME = airscript/ci:base
 TESTS_IMAGE_NAME = airscript/tests:base
 BLOG_IMAGE_NAME = airscript/blog:compose
+DIND_IMAGE_NAME = docker:20.10.22-dind-alpine3.17
 
-ENVIRONMENT_DEVCONTAINER_NAME = devcontainer
-DIND_ENVIRONMENT_IMAGE_NAME = docker:20.10.22-dind-alpine3.17
-ENVIRONMENT_DEVCONTAINER_IMAGE_NAME = airscript/devcontainer:environment
+DEVCONTAINER_NAME = airscript-devcontainer-base
+DEVCONTAINER_IMAGE_NAME = airscript/devcontainer:base
+DEVCONTAINER_CLI_IMAGE_NAME = airscript/devcontainer:cli
 
 .SUFFIXES:
 .SUFFIXES: .sh
@@ -80,34 +81,35 @@ run-ci:
 	docker run --rm $(CI_IMAGE_NAME) && \
 	docker rmi $(CI_IMAGE_NAME)
 
-.PHONY: all-devcontainers
-all-devcontainers: build-devcontainers run-devcontainers
+.PHONY: all-devcontainer
+all-devcontainer: build-devcontainer run-devcontainer
 
-.PHONY: build-devcontainers
-build-devcontainers:
+.PHONY: build-devcontainer
+build-devcontainer:
 	mkdir -p tmp && \
-	cp -r  .devcontainers scripts Makefile tmp && \
-	docker build -f .docker/dockerfiles/devcontainer/environment.Dockerfile -t $(ENVIRONMENT_DEVCONTAINER_IMAGE_NAME) .; \
+	cp -r  .devcontainer scripts Makefile tmp && \
+	docker build -f .docker/dockerfiles/devcontainer.Dockerfile -t $(DEVCONTAINER_IMAGE_NAME) .; \
 	rm -rf tmp
 
-.PHONY: run-devcontainers
-run-devcontainers:
+.PHONY: run-devcontainer
+run-devcontainer:
 	docker run \
 		--rm \
-		--name $(ENVIRONMENT_DEVCONTAINER_NAME) \
-		-v /var/run/docker.sock:/var/run/docker.sock \
-		$(ENVIRONMENT_DEVCONTAINER_IMAGE_NAME) /bin/bash ./scripts/environment/verify.sh;
+		--name $(DEVCONTAINER_NAME) \
+		--volume /var/run/docker.sock:/var/run/docker.sock \
+		$(DEVCONTAINER_IMAGE_NAME) /bin/bash ./scripts/devcontainer/verify.sh;
 
-	make clean-devcontainers
+	make clean-devcontainer
 
-.PHONY: clean-devcontainers
-clean-devcontainers:
-	docker rmi $(ENVIRONMENT_DEVCONTAINER_IMAGE_NAME)
-	docker rmi $(DIND_ENVIRONMENT_IMAGE_NAME)
+.PHONY: clean-devcontainer
+clean-devcontainer:
+	docker rmi $(DIND_IMAGE_NAME) || true
+	docker rmi $(DEVCONTAINER_IMAGE_NAME)
+	docker rmi $(DEVCONTAINER_CLI_IMAGE_NAME)
 
-.PHONY: clean-environment-devcontainer
-clean-environment-devcontainer:
-	sh ./scripts/environment/teardown.sh
+.PHONY: teardown-devcontainer
+teardown-devcontainer:
+	sh ./scripts/devcontainer/teardown.sh
 
 .PHONY: install-bash
 install-bash:
