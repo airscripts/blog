@@ -9,8 +9,8 @@ FROM docker:20.10.22-dind-alpine3.17 AS runner
     bash scripts/install/make.sh && \
     make install-npm && \
     make install-python3 && \
-    make install-g++ && \
-    make install-devcontainers-cli
+    make install-gpp && \
+    make install-devcontainer-cli
 
   ENTRYPOINT [ ".docker/scripts/devcontainer.docker-entrypoint.sh" ]
   CMD ["devcontainer"]
