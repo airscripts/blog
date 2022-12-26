@@ -1,7 +1,7 @@
 FROM docker:20.10.22-dind-alpine3.17 AS runner
   LABEL maintainer="Airscript <francesco@airscript.it>"
-  WORKDIR /tmp
-  COPY tmp/ /tmp/
+  WORKDIR /home
+  COPY tmp/ /home/
 
   RUN \
     sh scripts/update.sh && \
