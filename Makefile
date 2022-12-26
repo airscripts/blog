@@ -116,6 +116,10 @@ install-circleci-cli:
 install-netlify-cli:
 	bash ./scripts/install/netlify-cli.sh
 
+.PHONY: install-python3
+install-python3:
+	bash ./scripts/install/python3.sh
+
 .PHONY: ci-verify
 ci-verify:
 	bash ./scripts/ci/verify.sh $(environment)
