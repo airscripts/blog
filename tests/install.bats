@@ -38,6 +38,18 @@ setup() {
     refute_output --partial "ERROR"
 }
 
+@test "Install gpp" {
+    run ./scripts/install/gpp.sh
+    assert_output --partial "$INSTALL_GPP"
+    refute_output --partial "ERROR"
+}
+
+@test "Install python3" {
+    run ./scripts/install/python3.sh
+    assert_output --partial "$INSTALL_PYTHON3"
+    refute_output --partial "ERROR"
+}
+
 @test "Install npm" {
     run ./scripts/install/npm.sh
     assert_output --partial "$INSTALL_NPM"
@@ -47,6 +59,12 @@ setup() {
 @test "Install Netlify CLI" {
     run ./scripts/install/netlify-cli.sh
     assert_output --partial "$INSTALL_NETLIFY_CLI"
+    refute_output --partial "ERR!"
+}
+
+@test "Install devcontainer CLI" {
+    run ./scripts/install/devcontainer-cli.sh
+    assert_output --partial "$INSTALL_DEVCONTAINER_CLI"
     refute_output --partial "ERR!"
 }
 
