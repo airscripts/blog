@@ -20,7 +20,7 @@ if [ ${#TESTS_FILES} -gt 0 ]; then
 fi
 
 if [ ${#DEVCONTAINER_FILES} -gt 0 ]; then
-  if ! make all-devcontainers; then
+  if ! make all-devcontainer; then
     echo "$PREFIX Error during devcontainer validation."
     exit 1
   fi
