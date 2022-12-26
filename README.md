@@ -26,7 +26,6 @@ Please note that only one path between *Classic* and *Dev Container* has to be f
 
 3. Run the following commands in the repository's root folder:
     ```bash
-    make setup
     make all
     ```
 
@@ -52,7 +51,6 @@ To make it work here, be sure to have installed *Dev Containers* extension.
 
 4. Run the following commands in the repository's root folder:
     ```bash
-    make setup
     make all
     ```
 
