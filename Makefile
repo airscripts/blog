@@ -124,6 +124,10 @@ install-python3:
 install-g++:
 	bash ./scripts/install/g++.sh
 
+.PHONY: install-devcontainers-cli
+install-g++:
+	bash ./scripts/install/devcontainers-cli.sh
+
 .PHONY: ci-verify
 ci-verify:
 	bash ./scripts/ci/verify.sh $(environment)
