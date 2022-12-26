@@ -13,7 +13,7 @@ DEVCONTAINER_CLI_IMAGE_NAME = airscript/devcontainer:cli
 .SUFFIXES: .sh
 
 .PHONY: all
-all: build run
+all: setup build run
 
 .PHONY: setup
 setup:
