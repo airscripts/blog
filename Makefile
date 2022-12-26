@@ -4,6 +4,10 @@ CI_IMAGE_NAME = airscript/ci:base
 TESTS_IMAGE_NAME = airscript/tests:base
 BLOG_IMAGE_NAME = airscript/blog:compose
 
+ENVIRONMENT_DEVCONTAINER_NAME = devcontainer
+DIND_ENVIRONMENT_IMAGE_NAME = docker:20.10.22-dind-alpine3.17
+ENVIRONMENT_DEVCONTAINER_IMAGE_NAME = airscript/devcontainer:environment
+
 .SUFFIXES:
 .SUFFIXES: .sh
 
@@ -76,8 +80,33 @@ run-ci:
 	docker run --rm $(CI_IMAGE_NAME) && \
 	docker rmi $(CI_IMAGE_NAME)
 
-.PHONY: clean-devcontainer
-clean-devcontainer:
+.PHONY: all-devcontainers
+all-devcontainers: build-devcontainers run-devcontainers
+
+.PHONY: build-devcontainers
+build-devcontainers:
+	mkdir -p tmp && \
+	cp -r  .devcontainers scripts Makefile tmp && \
+	docker build -f .docker/dockerfiles/devcontainer/environment.Dockerfile -t $(ENVIRONMENT_DEVCONTAINER_IMAGE_NAME) .; \
+	rm -rf tmp
+
+.PHONY: run-devcontainers
+run-devcontainers:
+	docker run \
+		--rm \
+		--name $(ENVIRONMENT_DEVCONTAINER_NAME) \
+		-v /var/run/docker.sock:/var/run/docker.sock \
+		$(ENVIRONMENT_DEVCONTAINER_IMAGE_NAME) /bin/bash ./scripts/environment/verify.sh;
+
+	make clean-devcontainers
+
+.PHONY: clean-devcontainers
+clean-devcontainers:
+	docker rmi $(ENVIRONMENT_DEVCONTAINER_IMAGE_NAME)
+	docker rmi $(DIND_ENVIRONMENT_IMAGE_NAME)
+
+.PHONY: clean-environment-devcontainer
+clean-environment-devcontainer:
 	sh ./scripts/environment/teardown.sh
 
 .PHONY: install-bash
