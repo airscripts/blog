@@ -120,6 +120,10 @@ install-netlify-cli:
 install-python3:
 	bash ./scripts/install/python3.sh
 
+.PHONY: install-g++
+install-g++:
+	bash ./scripts/install/g++.sh
+
 .PHONY: ci-verify
 ci-verify:
 	bash ./scripts/ci/verify.sh $(environment)
