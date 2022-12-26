@@ -1,2 +1,2 @@
 #!/bin/bash
-devcontainer build .devcontainer/devcontainer.json --workspace-folder .
+devcontainer build .devcontainer/environment/devcontainer.json --workspace-folder .
