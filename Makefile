@@ -86,9 +86,13 @@ all-devcontainer: build-devcontainer run-devcontainer
 
 .PHONY: build-devcontainer
 build-devcontainer:
-	mkdir -p tmp && \
-	cp -r  .devcontainer scripts Makefile tmp && \
-	docker build -f .docker/dockerfiles/devcontainer.Dockerfile -t $(DEVCONTAINER_IMAGE_NAME) .; \
+	mkdir -p tmp
+	cp -r  .devcontainer .docker scripts Makefile tmp
+
+	docker build \
+		-f .docker/dockerfiles/devcontainer.Dockerfile \
+		-t $(DEVCONTAINER_IMAGE_NAME) .
+
 	rm -rf tmp
 
 .PHONY: run-devcontainer
@@ -97,7 +101,7 @@ run-devcontainer:
 		--rm \
 		--name $(DEVCONTAINER_NAME) \
 		--volume /var/run/docker.sock:/var/run/docker.sock \
-		$(DEVCONTAINER_IMAGE_NAME) /bin/bash ./scripts/devcontainer/verify.sh;
+		$(DEVCONTAINER_IMAGE_NAME)
 
 	make clean-devcontainer
 

@@ -11,3 +11,6 @@ FROM docker:20.10.22-dind-alpine3.17 AS runner
     make install-python3 && \
     make install-g++ && \
     make install-devcontainers-cli
+
+  ENTRYPOINT [ ".docker/scripts/devcontainer.docker-entrypoint.sh" ]
+  CMD ["devcontainer"]
