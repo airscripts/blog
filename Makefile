@@ -125,7 +125,7 @@ install-g++:
 	bash ./scripts/install/g++.sh
 
 .PHONY: install-devcontainers-cli
-install-g++:
+install-devcontainers-cli:
 	bash ./scripts/install/devcontainers-cli.sh
 
 .PHONY: ci-verify
