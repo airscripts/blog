@@ -1,4 +1,6 @@
 # 🪶 blog.airscript.it  
+[English](./README.md) | [Italian](./README.it-IT.md)  
+
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Airscripts/blog.airscript.it/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Airscripts/blog.airscript.it/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/regal-sunshine-3cc2d8/deploys)  
 
 Questo repository contiene il codice sorgente e i contenuti del mio blog ospitato su [blog.airscript.it](https://blog.airscript.it).  
