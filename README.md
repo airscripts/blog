@@ -7,7 +7,7 @@ This repository contains source code and content of my blog hosted on [blog.airs
 ## 📦 Installation  
 In order to contribute to this project, you need an up and running development environment.  
 Follow the steps below in order to have one fully functional.  
-Please note that only one path between *Classic* and *Dev Container* has to be followed.
+Please note that only one path between *Classic* and *Dev Container* has to be followed.  
 &nbsp;
 
 ### Classic  
