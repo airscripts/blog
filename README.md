@@ -54,7 +54,7 @@ To make it work here, be sure to have installed *Dev Containers* extension.
     make all
     ```
 
-4. Everything should be set up and running on port 25001.  
+5. Everything should be set up and running on port 25001.  
 &nbsp;
 
 ## 🤝 Contributing  
