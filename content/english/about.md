@@ -76,7 +76,7 @@ This means that you can contribute to both its development and the drafting
 of articles, get inspiration and much more.  
 
 If you want to leave a star and support my project, you can find it at the 
-following [link](https://github.com/Airscripts/blog.airscript.it).  
+following [link](https://github.com/Airscripts/blog).  
 I would be delighted if you did!  
 
 And now, without too much delay here are the links that I promised you:  

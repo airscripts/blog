@@ -76,7 +76,7 @@ Ciò significa che puoi contribuire sia al suo sviluppo che alla stesura degli
 articoli, trarne ispirazione e tanto altro.  
 
 Se ti va di lasciare una stellina e supportare il mio progetto, lo trovi al 
-seguente [link](https://github.com/Airscripts/blog.airscript.it).  
+seguente [link](https://github.com/Airscripts/blog).  
 Sarei felicissimo se lo facessi!
 
 Ed ora, senza troppi indugi ecco i link che ti avevo promesso:  
