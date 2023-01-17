@@ -26,7 +26,7 @@ Title = "Oh, ciao! 👋🏻"
 Content = """
 Ti do il benvenuto su **airscript.it**!  
 Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!  
-Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una 🌟 al [blog su GitHub](https://github.com/Airscripts/blog.airscript.it).  
+Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una 🌟 al [blog su GitHub](https://github.com/Airscripts/blog).  
 &nbsp;  
 Qui non si bada a spese!  
 *John Hammond, Jurassic Park.*
@@ -153,7 +153,7 @@ url = "https://blog.airscript.it/index.xml"
 [params.editPost]
 appendFilePath = false
 Text = "Suggest Changes"
-URL = "https://github.com/Airscripts/blog.airscript.it/tree/main/content"
+URL = "https://github.com/Airscripts/blog/tree/main/content"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]
