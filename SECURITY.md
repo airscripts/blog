@@ -6,4 +6,4 @@
 | 1.x.x   | :white_check_mark: |
 
 ## Reporting a Vulnerability
-To report a vulnerability, open an [issue](https://github.com/Airscripts/blog.airscript.it/issues/new/choose).
+To report a vulnerability, open an [issue](https://github.com/Airscripts/blog/issues/new/choose).
