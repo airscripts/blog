@@ -8,7 +8,7 @@ Questo repository contiene il codice sorgente e i contenuti del mio blog ospitat
 
 ## 📦 Installazione  
 Per poter contribuire a questo progetto, è necessario avere un ambiente di sviluppo funzionante.  
-Seguite i passi seguenti per averne uno completamente funzionante.  
+Seguite gli step descritti di seguito per averne uno completamente funzionante.  
 E' necessario seguire un solo percorso tra *Classic* e *Dev Container*.  
 &nbsp;
 
