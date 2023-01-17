@@ -1,7 +1,7 @@
 # 🪶 Blog 
 [English](./README.md) | [Italian](./README.it-IT.md)  
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Airscripts/blog.airscript.it/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Airscripts/blog.airscript.it/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/regal-sunshine-3cc2d8/deploys)  
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Airscripts/blog/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Airscripts/blog/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/regal-sunshine-3cc2d8/deploys)  
 
 Questo repository contiene il codice sorgente e i contenuti del mio blog ospitato su [blog.airscript.it](https://blog.airscript.it).  
 &nbsp;
@@ -23,7 +23,7 @@ E' necessario seguire un solo percorso tra *Classic* e *Dev Container*.
 
 2. Clonate questo repository: 
     ```bash
-    git clone https://github.com/Airscripts/blog.airscript.it.git
+    git clone https://github.com/Airscripts/blog.git
     ```
 
 3. Eseguite i seguenti comandi nella cartella principale del repository:
@@ -45,7 +45,7 @@ E' necessario seguire un solo percorso tra *Classic* e *Dev Container*.
 
 2. Clonate questo repository: 
     ```bash
-    git clone https://github.com/Airscripts/blog.airscript.it.git
+    git clone https://github.com/Airscripts/blog.git
     ```
 
 3. Aprite Visual Studio Code e confermate la volontà di aprire il repository in un devcontainer.  
@@ -75,7 +75,7 @@ Grazie mille, significa molto per me!
 
 ## 💳 Licenze  
 Questo repository ha una doppia licenza.  
-Ciò significa che per il codice sorgente si applica la [Licenza MIT](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_MIT) e per i post del blog la [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_CC_BY_4.0).  
+Ciò significa che per il codice sorgente si applica la [Licenza MIT](https://github.com/Airscripts/blog/blob/main/LICENSE_MIT) e per i post del blog la [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog/blob/main/LICENSE_CC_BY_4.0).  
 &nbsp;
 
 ## 📚 Risorse
