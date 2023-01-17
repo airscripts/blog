@@ -1,7 +1,7 @@
 # 🪶 Blog
 [English](./README.md) | [Italian](./README.it-IT.md)  
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Airscripts/blog.airscript.it/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Airscripts/blog.airscript.it/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/regal-sunshine-3cc2d8/deploys)  
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Airscripts/blog/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Airscripts/blog/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/regal-sunshine-3cc2d8/deploys)  
 
 This repository contains source code and content of my blog hosted on [blog.airscript.it](https://blog.airscript.it).  
 &nbsp;
@@ -23,7 +23,7 @@ Please note that only one path between *Classic* and *Dev Container* has to be f
 
 2. Clone this repository: 
     ```bash
-    git clone https://github.com/Airscripts/blog.airscript.it.git
+    git clone https://github.com/Airscripts/blog.git
     ```
 
 3. Run the following commands in the repository's root folder:
@@ -45,7 +45,7 @@ Please note that only one path between *Classic* and *Dev Container* has to be f
 
 2. Clone this repository: 
     ```bash
-    git clone https://github.com/Airscripts/blog.airscript.it.git
+    git clone https://github.com/Airscripts/blog.git
     ```
 
 3. Open it in Visual Studio Code and then confirm the will to open it into a devcontainer.  
@@ -75,7 +75,7 @@ Thank you so much, it means a lot for me!
 
 ## 💳 License  
 This repository has dual-licensing.  
-This means that for its source code [MIT License](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_CC_BY_4.0) is applied.  
+This means that for its source code [MIT License](https://github.com/Airscripts/blog/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog/blob/main/LICENSE_CC_BY_4.0) is applied.  
 &nbsp;
 
 ## 📚 Resources
