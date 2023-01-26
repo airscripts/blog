@@ -3,14 +3,12 @@
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/Airscripts/blog/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Airscripts/blog/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/regal-sunshine-3cc2d8/deploys)  
 
-This repository contains source code and content of my blog hosted on [blog.airscript.it](https://blog.airscript.it).  
-&nbsp;
+This repository contains source code and content of my blog hosted on [blog.airscript.it](https://blog.airscript.it).
 
-## 📦 Installation  
+## 📦 Install
 In order to contribute to this project, you need an up and running development environment.  
 Follow the steps below in order to have one fully functional.  
-Please note that only one path between *Classic* and *Dev Container* has to be followed.  
-&nbsp;
+Please note that only one path between *Classic* and *Dev Container* has to be followed.
 
 ### Classic  
 
@@ -31,8 +29,7 @@ Please note that only one path between *Classic* and *Dev Container* has to be f
     make all
     ```
 
-4. Everything should be set up and running on port 25001.  
-&nbsp;
+4. Everything should be set up and running on port 25001.
 
 ### Dev Container  
 
@@ -56,27 +53,21 @@ To make it work here, be sure to have installed *Dev Containers* extension.
     make all
     ```
 
-5. Everything should be set up and running on port 25001.  
-&nbsp;
+5. Everything should be set up and running on port 25001.
 
-## 🤝 Contributing  
-Contributions and suggestions about how to improve the blog are welcome!  
-&nbsp;  
+## 🤝 Contribute
+Contributions and suggestions about how to improve the blog are welcome!
 
 ## 💚 Support  
 If you want to support my work you can do it with the links below.  
 
 Choose what you find more suitable for you:  
 - [Support me on GitHub](https://github.com/sponsors/Airscripts)  
-- [Support me via linktr.ee](https://linktr.ee/airscript)  
-
-Thank you so much, it means a lot for me!  
-&nbsp;  
+- [Support me via linktr.ee](https://linktr.ee/airscript)
 
 ## 💳 License  
 This repository has dual-licensing.  
-This means that for its source code [MIT License](https://github.com/Airscripts/blog/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog/blob/main/LICENSE_CC_BY_4.0) is applied.  
-&nbsp;
+This means that for its source code [MIT License](https://github.com/Airscripts/blog/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog/blob/main/LICENSE_CC_BY_4.0) is applied.
 
 ## 📚 Resources
 - PageSpeed Insights Report: [Link](https://pagespeed.web.dev/report?url=https%3A%2F%2Fblog.airscript.it%2F)  
