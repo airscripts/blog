@@ -10,6 +10,7 @@ summary: "Cos'è Molivair e in cosa consiste il progetto Outpaintings."
 
 ![name](/images/woman-with-a-parasol.png#center)
 
+## Introduzione
 Ehi! 👋🏻  
 Ne è passato di tempo dall'ultima volta!  
 Ho finalmente portato a termine un progetto che non vedevo l'ora di condividere.  
@@ -44,11 +45,14 @@ Speriamo possa piacerti come lo è stato per noi mentre generavamo ogni singolo 
 ## Come avete generato i dipinti?
 Se sei interessato a conoscere il processo dietro la creazione dei dipinti, puoi farmelo sapere tramite i contatti che ti lascerò alla fine del post. Mi piacerebbe molto scrivere qualcosa a riguardo!
 
-## Dove puoi trovare Outpaintings
+## Dove posso trovare Outpaintings?
 Se vuoi darci un'occhiata, qui sotto ti lascio in chiaro l'indirizzo per raggiungerla:
 https://opensea.io/collection/molivair-outpaintings 🔗
 
-## Contattami!
+## Conclusione
+Abbiamo visto che cos'è Molivair, com'è nata e dove puoi trovare la prima collezione d'arte: Outpaintings.  
+
+## Contatti
 Puoi trovarmi ai seguenti link:
 - [GitHub](https://github.com/Airscripts)
 - [LinkedIn](https://www.linkedin.com/in/airscript/)
