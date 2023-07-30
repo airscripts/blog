@@ -11,7 +11,7 @@ summary: "About page di blog.airscript.it dove racconto chi sono, cosa faccio e 
 > Per rendere una cosa speciale, devi solo credere che sia speciale.  
 > *Mr. Ping, Kung Fu Panda*
 
-## Ciao Mondo! 👋🏻
+## Ciao Mondo!  
 Ti do il benvenuto sul mio blog!  
 Io sono Francesco conosciuto come **Airscript** sul web.  
 

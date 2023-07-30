@@ -11,7 +11,7 @@ summary: "Blog's about page where I tell about who I am, what I do and the objec
 > To make something special, you just have to believe it's special.  
 > *Mr. Ping, Kung Fu Panda*
 
-## Hello World! 👋🏻
+## Hello World!  
 Welcome to my blog!  
 I am Francesco known as **Airscript** on the web.  
 

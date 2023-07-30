@@ -11,7 +11,7 @@ summary: "Cos'è Molivair e in cosa consiste il progetto Outpaintings."
 ![name](/images/woman-with-a-parasol.png#center)
 
 ## Introduzione
-Ehi! 👋🏻  
+Ehilà!  
 Ne è passato di tempo dall'ultima volta!  
 Ho finalmente portato a termine un progetto che non vedevo l'ora di condividere.  
 Ma prima partiamo dal principio. Ho co-fondato **Molivair**.  

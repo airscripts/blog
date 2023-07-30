@@ -16,17 +16,17 @@ languageAltTitle = "Italiano"
 contentDir = "content/italian"
 
 description = """
-Ti do il benvenuto su airscript.it!
-Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!
+Sono Francesco conosciuto come Airscript sul web e ti do un caloroso benvenuto sul mio blog!
+Qui troverai articoli relativi ad open source, motivazione e molto altro.
 """
 
 [languages.it.homeInfoParams]
-Title = "Oh, ciao! 👋🏻"
+Title = "Ehilà!"
 
 Content = """
-Ti do il benvenuto su **airscript.it**!  
-Su questo blog troverai articoli relativi ad informatica, motivazione e molto altro!  
-Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una 🌟 al [blog su GitHub](https://github.com/Airscripts/blog).  
+Sono Francesco conosciuto come Airscript sul web e ti do un caloroso benvenuto sul mio blog!  
+Qui troverai articoli relativi ad open source, motivazione e molto altro.  
+Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una stella al [blog su GitHub](https://github.com/Airscripts/blog).  
 &nbsp;  
 Qui non si bada a spese!  
 *John Hammond, Jurassic Park.*
@@ -58,8 +58,8 @@ languageAltTitle = "English"
 contentDir = "content/english"
 
 description = """
-I welcome you on airscript.it!
-On this blog you'll find articles related to computer science, motivation and much more!
+I am Francesco known as Airscript on the web and I warmly welcome you on my blog!  
+Here you'll find articles related to open source, motivation and much more.  
 """
 
 # [[languages.en.menu.main]]
@@ -82,12 +82,12 @@ pageRef = "search"
 identifier = "Search"
 
 [languages.en.homeInfoParams]
-Title = "Oh, hello! 👋🏻"
+Title = "Hey there!"
 
 Content = """
-I welcome you on **airscript.it**!  
-On this blog you'll find articles related to computer science, motivation and much more!  
-If you want, you can support me through the link below or leaving a 🌟 at my [blog on GitHub](https://github.com/Airscripts/blog.airscript.it).  
+I am Francesco known as Airscript on the web and I warmly welcome you on my blog!  
+Here you'll find articles related to open source, motivation and much more.  
+If you want, you can support me through the links below or leaving a star at my [blog on GitHub](https://github.com/Airscripts/blog.airscript.it).  
 &nbsp;  
 Spared no expense!  
 *John Hammond, Jurassic Park.*
