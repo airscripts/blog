@@ -1,4 +1,4 @@
-const CACHE_VERSION = "1.10.0";
+const CACHE_VERSION = "1.11.0";
 const SUPPORTED_METHODS = ["GET"];
 const NOT_FOUND_PAGE = "/404.html";
 const OFFLINE_PAGE = "/offline/index.html";
