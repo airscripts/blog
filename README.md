@@ -1,5 +1,5 @@
 # Blog
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airscripts/blog/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airscripts/blog/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status)](https://app.netlify.com/sites/airscripts-blog/deploys)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/airscripts/blog/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/airscripts/blog/tree/main) [![Netlify Status](https://api.netlify.com/api/v1/badges/59826574-7ccb-4c30-a776-942044cf9520/deploy-status?branch=main)](https://app.netlify.com/sites/airscripts-blog/deploys)
 
 This repository contains source code and content of my blog hosted on [blog.airscript.it](https://blog.airscript.it).
 
