@@ -6,50 +6,8 @@ enableRobotsTXT = true
 pygmentsUseClasses = true
 copyright = "airscript.it"
 enableInlineShortcodes = true
-defaultContentLanguage = "it"
+defaultContentLanguage = "en"
 baseURL = "https://blog.airscript.it"
-
-[languages.it]
-weight = 1
-languageName = "it"
-languageAltTitle = "Italiano"
-contentDir = "content/italian"
-
-description = """
-Sono Francesco conosciuto come Airscript sul web e ti do un caloroso benvenuto sul mio blog!
-Qui troverai articoli relativi ad open source, motivazione e molto altro.
-"""
-
-[languages.it.homeInfoParams]
-Title = "Ehilà!"
-
-Content = """
-Sono Francesco conosciuto come Airscript sul web e ti do un caloroso benvenuto sul mio blog!  
-Qui troverai articoli relativi ad open source, motivazione e molto altro.  
-Se vuoi, puoi supportarmi attraverso i link sotto o lasciando una stella al [blog su GitHub](https://github.com/Airscripts/blog).  
-&nbsp;  
-Qui non si bada a spese!  
-*John Hammond, Jurassic Park.*
-"""
-
-# [[languages.it.menu.main]]
-# weight = 5
-# name = "Archivio"
-# url = "archives/"
-
-[[languages.it.menu.main]]
-weight = 10
-name = "About"
-url = "about/"
-pageRef = "about"
-identifier = "About"
-
-[[languages.it.menu.main]]
-weight = 15
-name = "Cerca"
-url = "search/"
-pageRef = "search"
-identifier = "Search"
 
 [languages.en]
 weight = 2
