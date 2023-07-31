@@ -54,9 +54,9 @@ To make it work here, be sure to have installed *Dev Containers* extension.
 5. Everything should be set up and running on port 25001.
 
 ## Resources
-- PageSpeed Insights Report: [Link](https://pagespeed.web.dev/report?url=https%3A%2F%2Fblog.airscript.it%2F)  
-- Mozilla Observatory: [Link](https://observatory.mozilla.org/analyze/blog.airscript.it)  
-- Security Headers: [Link](https://securityheaders.com/?q=blog.airscript.it&hide=on&followRedirects=on)
+- [PageSpeed Insights Report](https://pagespeed.web.dev/report?url=https%3A%2F%2Fblog.airscript.it%2F)  
+- [Mozilla Observatory](https://observatory.mozilla.org/analyze/blog.airscript.it)  
+- [Security Headers](https://securityheaders.com/?q=blog.airscript.it&hide=on&followRedirects=on)
 
 ## Contributing
 Contributions and suggestions about how to improve the blog are welcome!
