@@ -44,7 +44,7 @@ Once done this, I was literally at a good point with the language.
 ## Exposing Everything
 Once I had the standard library, I needed to choose first how users could consume this language.  
 I thought to start with two simple ways: a CLI and a simple import as a libary.  
-For the latter, it was really easy: I have just exposed the modules I wanted through the use of ES Modules.  
+For the latter, it was really easy: I have just exposed the modules I wanted through the use of [ES Modules][javascript-modules].  
 The CLI was a little bit more interesting to do.  
 Did you know that you can add a bin key into your package.json and that just makes a binary for your lib? It is literally amazing.
 

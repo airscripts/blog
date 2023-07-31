@@ -46,8 +46,7 @@ We hope you will enjoy it as much as it was with us as we generated each and eve
 If you are interested in knowing the process behind the creation of the paintings, you can let me know via the contact information I will leave at the end of the post. I would love to write something about it!
 
 ## Where Can I Find Outpaintings?
-If you'd like to check it out, I'll leave below in plain text the address to reach it:
-https://opensea.io/collection/molivair-outpaintings 🔗
+If you'd like to check it out, you can find it on [OpenSea][opensea-molivair-outpaintings].
 
 ## Conclusion
 We have seen what is Molivair, how it is born and where you can find the first art collection: Outpaintings.  
@@ -59,3 +58,4 @@ If you want to make me even more happier, just follow, share or star me and my p
 
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
+[opensea-molivair-outpaintings]: https://opensea.io/collection/molivair-outpaintings

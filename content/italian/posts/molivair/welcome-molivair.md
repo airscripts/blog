@@ -46,8 +46,7 @@ Speriamo possa piacerti come lo è stato per noi mentre generavamo ogni singolo 
 Se sei interessato a conoscere il processo dietro la creazione dei dipinti, puoi farmelo sapere tramite i contatti che ti lascerò alla fine del post. Mi piacerebbe molto scrivere qualcosa a riguardo!
 
 ## Dove posso trovare Outpaintings?
-Se vuoi darci un'occhiata, qui sotto ti lascio in chiaro l'indirizzo per raggiungerla:
-https://opensea.io/collection/molivair-outpaintings 🔗
+Se vuoi darci un'occhiata, lo trovi su [OpenSea][opensea-molivair-outpaintings].
 
 ## Conclusione
 Abbiamo visto che cos'è Molivair, com'è nata e dove puoi trovare la prima collezione d'arte: Outpaintings.  
@@ -59,3 +58,4 @@ Se vuoi rendermi ancora più felice, seguimi, condividi o metti una stella a me 
 
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
+[opensea-molivair-outpaintings]: https://opensea.io/collection/molivair-outpaintings

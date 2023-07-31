@@ -12,20 +12,20 @@ summary: "Una presentazione di una nuova Awesome List open source per Steam Deck
 
 ## Introduzione
 Ehilà! Sono Francesco conosciuto come Airscript sul web.  
-Oggi con questo blog post vorrei condividere con te un nuovo progetto open source che sto sviluppando: [Awesome Steam Deck](https://github.com/airscripts/awesome-steam-deck).  
+Oggi con questo blog post vorrei condividere con te un nuovo progetto open source che sto sviluppando: [Awesome Steam Deck][awesome-steam-deck].  
 
 ## Perché Una Awesome List?
 Ho recentemente comprato uno Steam Deck e come al solito, ho cominciato ad imparare tutto quello che potevo a riguardo.  
 Pertanto ho raccolto informazioni sul web: da Reddit, blogs indipendenti o anche video.  
 
 Dopo tutte queste ricerche, qualcosa mi è passato per la testa e mi sono detto: "Probabilmente esiste una Awesome List per questo!"  
-Mi sbagliavo. All'interno di [Awesome](https://github.com/sindresorhus/awesome) non ho trovato nulla di collegato. Solo alcuni progetti attorno a GitHub non più aggiornati.  
+Mi sbagliavo. All'interno di [Awesome][awesome] non ho trovato nulla di collegato. Solo alcuni progetti attorno a GitHub non più aggiornati.  
 Pertanto ho deciso di provare a farne una io, poiché volevo essere di aiuto agli altri e contribuire al magnifico ecosistema creato da Valve.
 
 ## Come Hai Cominciato?
-Ho cominciato dando un'occhiata alle [linee guida](https://github.com/sindresorhus/awesome/blob/main/create-list.md) di una Awesome List.
+Ho cominciato dando un'occhiata alle [linee guida][guidelines] di una Awesome List.
 C'è bisogno di un sacco di cose per essere allineati con Awesome, pertanto ho deciso di iniziare proprio da come partire nel modo corretto.  
-Dopo ciò, necessitavo di ottenere informazioni. Dato che sono molto navigato nell'interagire con le communities, ne ho trovata una su Telegram chiamata [Steam Deck Italia](https://t.me/SteamDeckIta).  
+Dopo ciò, necessitavo di ottenere informazioni. Dato che sono molto navigato nell'interagire con le communities, ne ho trovata una su Telegram chiamata [Steam Deck Italia][steam-deck-italia].  
 Qui ho trovato delle persone meravigliose che hanno condiviso gratuitamente conoscenza e per questo in seguito, ho deciso di fare una partnership con loro per ringraziarli dell'aiuto indiretto che mi hanno donato.  
 
 Dopo aver costruito una piccola base, ho provato a raggiungere un pubblico più ampio su Reddit. Ciò che ho trovato lì sopra è stato sensazionale.  
@@ -55,3 +55,7 @@ Se vuoi rendermi ancora più felice, seguimi, condividi o metti una stella a me 
 
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
+[steam-deck-italia]: https://t.me/SteamDeckIta
+[awesome]: https://github.com/sindresorhus/awesome
+[awesome-steam-deck]: https://github.com/airscripts/awesome-steam-deck
+[guidelines]: https://github.com/sindresorhus/awesome/blob/main/create-list.md
