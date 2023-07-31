@@ -29,7 +29,7 @@ The possibility of being able to create tools that could make people's life bett
 **passion** and later also **work**.  
 
 I currently work as a Software Engineer for a beautiful startup called 
-[hlpy](https://hlpy.co).  
+[hlpy][hlpy].  
 Being able to contribuite to a project with a similar impact, makes me 
 extremely satisfied and happy.  
 
@@ -39,7 +39,7 @@ this blog.
 ## Why A Blog?
 During 2022 I've decided to expose me publicly because I wanted to confront 
 myself with other professionals in the sector.  
-The reason? I have known [Progetto Happiness](https://progettohappiness.com/en/the-project/).  
+The reason? I have known [Progetto Happiness][progetto-happiness].  
 
 If you didn't know Progetto Happiness, it is an initiative aimed to 
 understanding what it is and how you can reach the **happiness** through a 
@@ -76,12 +76,15 @@ This means that you can contribute to both its development and the drafting
 of articles, get inspiration and much more.  
 
 If you want to leave a star and support my project, you can find it at the 
-following [link](https://github.com/Airscripts/blog).  
+following [link][github-blog].  
 I would be delighted if you did!  
 
 And now, without too much delay here are the links that I promised you:  
-- [airscript.it][airscript-it]: here you can find everything you need.
+- [airscript.it][airscript-it]: here you can find everything you need, starting from my socials.
 - [GitHub][github]: this is my GitHub profile where all my open source project are.
 
+[hlpy]: https://hlpy.co
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
+[github-blog]: https://github.com/Airscripts/blog
+[progetto-happiness]: https://progettohappiness.com/il-progetto/

@@ -30,7 +30,7 @@ delle persone attraverso delle linee di codice, mi ha entusiasmato così tanto
 da far divenire questo interesse, **passione** ed in seguito anche **lavoro**.  
 
 Attualmente lavoro come Software Engineer per una bellissima startup 
-chiamata [hlpy](https://hlpy.co).  
+chiamata [hlpy][hlpy].  
 Poter contribuire ad un progetto con un impatto simile, mi rende estremamente soddisfatto e felice.  
 
 Ma ehi, presentazioni a parte, lascia che ti spieghi cosa mi porta a scrivere su questo blog.  
@@ -38,7 +38,7 @@ Ma ehi, presentazioni a parte, lascia che ti spieghi cosa mi porta a scrivere su
 ## Perché un blog?
 Nel corso del 2022 ho deciso di espormi pubblicamente perché desideravo 
 confrontarmi con altri professionisti del settore.  
-Il motivo? Ho conosciuto [Progetto Happiness](https://progettohappiness.com/il-progetto/).  
+Il motivo? Ho conosciuto [Progetto Happiness][progetto-happiness].  
 
 Se non conoscessi Progetto Happiness, è un'iniziativa volta a comprendere 
 cosa sia e come si possa raggiungere la **felicità** attraverso una serie 
@@ -76,12 +76,15 @@ Ciò significa che puoi contribuire sia al suo sviluppo che alla stesura degli
 articoli, trarne ispirazione e tanto altro.  
 
 Se ti va di lasciare una stellina e supportare il mio progetto, lo trovi al 
-seguente [link](https://github.com/Airscripts/blog).  
+seguente [link][github-blog].  
 Sarei felicissimo se lo facessi!
 
 Ed ora, senza troppi indugi ecco i link che ti avevo promesso:  
-- [airscript.it][airscript-it]: qui trovi praticamente tutto quello di cui puoi avere bisogno.
+- [airscript.it][airscript-it]: qui trovi praticamente tutto quello di cui puoi avere bisogno, a partire dai miei socials.
 - [GitHub][github]: questo è il mio profilo GitHub, dove trovi tutti i miei progetti open source.
 
+[hlpy]: https://hlpy.co
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
+[github-blog]: https://github.com/Airscripts/blog
+[progetto-happiness]: https://progettohappiness.com/il-progetto/
