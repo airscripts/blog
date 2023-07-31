@@ -1,5 +1,5 @@
 ---
-date: "2023-08-01"
+date: "2023-07-31"
 author: "Airscript"
 title: "Building Anally Fast Stuff"
 categories: ["open source", "esolangs"]
