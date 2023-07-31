@@ -1,5 +1,5 @@
 ---
 title: "Archive"
 layout: "archives"
-summary: "Archives of blog.airscript.it."
+summary: "Blog's archives."
 ---

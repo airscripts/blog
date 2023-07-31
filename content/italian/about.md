@@ -80,9 +80,8 @@ seguente [link](https://github.com/Airscripts/blog).
 Sarei felicissimo se lo facessi!
 
 Ed ora, senza troppi indugi ecco i link che ti avevo promesso:  
-- [GitHub](https://github.com/Airscripts)
-- [LinkedIn](https://www.linkedin.com/in/airscript/)
-- [Twitter](https://twitter.com/airscript)
-- [Telegram](https://t.me/airscript)
+- [airscript.it][airscript-it]: qui trovi praticamente tutto quello di cui puoi avere bisogno.
+- [GitHub][github]: questo è il mio profilo GitHub, dove trovi tutti i miei progetti open source.
 
-Non ti bastano? Scrivimi pure una email a hello@airscript.it.
+[airscript-it]: https://airscript.it
+[github]: https://github.com/airscripts

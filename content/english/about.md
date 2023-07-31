@@ -36,7 +36,7 @@ extremely satisfied and happy.
 But hey, introductions aside, let me explain what leads me to write on 
 this blog.  
 
-## Why a blog?
+## Why A Blog?
 During 2022 I've decided to expose me publicly because I wanted to confront 
 myself with other professionals in the sector.  
 The reason? I have known [Progetto Happiness](https://progettohappiness.com/en/the-project/).  
@@ -52,7 +52,7 @@ world all the beauty that people that I know and interact with every day give me
 During this year I've got an invaluable value from these experiences and I 
 want to share them with you.  
 
-## What can I read?
+## What Can I Read?
 As a great computer science enthusiast it seems absolutely obvious 
 to me that the main topic will be that. I will treat it, however, in my own way.  
 
@@ -62,13 +62,13 @@ Beyond this, I'd like to build a bond with whoever reads what I write.
 So expect to find totally generic articles, from time to time, about what 
 happens during my daily adventures.  
 
-## To whom it is addressed?
+## To Whom It Is Addressed?
 This blog is aimed to anyone looking for a different point of view, to 
 anyone who wants to question themselves or just learn something new.  
 
 Sure, okay, even if you want to find out why my name is `airscript`.  
 
-## Where can I find you?
+## Where Can I Find You?
 If you want to follow my adventures I'll leave some useful links below.  
 
 But before that, I remind you that this blog is **entirely Open Source**.  
@@ -80,9 +80,8 @@ following [link](https://github.com/Airscripts/blog).
 I would be delighted if you did!  
 
 And now, without too much delay here are the links that I promised you:  
-- [GitHub](https://github.com/Airscripts)
-- [LinkedIn](https://www.linkedin.com/in/airscript/)
-- [Twitter](https://twitter.com/airscript)
-- [Telegram](https://t.me/airscript)
+- [airscript.it][airscript-it]: here you can find everything you need.
+- [GitHub][github]: this is my GitHub profile where all my open source project are.
 
-Not enough for you? Feel free to write an email at hello@airscript.it.
+[airscript-it]: https://airscript.it
+[github]: https://github.com/airscripts

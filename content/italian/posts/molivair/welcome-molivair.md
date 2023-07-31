@@ -52,11 +52,10 @@ https://opensea.io/collection/molivair-outpaintings 🔗
 ## Conclusione
 Abbiamo visto che cos'è Molivair, com'è nata e dove puoi trovare la prima collezione d'arte: Outpaintings.  
 
-## Contatti
-Puoi trovarmi ai seguenti link:
-- [GitHub](https://github.com/Airscripts)
-- [LinkedIn](https://www.linkedin.com/in/airscript/)
-- [Twitter](https://twitter.com/airscript)
-- [Telegram](https://t.me/airscript)
+## Condivisione E Supporto
+Se ti è piaciuto questo post, vieni a dirmelo!  
+Troppa timidezza per farlo? Nessun problema. Visita [airscript.it][airscript-it] e mostra il tuo supporto seguendomi su una delle tue piattaforme social preferite.  
+Se vuoi rendermi ancora più felice, seguimi, condividi o metti una stella a me e ai miei progetti su [GitHub][github].
 
-Non ti bastano? Scrivimi pure una email a hello@airscript.it.
+[airscript-it]: https://airscript.it
+[github]: https://github.com/airscripts

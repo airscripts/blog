@@ -14,7 +14,7 @@ summary: "Una presentazione di una nuova Awesome List open source per Steam Deck
 Ehilà! Sono Francesco conosciuto come Airscript sul web.  
 Oggi con questo blog post vorrei condividere con te un nuovo progetto open source che sto sviluppando: [Awesome Steam Deck](https://github.com/airscripts/awesome-steam-deck).  
 
-## Perché una Awesome List?
+## Perché Una Awesome List?
 Ho recentemente comprato uno Steam Deck e come al solito, ho cominciato ad imparare tutto quello che potevo a riguardo.  
 Pertanto ho raccolto informazioni sul web: da Reddit, blogs indipendenti o anche video.  
 
@@ -22,7 +22,7 @@ Dopo tutte queste ricerche, qualcosa mi è passato per la testa e mi sono detto:
 Mi sbagliavo. All'interno di [Awesome](https://github.com/sindresorhus/awesome) non ho trovato nulla di collegato. Solo alcuni progetti attorno a GitHub non più aggiornati.  
 Pertanto ho deciso di provare a farne una io, poiché volevo essere di aiuto agli altri e contribuire al magnifico ecosistema creato da Valve.
 
-## Come hai cominciato?
+## Come Hai Cominciato?
 Ho cominciato dando un'occhiata alle [linee guida](https://github.com/sindresorhus/awesome/blob/main/create-list.md) di una Awesome List.
 C'è bisogno di un sacco di cose per essere allineati con Awesome, pertanto ho deciso di iniziare proprio da come partire nel modo corretto.  
 Dopo ciò, necessitavo di ottenere informazioni. Dato che sono molto navigato nell'interagire con le communities, ne ho trovata una su Telegram chiamata [Steam Deck Italia](https://t.me/SteamDeckIta).  
@@ -33,7 +33,7 @@ Il progetto è stato amato da tanti e alcune persone mi hanno anche donato i lor
 È proprio qui che ho fatto i cambiamenti finali e le ultime scoperte per la lista.  
 Da questo momento in poi, la gente ha cominciato a condividere la lista trovandola utile e questo mi ha riempito di felicità.
 
-## E adesso?
+## E Adesso?
 Per poter divenire una Awesome List certificata, la lista stessa dev'essere quanto più completa possibile e avere almeno 30 giorni.  
 Al momento siamo nella seconda settimana di vita e quindi c'è ancora un po' di tempo.  
 Mi sono dato degli obiettivi da raggiungere prima che queste tre settimane finiscanoç
@@ -48,11 +48,10 @@ Se conosci lo spagnolo, il francere o il tedesco, sarebbe fantastica e molto app
 In caso contrario, altri tipi di contributo sono sempre benvenuti, lo sai bene.  
 Grazie dal profondo per aver letto questo articolo!
 
-## Contatti
-Puoi trovarmi ai seguenti links:
-- [GitHub](https://github.com/Airscripts)
-- [LinkedIn](https://www.linkedin.com/in/airscript/)
-- [Twitter](https://twitter.com/airscript)
-- [Telegram](https://t.me/airscript)
+## Condivisione E Supporto
+Se ti è piaciuto questo post, vieni a dirmelo!  
+Troppa timidezza per farlo? Nessun problema. Visita [airscript.it][airscript-it] e mostra il tuo supporto seguendomi su una delle tue piattaforme social preferite.  
+Se vuoi rendermi ancora più felice, seguimi, condividi o metti una stella a me e ai miei progetti su [GitHub][github].
 
-Non sono abbastanza per te? Mandami pure un email a hello@airscript.it.
+[airscript-it]: https://airscript.it
+[github]: https://github.com/airscripts
