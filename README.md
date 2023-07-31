@@ -53,6 +53,11 @@ To make it work here, be sure to have installed *Dev Containers* extension.
 
 5. Everything should be set up and running on port 25001.
 
+## Resources
+- PageSpeed Insights Report: [Link](https://pagespeed.web.dev/report?url=https%3A%2F%2Fblog.airscript.it%2F)  
+- Mozilla Observatory: [Link](https://observatory.mozilla.org/analyze/blog.airscript.it)  
+- Security Headers: [Link](https://securityheaders.com/?q=blog.airscript.it&hide=on&followRedirects=on)
+
 ## Contributing
 Contributions and suggestions about how to improve the blog are welcome!
 
@@ -67,8 +72,3 @@ Choose what you find more suitable for you:
 ## License
 This repository has dual-licensing.  
 This means that for its source code [MIT License](https://github.com/Airscripts/blog/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog/blob/main/LICENSE_CC_BY_4.0) is applied.
-
-## Resources
-- PageSpeed Insights Report: [Link](https://pagespeed.web.dev/report?url=https%3A%2F%2Fblog.airscript.it%2F)  
-- Mozilla Observatory: [Link](https://observatory.mozilla.org/analyze/blog.airscript.it)  
-- Security Headers: [Link](https://securityheaders.com/?q=blog.airscript.it&hide=on&followRedirects=on)  
