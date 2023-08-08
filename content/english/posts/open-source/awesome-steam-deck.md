@@ -50,7 +50,7 @@ Thank you kindly for reading this article!
 
 ## Share Support
 If you have liked this post, just come and tell me!  
-Are you too shy for doing this? No problem. Just visit [airscript.it][airscript-it] and share your support following me on your preferrend social platform.  
+Are you too shy for doing this? No problem. Just visit [airscript.it][airscript-it] and share your support following me on your preferred social platform.  
 If you want to make me even more happier, just follow, share or star me and my projects on [GitHub][github].
 
 [airscript-it]: https://airscript.it
