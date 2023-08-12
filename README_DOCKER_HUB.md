@@ -14,4 +14,4 @@ It is open source so that anybody can improve it freely or just take inspiration
 
 # License
 This repository has dual-licensing.  
-This means that for its source code [MIT License](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog.airscript.it/blob/main/LICENSE_CC_BY_4.0) is applied.  
+This means that for its source code [MIT License](https://github.com/Airscripts/blog/blob/main/LICENSE_MIT) applies and for blog posts [Creative Commons Attribution 4.0 International](https://github.com/Airscripts/blog/blob/main/LICENSE_CC_BY_4.0) is applied.  
