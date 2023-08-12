@@ -4,11 +4,11 @@ author: "Airscript"
 title: "Awesome Steam Deck"
 categories: ["open source", "steam deck"]
 tags: ["airscript", "open source", "steam deck"]
-images: ["/images/logo-steam-deck.jpeg", "/logo-open-graph.png"]
+images: ["/images/logo-steam-deck.png", "/logo-open-graph.png"]
 summary: "A presentation of a new open source Awesome List for Steam Deck."
 ---
 
-![name](/images/logo-steam-deck.jpeg#center)
+![name](/images/logo-steam-deck.png#center)
 
 ## Introduction
 Hey there! I am Francesco known as Airscript on the web.  
