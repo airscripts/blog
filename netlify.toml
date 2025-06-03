@@ -1,3 +1,6 @@
+[build]
+command = "exit 0"
+
 [[headers]]
 for = "/*"
 
