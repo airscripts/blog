@@ -1,4 +1,4 @@
-FROM alpine:3.17 AS builder
+FROM alpine:3.22 AS builder
   ARG BLOG_BUILD_ENVIRONMENT=docker
   WORKDIR /home
   COPY . .
@@ -12,7 +12,7 @@ FROM alpine:3.17 AS builder
     make install-git environment=${BLOG_BUILD_ENVIRONMENT} && \
     make git-submodules environment=${BLOG_BUILD_ENVIRONMENT}
 
-FROM alpine:3.17 AS runner
+FROM alpine:3.22 AS runner
   LABEL maintainer="Airscript <francesco@airscript.it>"
   ENV BLOG_PORT=25001
   ENV BLOG_INTERFACE=0.0.0.0
