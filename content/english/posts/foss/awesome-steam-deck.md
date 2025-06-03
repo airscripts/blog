@@ -14,6 +14,8 @@ summary: "A presentation of a new open source Awesome List for Steam Deck."
 Hey there! I am Francesco known as Airscript on the web.  
 Today with this blog post I want to share with you a new open source project that I'm developing: [Awesome Steam Deck][awesome-steam-deck].  
 
+---
+
 ## Why An Awesome List?
 I've recently bought a Steam Deck and as always, I just started learning everything that I could learn about it.  
 So I've gathered information around all the web: from Reddit, independent blogs or even videos.  
@@ -21,6 +23,8 @@ So I've gathered information around all the web: from Reddit, independent blogs 
 After all this research, something clicked in my mind and I told myself: "Maybe there is an Awesome List for this!"  
 I was wrong. Inside [Awesome][awesome] I didn't find out something related. Only a few projects around GitHub but not updated anymore.  
 So I've decided to try in doing one myself, because I wanted to be of help to others and contribute to this wonderful ecosystem that Valve made.
+
+---
 
 ## How Have You Started?
 I started from looking at the [guidelines][guidelines] of an Awesome List.
@@ -33,6 +37,8 @@ The project has been loved by many and a few people also gave me their projects 
 That's where I just made the final changes and findings for the list.  
 People has started to share the list each other finding it useful and that just filled me up with happiness.
 
+---
+
 ## What's Next?
 In order to be a certified Awesome List, the list itself has to be as complete as possible and at least 30 days old.  
 Right now we're in the second week of life so there's much time ahead.  
@@ -41,6 +47,8 @@ I've set some goals to reach before this three weeks finish up:
 - Internationalize the project: accessibility is key for knowledge like this;
 - Make it as viral as possible: the purpose of this is to help, so the main thing is this.
 
+---
+
 ## Conclusion
 So this is my new project. We have seen together why and how I started it and what goals I've set for it.  
 I'm looking forward to have contributors both for the list itself and for the internationalization part.  
@@ -48,7 +56,9 @@ If you know spanish, french or german, it would be awesome and well appreciated 
 Otherwise other types of contributions are always welcome, you know that.  
 Thank you kindly for reading this article!
 
-## Share Support
+---
+
+## Support
 If you have liked this post, just come and tell me!  
 Are you too shy for doing this? No problem. Just visit [airscript.it][airscript-it] and share your support following me on your preferred social platform.  
 If you want to make me even more happier, just follow, share or star me and my projects on [GitHub][github].
