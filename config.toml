@@ -1,4 +1,3 @@
-paginate = 5
 theme = "PaperMod"
 enableEmoji = true
 title = "airscript.it" 
@@ -8,6 +7,9 @@ copyright = "airscript.it"
 enableInlineShortcodes = true
 defaultContentLanguage = "en"
 baseURL = "https://blog.airscript.it"
+
+[pagination]
+pagerSize = 10
 
 [languages.en]
 weight = 2

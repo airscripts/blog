@@ -3,7 +3,7 @@ SHELL = /bin/sh
 CI_IMAGE_NAME = airscript/ci:base
 TESTS_IMAGE_NAME = airscript/tests:base
 BLOG_IMAGE_NAME = airscript/blog:compose
-DIND_IMAGE_NAME = docker:20.10.22-dind-alpine3.17
+DIND_IMAGE_NAME = docker:28.2.2-dind-alpine3.21
 
 DEVCONTAINER_NAME = airscript-devcontainer-base
 DEVCONTAINER_IMAGE_NAME = airscript/devcontainer:base

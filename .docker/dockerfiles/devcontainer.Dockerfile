@@ -1,4 +1,4 @@
-FROM docker:20.10.22-dind-alpine3.17 AS runner
+FROM docker:28.2.2-dind-alpine3.21 AS runner
   LABEL maintainer="Airscript <francesco@airscript.it>"
   WORKDIR /home
   COPY tmp/ /home/
