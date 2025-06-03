@@ -13,77 +13,64 @@ summary: "Blog's about page where I tell about who I am, what I do and the objec
 
 ## Hello World!  
 Welcome to my blog!  
-I am Francesco known as **Airscript** on the web.  
+I’m Francesco, known online as **Airscript**.  
 
-Since I was a kid I've demonstrated a strong curiosity for what surrounded 
-me: videogames, sports, cinematography.  
-Just to name a few of the thousand things that fascinate me.  
+Since I was a kid, I’ve always been curious about the world around me—videogames, sports, cinematography—just to name a few of the countless things that fascinate me.  
 
-Oh yes! I cannot miss out an honorable mention to paleonthology and 
-specifically to **dinosaurs**.  
-*Just between us I hadn't really forgotten them, I wanted them to have the 
-attention they deserve.*  
+Oh, and let’s not forget paleontology—especially **dinosaurs**.  
+*Between us, I didn’t really forget them. I just wanted to make sure they got the spotlight they deserve.*  
 
-Of all, however, computer science was the one I never lost sight of.  
-The possibility of being able to create tools that could make people's life better through lines of code, got me so excited to make this interest, 
-**passion** and later also **work**.  
+But out of everything, computer science is what stuck with me the most.  
+The idea that I could build tools to improve people's lives through code got me hooked early on. What started as a spark turned into a full-blown **passion**, and eventually, my **career**.  
 
-I currently work as a Software Engineer for a beautiful startup called 
-[hlpy][hlpy].  
-Being able to contribuite to a project with a similar impact, makes me 
-extremely satisfied and happy.  
+Today, I work as a **freelance software engineer**, helping bring ideas to life through technology.  
 
-But hey, introductions aside, let me explain what leads me to write on 
-this blog.  
+But enough introductions—let me tell you why I decided to start this blog.  
 
-## Why A Blog?
-During 2022 I've decided to expose me publicly because I wanted to confront 
-myself with other professionals in the sector.  
-The reason? I have known [Progetto Happiness][progetto-happiness].  
+---
 
-If you didn't know Progetto Happiness, it is an initiative aimed to 
-understanding what it is and how you can reach the **happiness** through a 
-series of questions addressed to incredible people.  
+## Why a Blog?  
+In 2022, I made a decision: I wanted to put myself out there and connect with others in my field.  
+The spark? Discovering [Progetto Happiness][progetto-happiness].  
+
+If you haven’t heard of it, it’s an initiative exploring what happiness really is—through questions asked to some truly incredible people.  
 
 So here I am!  
-I too, like Giuseppe of the Project, would like to share with the whole 
-world all the beauty that people that I know and interact with every day give me.
+Like Giuseppe from the project, I want to share the beauty I see every day in the people around me.  
 
-During this year I've got an invaluable value from these experiences and I 
-want to share them with you.  
+This past year has given me so much, and now I’d love to give something back—by writing about it here.  
 
-## What Can I Read?
-As a great computer science enthusiast it seems absolutely obvious 
-to me that the main topic will be that. I will treat it, however, in my own way.  
+---
 
-How? I'll put in a pinch of **philosophy** and **simplicity**: like those that distinguish me.  
+## What Can I Read?  
+Since I’m a huge fan of computer science, that’ll be the main theme. But I’ll explore it my way.  
 
-Beyond this, I'd like to build a bond with whoever reads what I write.  
-So expect to find totally generic articles, from time to time, about what 
-happens during my daily adventures.  
+How? With a pinch of **philosophy** and **simplicity**—just like me.  
 
-## To Whom It Is Addressed?
-This blog is aimed to anyone looking for a different point of view, to 
-anyone who wants to question themselves or just learn something new.  
+That said, I want to connect with you, the reader. So from time to time, you’ll also find more personal posts—stories from my daily adventures, lessons learned, and maybe a few random thoughts too.  
 
-Sure, okay, even if you want to find out why my name is `airscript`.  
+---
 
-## Where Can I Find You?
-If you want to follow my adventures I'll leave some useful links below.  
+## Who’s It For?  
+This blog is for anyone looking for a fresh perspective.  
+For anyone who loves to question things—or just wants to learn something new.  
 
-But before that, I remind you that this blog is **entirely Open Source**.  
-This means that you can contribute to both its development and the drafting 
-of articles, get inspiration and much more.  
+And hey, even if you’re just curious about why I go by `airscript`, you’re in the right place.  
 
-If you want to leave a star and support my project, you can find it at the 
-following [link][github-blog].  
-I would be delighted if you did!  
+---
 
-And now, without too much delay here are the links that I promised you:  
-- [airscript.it][airscript-it]: here you can find everything you need, starting from my socials.
-- [GitHub][github]: this is my GitHub profile where all my open source project are.
+## Where Can I Find You?  
+Want to follow along? I’ve dropped some helpful links below.  
 
-[hlpy]: https://hlpy.co
+But first—a quick note. This blog is **fully open source**.  
+That means you can contribute to its development, collaborate on articles, or simply draw inspiration from it.  
+
+If you'd like to support the project, feel free to leave a star on [GitHub][github-blog]—I'd really appreciate it!  
+
+And now, as promised, here are the links:  
+- [airscript.it][airscript-it] — your hub for all my social links and updates.  
+- [GitHub][github] — where you’ll find all my open source projects.
+
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
 [github-blog]: https://github.com/Airscripts/blog
