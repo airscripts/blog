@@ -1,0 +1,108 @@
+theme: "PaperMod"
+enableEmoji: true
+title: "airscript.it"
+enableRobotsTXT: true
+pygmentsUseClasses: true
+copyright: "airscript.it"
+enableInlineShortcodes: true
+baseURL: "https://blog.airscript.it"
+
+pagination:
+  pagerSize: 10
+
+menu:
+  main:
+    - weight: 5
+      name: "Archive"
+      url: "archives/"
+
+    - weight: 10
+      name: "About"
+      url: "about/"
+      pageRef: "about"
+      identifier: "About"
+
+    - weight: 15
+      name: "Search"
+      url: "search/"
+      pageRef: "search"
+      identifier: "Search"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+markup:
+  highlight:
+    style: "dracula"
+
+params:
+  showToc: true
+  showWordCount: true
+
+  homeInfoParams:
+    title: "Hey there!"
+
+    content: |
+      I am Francesco known as Airscript on the web and I warmly welcome you on my blog!  
+      Here you'll find articles related to open source, motivation and much more.  
+      If you want, you can support me through the links below or leaving a star at my [blog on GitHub](https://github.com/Airscripts/blog.airscript.it).  
+      &nbsp;  
+      Spared no expense!  
+      *John Hammond, Jurassic Park.*
+
+  label:
+    icon: "logo.svg"
+    iconWidth: 30
+    iconHeight: 30
+
+  defaultTheme: "auto"
+  showReadingTime: true
+  showShareButtons: false
+  showCodeCopyButtons: true
+  disableLanguageSwitch: true
+  
+  assets:
+    disableHLJS: true
+    theme_color: "#0f94d2"
+    msapplication_TileColor: "#2b5797"
+
+  images:
+    - "/logo-512x512"
+
+  customStyles:
+    - file: "/css/offline.css"
+      integrity: "sha512-+R/cu1jJ/RrydyUhKhXI1QczU3TRLLLHAQyYHi1vXFAEF8lK4MxJiWgjIckiCegJ80aIB6icc6lSoLn1YY/OSA=="
+
+  notificationsScripts:
+    - file: "/js/notifications/dictionary.js"
+      integrity: "sha512-tOZZsofKwRGHAcQVGMed077Q0y4hnPvTv0Nw8L9VYWKlQgWcQZznMXZTTNID39Q0+Dumx+kHl7PlP7K+cGn6nQ=="
+    - file: "/js/notifications/i18n.js"
+      integrity: "sha512-eNnuCLQ8noOgoy620xyZxApQlMLSJZze6Qe/h/uKQIynxfvYfmL29FimkcLho1i7AGeG+tkh0WM5pnBcIn82Hg=="
+    - file: "/js/notifications/main.js"
+      integrity: "sha512-SAID9CBhh48e0EabUHvgvRrh2FiCmBh5Xb+fX2sv5P9IhYvRC73fYNHWg6usTYMyEOvJ6uEuP9y7nTQIgr0f7w=="
+
+  menuScripts:
+    - file: "/js/menu.js"
+      integrity: "sha512-XF6O1Z7tmFdMKJug1taoTIEN5erd8st9wgg3kujj3zIB9ErdmlzR499Eup9AKwDXeI2O6BnABt/6fWqvmzkOJw=="
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/sponsors/Airscripts"
+    - name: "KoFi"
+      url: "https://ko-fi.com/airscript"
+    - name: "RSS"
+      url: "https://blog.airscript.it/index.xml"
+
+  editPost:
+    appendFilePath: false
+    text: "Suggest Changes"
+    url: "https://github.com/Airscripts/blog/tree/main/content"
+
+customScripts: []
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
