@@ -2,8 +2,8 @@
 date: "2024-12-18"
 author: "Airscript"
 title: "Less Feetpics, Less Footprint"
-tags: ["airscript", "green-bytes"]
-categories: ["green-bytes", "data-saving", "data", "carbon", "ecology"]
+categories: ["green-bytes"]
+tags: ["airscript", "green-bytes", "data"]
 images: ["/images/less-feetpics-less-footprint.png", "/logo-open-graph.png"]
 summary: "Cutting back on data? It's not that bad after all, and it helps the planet."
 ---

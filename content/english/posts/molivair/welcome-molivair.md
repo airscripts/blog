@@ -2,8 +2,8 @@
 date: "2022-10-12"
 author: "Airscript"
 title: "Welcome, Molivair"
-tags: ["airscript", "molivair"]
-categories: ["molivair", "ai", "art"]
+categories: ["molivair"]
+tags: ["airscript", "molivair", "ai"]
 images: ["/images/woman-with-a-parasol.png", "/logo-open-graph.png"]
 summary: "What is Molivair and what the Outpaintings project consists of."
 ---

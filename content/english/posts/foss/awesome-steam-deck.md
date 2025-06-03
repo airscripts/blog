@@ -2,7 +2,7 @@
 date: "2023-07-17"
 author: "Airscript"
 title: "Awesome Steam Deck"
-categories: ["open source", "steam deck"]
+categories: ["foss"]
 tags: ["airscript", "open source", "steam deck"]
 images: ["/images/logo-steam-deck.png", "/logo-open-graph.png"]
 summary: "A presentation of a new open source Awesome List for Steam Deck."

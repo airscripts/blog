@@ -2,7 +2,7 @@
 date: "2023-07-31"
 author: "Airscript"
 title: "Building Anally Fast Stuff"
-categories: ["open source", "esolangs"]
+categories: ["foss"]
 tags: ["airscript", "open source", "esolangs"]
 images: ["/images/cover-analscript.png", "/logo-open-graph.png"]
 summary: "A modern approach for writing anally fast stuff with Analscript."
