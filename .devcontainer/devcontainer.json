@@ -1,7 +1,7 @@
 {
   "overrideCommand": false,
   "name": "airscript-devcontainer",
-  "image": "docker:20.10.22-dind-alpine3.17",
+  "image": "docker:28.2.2-dind-alpine3.21",
   "postCreateCommand": "sh scripts/devcontainer/setup.sh",
 
   "forwardPorts": [
