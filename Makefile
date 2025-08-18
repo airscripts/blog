@@ -173,7 +173,7 @@ ci-build:
 
 .PHONY: ci-deploy
 ci-deploy:
-	bash ./scripts/ci/deploy.sh $(id) $(token)
+	bash ./scripts/ci/deploy.sh $(org) $(project) $(token)
 
 .PHONY: ci-publish
 ci-publish: docker-login docker-build docker-push
