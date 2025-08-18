@@ -9,7 +9,7 @@ readonly INSTALL_CURL="curl installed successfully."
 readonly INSTALL_BASH="Bash installed successfully."
 readonly INSTALL_PYTHON3="python3 installed successfully."
 readonly INSTALL_DOCKER_CLI="Docker CLI installed successfully."
-readonly INSTALL_NETLIFY_CLI="Netlify CLI installed successfully."
+readonly INSTALL_VERCEL_CLI="Vercel CLI installed successfully."
 readonly INSTALL_CIRCLECI_CLI="CircleCI CLI installed successfully."
 readonly INSTALL_DEVCONTAINER_CLI="devcontainer CLI installed successfully."
 

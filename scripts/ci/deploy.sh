@@ -1,2 +1,2 @@
 #!/bin/bash
-netlify deploy --site $1 --auth $2 --prod --dir=public
+VERCEL_ORG_ID=$1 VERCEL_PROJECT_ID=$2 vercel deploy --token $3 --prod --yes

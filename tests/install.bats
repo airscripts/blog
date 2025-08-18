@@ -56,9 +56,9 @@ setup() {
     refute_output --partial "ERROR"
 }
 
-@test "Install Netlify CLI" {
-    run ./scripts/install/netlify-cli.sh
-    assert_output --partial "$INSTALL_NETLIFY_CLI"
+@test "Install Vercel CLI" {
+    run ./scripts/install/vercel-cli.sh
+    assert_output --partial "$INSTALL_VERCEL_CLI"
     refute_output --partial "ERR!"
 }
 

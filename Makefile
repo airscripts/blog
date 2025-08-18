@@ -147,9 +147,9 @@ install-docker-cli:
 install-circleci-cli:
 	bash ./scripts/install/circleci-cli.sh
 
-.PHONY: install-netlify-cli
-install-netlify-cli:
-	bash ./scripts/install/netlify-cli.sh
+.PHONY: install-vercel-cli
+install-vercel-cli:
+	bash ./scripts/install/vercel-cli.sh
 
 .PHONY: install-python3
 install-python3:

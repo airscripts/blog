@@ -11,7 +11,7 @@ elif [ "$1" = "deploy" ]; then
   apk --version
   node -v
   npm -v
-  netlify -v
+  vercel -v
 
 elif [ "$1" = "publish" ]; then
   apk --version
