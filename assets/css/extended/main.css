@@ -1,3 +1,7 @@
 html {
   min-width: 320px;
 }
+
+.dark .logo img[aria-label="logo"] {
+  filter: invert(1);
+}
