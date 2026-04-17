@@ -52,7 +52,7 @@ params:
       *John Hammond, Jurassic Park.*
 
   label:
-    icon: "logo.svg"
+    icon: "logo.png"
     iconWidth: 30
     iconHeight: 30
 
@@ -68,7 +68,7 @@ params:
     msapplication_TileColor: "#2b5797"
 
   images:
-    - "/logo-512x512"
+    - "/logo.png"
 
   customStyles:
     - file: "/css/offline.css"

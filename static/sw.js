@@ -7,25 +7,14 @@ const SITE_URL = "https://blog.airscript.it";
 const OFFLINE_CACHE_FILES = ["/offline/index.html"];
 
 const BASE_CACHE_FILES = [
-  "/logo.svg",
-  "/logo-256x256.png",
-  "/logo-512x512.png",
+  "/logo.png",
   "/favicon.ico",
-  "/manifest.json",
-  "/mstile-70x70.png",
-  "/mstile-144x144.png",
-  "/mstile-150x150.png",
-  "/mstile-310x150.png",
-  "/mstile-310x310.png",
-  "/favicon-16x16.png",
-  "/favicon-32x32.png",
-  "/browserconfig.xml",
+  "/favicon.svg",
+  "/favicon-96x96.png",
+  "/site.webmanifest",
   "/apple-touch-icon.png",
-  "/safari-pinned-tab.svg",
-  "/android-chrome-192x192.png",
-  "/android-chrome-512x512.png",
-  "/maskable-android-chrome-192x192.png",
-  "/maskable-android-chrome-512x512.png",
+  "/web-app-manifest-192x192.png",
+  "/web-app-manifest-512x512.png",
 ];
 
 const CACHE_VERSIONS = {

@@ -12,20 +12,18 @@ summary: "Blog's about page where I tell about who I am, what I do and the objec
 > *Mr. Ping, Kung Fu Panda*
 
 ## Hello World!  
-Welcome to my blog!  
-I’m Francesco, known online as **Airscript**.  
+Welcome to my blog!
+I’m Francesco, known online as **Airscript**.
 
-Since I was a kid, I’ve always been curious about the world around me—videogames, sports, cinematography—just to name a few of the countless things that fascinate me.  
+I’ve always been curious about the world around me. *Videogames, sports, cinematography*, and yes, *dinosaurs*. Especially dinosaurs.
 
-Oh, and let’s not forget paleontology—especially **dinosaurs**.  
-*Between us, I didn’t really forget them. I just wanted to make sure they got the spotlight they deserve.*  
+Out of all my interests, **computer science** is what truly stuck. The idea of building things, *tools that actually improve people’s lives*, hooked me early. What started as curiosity became **passion**, and eventually my career.
 
-But out of everything, computer science is what stuck with me the most.  
-The idea that I could build tools to improve people's lives through code got me hooked early on. What started as a spark turned into a full-blown **passion**, and eventually, my **career**.  
+Today, I work as a **software engineer**, currently serving as **Head of Technology at Beelzebub**, where we build *AI-powered cybersecurity systems* to make the internet safer.
 
-Today, I work as a **freelance software engineer**, helping bring ideas to life through technology.  
+Alongside that, I work as a **freelance engineer**, building *CLI tools*, *web applications*, and *scalable systems*, while also helping others with *interview prep*, *resume reviews*, and *technical guidance*.
 
-But enough introductions—let me tell you why I decided to start this blog.  
+If you’re wondering why I started this blog, let’s get into it.
 
 ---
 
