@@ -5,7 +5,7 @@ title: "If Gael Had Turned Back"
 categories: ["life"]
 tags: ["airscript", "life", "dark souls"]
 images: ["/images/gael.png", "/logo-open-graph.png"]
-summary: "I chased something I thought would save me — but found something else instead."
+summary: "I chased something I thought would save me, but found something else instead."
 ---
 
 ![name](/images/gael.png#center)
@@ -14,7 +14,7 @@ summary: "I chased something I thought would save me — but found something els
 
 Hey there!  
 It has been quite some time since my last writing.  
-This time I'm here to give a little life update — the first one over here.  
+This time I'm here to give a little life update, the first one over here.  
 In the last year a lot has happened, and I'd like to talk openly about it since it makes me feel better in the first place.  
 But before starting, I have to add a note: this post will interlace my life update with a character from *Dark Souls* that I like a lot, called Gael.  
 Why though? Because I felt like him in recent times, connecting the dots looking backwards.  
@@ -25,13 +25,13 @@ So without any further ado, let's deep dive into my story.
 ## At The Gates Of The Ringed City
 
 This chapter is called *"At The Gates Of The Ringed City"*, a place where Gael goes during a certain moment in history in order to find what he was looking for: the Dark Soul.  
-This special thing would allow him — and an important person to him — to make a painting of a world.  
+This special thing would allow him, and an important person to him, to make a painting of a world.  
 A new world where people could just... live.  
 Yes, live, because the world in which the game is set is full of pain and death.
 
 Now, we can think about this soul just like something to make also my own painting: not necessarily a new world, but a paintbrush to change something in this one we live in and add something we can call value. A deep value.
 
-So in the last year, I've reached my personal Ringed City — a company that I co-founded and to which I put my dreams, hopes, and effort to make it bloom as the paintbrush we've been talking about a little earlier.
+So in the last year, I've reached my personal Ringed City, a company that I co-founded and to which I put my dreams, hopes, and effort to make it bloom as the paintbrush we've been talking about a little earlier.
 
 ---
 
@@ -52,11 +52,11 @@ We pursue a road that we think is the best for us, but sooner or later we realiz
 ## The Moment Before The Blood
 
 When you reach this exact moment in your life, life itself gives you a choice.  
-You can turn around, retrace your steps, learn from failures and find another way — or you can simply drink what remains of what you were looking for.  
+You can turn around, retrace your steps, learn from failures and find another way, or you can simply drink what remains of what you were looking for.  
 You just settle for the drops. And that's what Gael did.
 
 Arrived at this gigantic land of ash, he decided to take what's left of the Dark Soul (its blood) and drink it for the pain of the reality proposed to him.  
-Later on, that blood will corrupt him — just like society tries to do to us with what's meant to be right in the work world.
+Later on, that blood will corrupt him, just like society tries to do to us with what's meant to be right in the work world.
 
 At this time, I stopped and tried to think about a different ending.  
 Do I need to end corrupted as Gael or... is there another way?  
@@ -81,7 +81,7 @@ I want this painting to be made of:
 
 It may take time. It may not be grand. But it’ll be mine.
 
-Maybe your brush looks different. Maybe you're still in the ashlands. But if you’ve got anything left — even just a spark — you can still choose to paint something better.  
+Maybe your brush looks different. Maybe you're still in the ashlands. But if you’ve got anything left, even just a spark, you can still choose to paint something better.  
 Even Gael, in all his madness, made something beautiful in the end.  
 I just don't want to die to do it.
 
@@ -97,9 +97,11 @@ Keep being beautiful as you are and when you're facing reality, don't necessaril
 ---
 
 ## Support
-If you enjoyed this post, I’d love to hear from you!  
-Not ready to speak up? No worries — just head over to [airscript.it][airscript-it] and show your support by following me on your favorite social platform.
-Want to make my day even better? Follow, share, or star my projects on [GitHub][github] to help me grow and keep creating. Your support means the world!
+If this post resonated with you, I’d love to hear from you.
+
+And if you’d like to support what I do, you can follow me on your favorite platform through [airscript.it][airscript-it], or support my work on [GitHub][github] with a follow, a share, or a star.
+
+It really means a lot.
 
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts

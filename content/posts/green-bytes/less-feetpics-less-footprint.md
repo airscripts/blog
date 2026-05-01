@@ -66,9 +66,11 @@ So, take a minute today to enable data-saving modes on your favorite apps, track
 ---
 
 ## Support
-If you enjoyed this post, I’d love to hear from you!  
-Not ready to speak up? No worries — just head over to [airscript.it][airscript-it] and show your support by following me on your favorite social platform.
-Want to make my day even better? Follow, share, or star my projects on [GitHub][github] to help me grow and keep creating. Your support means the world!
+If this post resonated with you, I’d love to hear from you.
+
+And if you’d like to support what I do, you can follow me on your favorite platform through [airscript.it][airscript-it], or support my work on [GitHub][github] with a follow, a share, or a star.
+
+It really means a lot.
 
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts

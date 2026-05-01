@@ -59,9 +59,11 @@ Thank you kindly for reading this article!
 ---
 
 ## Support
-If you have liked this post, just come and tell me!  
-Are you too shy for doing this? No problem. Just visit [airscript.it][airscript-it] and share your support following me on your preferred social platform.  
-If you want to make me even more happier, just follow, share or star me and my projects on [GitHub][github].
+If this post resonated with you, I’d love to hear from you.
+
+And if you’d like to support what I do, you can follow me on your favorite platform through [airscript.it][airscript-it], or support my work on [GitHub][github] with a follow, a share, or a star.
+
+It really means a lot.
 
 [airscript-it]: https://airscript.it
 [github]: https://github.com/airscripts
